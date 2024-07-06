@@ -89,7 +89,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="./" className="-m-1.5 p-1.5">
             <span className="sr-only">Lightning Proxies</span>
-            <img className="w-auto h-8" src="/logo.svg" alt="" />
+            <img className="w-auto h-12" src="/logo.svg" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
