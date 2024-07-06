@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function FairUsagePolicy() {
   return (
     <section className=" pb-16 overflow-hidden bg-white">
@@ -8,7 +9,7 @@ export default function FairUsagePolicy() {
             Fair Usage Of Privacy Policy
           </h1>
           <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we'll get back you as soon as possible!
+            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
           </p>
         </div>
 

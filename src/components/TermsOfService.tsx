@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function TermsOfService() {
   return (
     <section className=" pb-16 overflow-hidden bg-white">
@@ -6,7 +7,7 @@ export default function TermsOfService() {
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Terms Of Service</h1>
           <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we'll get back you as soon as possible!
+            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
           </p>
         </div>
 
@@ -22,7 +23,7 @@ export default function TermsOfService() {
           <p>"Service" refers to the proxy services provided by CatProxies.</p>
           <p>"User" refers to any individual or entity using the Service.</p>
           <p>
-            "Account" refers to the User's account created upon registration.
+            "Account" refers to the User&apos;s account created upon registration.
           </p>
           <p>
             "Content" refers to any data, text, images, or other material
@@ -139,7 +140,7 @@ export default function TermsOfService() {
             CatProxies may terminate or suspend your account and access to the
             Service at any time, without prior notice, for conduct that
             CatProxies believes violates these Terms or is harmful to other
-            users of the Service, or for any other reason in CatProxies's sole
+            users of the Service, or for any other reason in CatProxies&apos;s sole
             discretion.
           </p>
 

@@ -24,7 +24,7 @@ export default function Blog() {
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Blogs</h1>
           <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we'll get back you as soon as possible!
+            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
           </p>
         </div>
 

@@ -125,7 +125,7 @@ export default function PricingSection() {
             <div className="px-2 text-center h-48 flex space-y-1 flex-col items-center justify-center">
               <h3 className="tracking-widest text-[20px]">Custom</h3>
               <h2 className="text-[30px] whitespace-nowrap text-[#246BFD] font-medium flex items-center justify-center leading-none mb-4 mt-2">
-                Let"s Discuss
+                Let&apos;s Discuss
               </h2>
               <span className="text-gray-600 text-base ml-1 text-[20px]">
                 Per month
