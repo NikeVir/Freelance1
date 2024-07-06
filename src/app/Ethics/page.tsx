@@ -5,11 +5,10 @@ import EthicsPolicy from "@/components/Ethics";
 export default function Home() {
   return (
     <main className="font-giest">
-     
       <Header />
-   <EthicsPolicy/>
-   
-      <Footer/>
+      <EthicsPolicy />
+
+      <Footer />
     </main>
   );
 }

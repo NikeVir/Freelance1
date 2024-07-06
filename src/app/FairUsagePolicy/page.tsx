@@ -5,11 +5,10 @@ import FairUsagePolicy from "@/components/FairUsagePolicy";
 export default function Home() {
   return (
     <main className="font-giest">
-     
       <Header />
-   <FairUsagePolicy/>
-   
-      <Footer/>
+      <FairUsagePolicy />
+
+      <Footer />
     </main>
   );
 }

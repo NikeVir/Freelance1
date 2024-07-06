@@ -11,16 +11,16 @@ export default function ContactSection() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-
     <div className="bg-white">
       <div className="flex justify-center items-center mb-4">
-        <img src="/images/illustration/gray-cat.svg"/>
-        </div>
+        <img src="/images/illustration/gray-cat.svg" />
+      </div>
 
-        <div className="flex flex-col justify-center items-center space-y-2">
+      <div className="flex flex-col justify-center items-center space-y-2">
         <h1 className="font-bold text-[32px]">Contact Us</h1>
-        <p className="text-[18px] text-gray-500 ">Reach out to us anytime, and we'll get back you as soon as possible!
-</p>
+        <p className="text-[18px] text-gray-500 ">
+          Reach out to us anytime, and we'll get back you as soon as possible!
+        </p>
       </div>
       <div className="relative isolate pt-1">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:flex flex-col gap-10 lg:items-center lg:px-8">
@@ -122,11 +122,11 @@ export default function ContactSection() {
               </div>
 
               <div className="">
-              <label
+                <label
                   htmlFor="last-name"
                   className="block text-sm font-normal leading-6 text-gray-900"
                 >
-                 Any Document to upload for us
+                  Any Document to upload for us
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -173,7 +173,6 @@ export default function ContactSection() {
               </div>
 
               <div className="lg:flex lg:justify-end sm:mt-12 lg:mt-0 sm:justify-end sm:flex">
-        
                 <button
                   type="submit"
                   className="inline-flex w-32 text-center items-center text-sm justify-end bg-[#05C067] p-2 shadow-lg shadow-black/30 rounded-md font-semibold leading-6 text-gray-900"

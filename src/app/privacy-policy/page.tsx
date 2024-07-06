@@ -5,11 +5,10 @@ import PrivacyPolicy from "@/components/privacy-policy";
 export default function Home() {
   return (
     <main className="font-giest">
-     
       <Header />
-   <PrivacyPolicy/>
-   
-      <Footer/>
+      <PrivacyPolicy />
+
+      <Footer />
     </main>
   );
 }

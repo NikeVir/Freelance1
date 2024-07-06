@@ -47,25 +47,20 @@ export default function WhySection() {
       <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
         <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5 space-y-4">
-          <h3 className="text-2xl lg:text-left text-center sm:text-4xl font-semibold tracking-tight text-secondary">
-          Cat Proxies Solutions 
+            <h3 className="text-2xl lg:text-left text-center sm:text-4xl font-semibold tracking-tight text-secondary">
+              Cat Proxies Solutions
             </h3>
             <p className="max-w-xl text-center lg:text-left mx-auto mt-4 text-base text-secondary/80">
-            Explore How Our Expertise Translates into Tangible Results. 
+              Explore How Our Expertise Translates into Tangible Results.
             </p>
             <p className="text-sm text-gray-400 ">
-            Dive deep into each project with comprehensive case studies that outline challenges, strategies, and outcomes.
+              Dive deep into each project with comprehensive case studies that
+              outline challenges, strategies, and outcomes.
             </p>
 
-          <div className="sm:flex sm:justify-center sm:items-center">
-          <img src="/images/illustration/three-cat-illustration.svg"  />
-           
-          </div>
-          
- 
-          
-           
-           
+            <div className="sm:flex sm:justify-center sm:items-center">
+              <img src="/images/illustration/three-cat-illustration.svg" />
+            </div>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
             <dl className="space-y-8 ">
@@ -84,29 +79,22 @@ export default function WhySection() {
                             <span className="text-xl font-light text-gray-900">
                               {faq.question}
                             </span>
-                            
                           </div>
 
                           <span className="flex items-center ml-6 h-7">
                             {open ? (
                               <>
-                               <ChevronUpIcon
-                                className="w-6 h-6"
-                                aria-hidden="true"
-                              />
-
-
+                                <ChevronUpIcon
+                                  className="w-6 h-6"
+                                  aria-hidden="true"
+                                />
                               </>
-                             
-                            
                             ) : (
                               <ChevronDownIcon
                                 className="w-6 h-6"
                                 aria-hidden="true"
                               />
-                           
                             )}
-                           
                           </span>
                         </Disclosure.Button>
                       </dt>
@@ -118,10 +106,9 @@ export default function WhySection() {
                           {faq.answer}
                         </p>
                         <button className="ml-2 px-4 py-4 w-full rounded-lg text-sm text-white bg-gradient-to-r from-[#05C067] to-[#50EA48] ">
-                                  Contact Us Now
-                                </button>
+                          Contact Us Now
+                        </button>
                       </Disclosure.Panel>
-                    
                     </>
                   )}
                 </Disclosure>

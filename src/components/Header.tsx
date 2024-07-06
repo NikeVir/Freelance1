@@ -102,7 +102,7 @@ export default function Header() {
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-   
+
         <PopoverGroup className="items-start justify-center hidden lg:flex lg:gap-x-6  ">
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm  leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none font-normal">
@@ -157,7 +157,7 @@ export default function Header() {
           </Popover>
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
-            Pricing
+              Pricing
               <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
                 aria-hidden="true"
@@ -208,7 +208,7 @@ export default function Header() {
           </Popover>
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
-            Solutions
+              Solutions
               <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
                 aria-hidden="true"
@@ -260,7 +260,7 @@ export default function Header() {
 
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
-            Resources
+              Resources
               <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
                 aria-hidden="true"
@@ -315,15 +315,18 @@ export default function Header() {
           </a>
         </PopoverGroup>
         <div className="items-center hidden gap-8 lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-normal  px-10 py-4 rounded-md border border-gray-300 leading-6  text-gray-700">
+          <a
+            href="#"
+            className="text-sm font-normal  px-10 py-4 rounded-md border border-gray-300 leading-6  text-gray-700"
+          >
             Sign up
           </a>
           <a
-                    href="#"
-                    className="justify-center w-full px-10 py-4 text-base font-semibold text-center text-white rounded-md shadow-sm bg-[#05C067]  hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:w-fit"
-                  >
-                    Login
-                  </a>
+            href="#"
+            className="justify-center w-full px-10 py-4 text-base font-semibold text-center text-white rounded-md shadow-sm bg-[#05C067]  hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:w-fit"
+          >
+            Login
+          </a>
         </div>
       </nav>
       <Dialog
@@ -358,7 +361,7 @@ export default function Header() {
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none",
+                            "h-5 w-5 flex-none"
                           )}
                           aria-hidden="true"
                         />
@@ -386,7 +389,7 @@ export default function Header() {
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none",
+                            "h-5 w-5 flex-none"
                           )}
                           aria-hidden="true"
                         />
@@ -414,7 +417,7 @@ export default function Header() {
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none",
+                            "h-5 w-5 flex-none"
                           )}
                           aria-hidden="true"
                         />
