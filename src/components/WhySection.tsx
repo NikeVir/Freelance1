@@ -43,9 +43,9 @@ const faqs = [
 
 export default function WhySection() {
   return (
-    <div className="bg-white">
-      <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
-        <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8">
+    <div className="bg-white justify-end">
+      <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8 justify-end">
+        <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8 justify-end">
           <div className="lg:col-span-5 space-y-4">
             <h3 className="text-2xl lg:text-left text-center sm:text-4xl font-semibold tracking-tight text-secondary">
               Cat Proxies Solutions

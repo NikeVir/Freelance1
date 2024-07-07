@@ -2,6 +2,10 @@
 import Header from "./Header";
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
+import { text } from "stream/consumers";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { PaperClipIcon } from "@heroicons/react/20/solid";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -9,6 +13,20 @@ function classNames(...classes: any) {
 
 export default function ContactSection() {
   const [agreed, setAgreed] = useState(false);
+  const [fileName, setFileName] = useState("");
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      setFileName(event.target.files[0].name);
+    }
+  };
+
+  const handleClick = () => {
+    const fileInput = document.getElementById("file-upload") as HTMLInputElement;
+    if (fileInput) {
+      fileInput.click();
+    }
+  };
 
   return (
     <div className="bg-white">
@@ -23,11 +41,11 @@ export default function ContactSection() {
         </p>
       </div>
       <div className="relative isolate pt-1">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:flex flex-col gap-10 lg:items-center lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:flex flex-col gap-10 lg:items-center lg:px-8" >
           <form
             action="#"
             method="POST"
-            className="bg-[#ffffff]  w-full shadow-lg rounded-2xl p-12 mx-auto  max-w-5xl"
+            className="bg-[#ffffff]  w-full shadow-lg rounded-2xl p-12 mx-auto  max-w-5xl" style={{ background: 'linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%)' }}
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -128,14 +146,31 @@ export default function ContactSection() {
                 >
                   Any Document to upload for us
                 </label>
-                <div className="mt-2.5">
+                <div className="mt-2.5 relative">
+                {/* <div className="flex items-center">
+                  <PaperClipIcon className="w-5 h-5 text-gray-400 mr-2" aria-hidden="true" /> */}
                   <input
                     placeholder="Click here to upload document"
                     type="text"
+                    value={fileName}
+                    readOnly
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 cursor-pointer"
+                    onClick={handleClick}
+                    style={{ paddingLeft: '40px' }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faFile}
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                  />
+                {/* </div> */}
+                  <input
+                    id="file-upload"
+                    type="file"
+                    className="hidden"
+                    onChange={handleFileChange}
                   />
                 </div>
               </div>

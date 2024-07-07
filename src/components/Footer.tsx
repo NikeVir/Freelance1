@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Link from 'next/link';
+
 
 type IconProps = React.SVGProps<SVGSVGElement>;
 export default function Footer() {
@@ -10,11 +12,11 @@ export default function Footer() {
       { name: "IPv6 Proxies", href: "#" },
     ],
     company: [
-      { name: "Contact us", href: "#" },
+      { name: "Contact us", href: "/contact-us" },
       { name: "Ethics", href: "#" },
-      { name: "FAQ", href: "#" },
+      { name: "FAQ", href: "/FAQ" },
       { name: "Guides", href: "#" },
-      { name: "Blog", href: "#" },
+      { name: "Blog", href: "/Blog" },
       { name: "Integrations", href: "#" },
     ],
     services: [
@@ -26,10 +28,10 @@ export default function Footer() {
       { name: "E-commerce", href: "#" },
     ],
     legal: [
-      { name: "terms and conditions", href: "#" },
-      { name: "privacy policy", href: "#" },
-      { name: "refund policy", href: "#" },
-      { name: "fair usage policy", href: "#" },
+      { name: "terms and conditions", href: "/TermsAndCondition" },
+      { name: "privacy policy", href: "/privacy-policy" },
+      { name: "refund policy", href: "/refund-policy" },
+      { name: "fair usage policy", href: "/FairUsagePolicy" },
       { name: "Shipping terms ", href: "#" },
     ],
     social: [

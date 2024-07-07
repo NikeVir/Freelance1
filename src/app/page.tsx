@@ -13,9 +13,9 @@ export default function Home() {
      
       <Header />
       <HeroSection />
+      <Features/>
       <LogoSection />
       <PricingSection/>
-      <Features/>
       <WhySection />
       <FAQs/>
       <ContactUsSection/>

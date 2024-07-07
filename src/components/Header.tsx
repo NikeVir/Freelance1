@@ -103,9 +103,9 @@ export default function Header() {
           </button>
         </div>
 
-        <PopoverGroup className="items-start justify-center hidden lg:flex lg:gap-x-6  ">
+        <PopoverGroup className="items-start justify-start hidden lg:flex lg:gap-x-6  ">
           <Popover>
-            <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm  leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none font-normal">
+            <PopoverButton className="flex items-start gap-x-1 rounded-md px-1.5 text-sm  leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none font-normal">
               Proxies
               <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
@@ -310,7 +310,7 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-normal  leading-6 text-gray-900">
+          <a href="/contact-us" className="text-sm font-normal  leading-6 text-gray-900">
             Contact
           </a>
         </PopoverGroup>

@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <div className="pt-32 pb-16 overflow-hidden bg-white font-giest">
+    <div className="pt-32 pb-1 overflow-hidden bg-white font-giest">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
           <div className="px-4">
