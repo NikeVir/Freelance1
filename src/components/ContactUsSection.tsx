@@ -1,11 +1,11 @@
 "use client";
-import Header from "./Header";
+import React from "react";
 import { useState } from "react";
-import { Switch } from "@headlessui/react";
-import { text } from "stream/consumers";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
-import { PaperClipIcon } from "@heroicons/react/20/solid";
+import { Switch } from "@headlessui/react";
+
+type IconProps = React.SVGProps<SVGSVGElement>;
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -45,7 +45,8 @@ export default function ContactSection() {
           <form
             action="#"
             method="POST"
-            className="bg-[#ffffff]  w-full shadow-lg rounded-2xl p-12 mx-auto  max-w-5xl" style={{ background: 'linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%)' }}
+            className="bg-[#ffffff] w-full shadow-lg rounded-2xl p-12 mx-auto max-w-5xl"
+            style={{ background: 'linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%)' }}
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -147,8 +148,6 @@ export default function ContactSection() {
                   Any Document to upload for us
                 </label>
                 <div className="mt-2.5 relative">
-                {/* <div className="flex items-center">
-                  <PaperClipIcon className="w-5 h-5 text-gray-400 mr-2" aria-hidden="true" /> */}
                   <input
                     placeholder="Click here to upload document"
                     type="text"
@@ -164,8 +163,8 @@ export default function ContactSection() {
                   <FontAwesomeIcon
                     icon={faFile}
                     className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
+                    style={{ width: '20px', height: '20px' }}
                   />
-                {/* </div> */}
                   <input
                     id="file-upload"
                     type="file"
@@ -202,7 +201,7 @@ export default function ContactSection() {
                     <a href="#" className="font-semibold ">
                       privacy&nbsp;policy
                     </a>
-                    , its terms of processing of my personal data. .
+                    , its terms of processing of my personal data.
                   </Switch.Label>
                 </Switch.Group>
               </div>

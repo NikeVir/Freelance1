@@ -13,7 +13,7 @@ export default function Footer() {
     ],
     company: [
       { name: "Contact us", href: "/contact-us" },
-      { name: "Ethics", href: "#" },
+      { name: "Ethics", href: "/Ethics" },
       { name: "FAQ", href: "/FAQ" },
       { name: "Guides", href: "#" },
       { name: "Blog", href: "/Blog" },
@@ -32,7 +32,7 @@ export default function Footer() {
       { name: "privacy policy", href: "/privacy-policy" },
       { name: "refund policy", href: "/refund-policy" },
       { name: "fair usage policy", href: "/FairUsagePolicy" },
-      { name: "Shipping terms ", href: "#" },
+      { name: "Shipping terms ", href: "/terms-of-service" },
     ],
     social: [
       {
