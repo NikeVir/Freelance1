@@ -3,9 +3,9 @@ export default function HeroSection() {
     <div className="pt-32 pb-1 overflow-hidden bg-white font-giest">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
-          <div className="px-4">
+          <div className="px-4 flex flex-col items-center lg:items-start">
             <div className="max-w-2xl mx-auto lg:mx-0 lg:flex-auto">
-              <div className="flex items-center text-base text-gray-600 gap-x-4">
+              <div className="flex items-center text-base text-gray-600 gap-x-4 justify-center lg:justify-start">
                 <span className="flex items-center justify-center gap-x-1">
                   <img
                     src="/images/icons/single-star.svg"
@@ -24,15 +24,15 @@ export default function HeroSection() {
                   <img src="/images/icons/red-5-stars.svg" className="mt-1" />
                 </span>
               </div>
-              <h1 className="max-w-xl mt-10 text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="max-w-xl mt-10 text-4xl font-semibold tracking-tight text-center lg:text-left text-gray-900 sm:text-6xl">
                 Unlock the Power of Residential Proxies
               </h1>
-              <p className="mt-6 text-lg font-normal leading-8 text-gray-600">
+              <p className="mt-6 text-lg font-normal leading-8 text-center lg:text-left text-gray-600">
                 Reliable and Secure Proxies for Your Needs Avoid captcha blocks
                 while scraping with the most reliable and fast Residential
                 Proxies.
               </p>
-              <div className="flex flex-col items-center gap-6 mt-10 sm:flex-row ">
+              <div className="flex flex-col items-center gap-6 mt-10 sm:flex-row">
                 <a
                   href="#"
                   className="justify-center w-full px-10 py-4 text-base font-semibold text-center text-white rounded-md shadow-sm bg-[#05C067]  hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:w-fit"
@@ -47,7 +47,7 @@ export default function HeroSection() {
                   with Google
                 </a>
               </div>
-              <div className="flex items-center gap-4 mt-10">
+              <div className="flex items-center gap-4 mt-10 justify-center lg:justify-start">
                 <p className="inline-flex gap-4 items-center text-base text-gray-600">
                   <img src="/images/icons/tick.svg" alt="" /> Start free trial
                 </p>

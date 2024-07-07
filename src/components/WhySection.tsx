@@ -43,32 +43,31 @@ const faqs = [
 
 export default function WhySection() {
   return (
-    <div className="bg-white justify-end">
-      <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8 justify-end">
-        <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8 justify-end">
-          <div className="lg:col-span-5 space-y-4">
-            <h3 className="text-2xl lg:text-left text-center sm:text-4xl font-semibold tracking-tight text-secondary">
+    <div className="bg-white">
+      <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
+        <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-5 space-y-4 text-center lg:text-left">
+            <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-secondary">
               Cat Proxies Solutions
             </h3>
-            <p className="max-w-xl text-center lg:text-left mx-auto mt-4 text-base text-secondary/80">
+            <p className="max-w-xl mx-auto mt-4 text-base text-secondary/80">
               Explore How Our Expertise Translates into Tangible Results.
             </p>
-            <p className="text-sm text-gray-400 ">
+            <p className="text-sm text-gray-400">
               Dive deep into each project with comprehensive case studies that
               outline challenges, strategies, and outcomes.
             </p>
-
-            <div className="sm:flex sm:justify-center sm:items-center">
+            <div className="sm:flex sm:justify-center lg:justify-start">
               <img src="/images/illustration/three-cat-illustration.svg" />
             </div>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
-            <dl className="space-y-8 ">
+            <dl className="space-y-8">
               {faqs.map((faq) => (
                 <Disclosure
                   as="div"
                   key={faq.question}
-                  className="max-w-xl p-4 mx-auto bg-white border border-gray-200 rounded-md shadow-md "
+                  className="max-w-xl p-4 mx-auto bg-white border border-gray-200 rounded-md shadow-md"
                 >
                   {({ open }) => (
                     <>
@@ -80,15 +79,12 @@ export default function WhySection() {
                               {faq.question}
                             </span>
                           </div>
-
                           <span className="flex items-center ml-6 h-7">
                             {open ? (
-                              <>
-                                <ChevronUpIcon
-                                  className="w-6 h-6"
-                                  aria-hidden="true"
-                                />
-                              </>
+                              <ChevronUpIcon
+                                className="w-6 h-6"
+                                aria-hidden="true"
+                              />
                             ) : (
                               <ChevronDownIcon
                                 className="w-6 h-6"
@@ -105,7 +101,7 @@ export default function WhySection() {
                         <p className="text-base font-normal text-gray-600">
                           {faq.answer}
                         </p>
-                        <button className="ml-2 px-4 py-4 w-full rounded-lg text-sm text-white bg-gradient-to-r from-[#05C067] to-[#50EA48] ">
+                        <button className="ml-2 px-4 py-4 w-full rounded-lg text-sm text-white bg-gradient-to-r from-[#05C067] to-[#50EA48]">
                           Contact Us Now
                         </button>
                       </Disclosure.Panel>

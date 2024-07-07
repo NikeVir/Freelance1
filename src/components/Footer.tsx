@@ -2,7 +2,6 @@
 import React from "react";
 import Link from 'next/link';
 
-
 type IconProps = React.SVGProps<SVGSVGElement>;
 export default function Footer() {
   const navigation = {
@@ -70,18 +69,16 @@ export default function Footer() {
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
-            <div className="flex items-center space-x-4">
+          <div className="space-y-8 text-center lg:text-left">
+            <div className="flex flex-col items-center space-y-2 lg:items-start">
               <img alt="Company name" src="/logo.svg" className="h-12" />
               <h1 className="font-bold">CAT PROXIES</h1>
             </div>
-
             <div className="space-y-2">
-              <p className="text-sm  text-gray-500">Technical Support</p>
-              <p className="text-sm ">support@catproxies.com</p>
+              <p className="text-sm text-gray-500">Technical Support</p>
+              <p className="text-sm">support@catproxies.com</p>
             </div>
-
-            <div className="flex space-x-6">
+            <div className="flex justify-center space-x-6 lg:justify-start">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
@@ -133,11 +130,11 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-normal underline leading-6 text-gray-400">
+                <h3 className="text-sm font-normal leading-6 underline text-gray-400">
                   Services
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
+                  {navigation.services.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}

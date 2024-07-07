@@ -17,9 +17,9 @@ const config: Config = {
         giest: ['Giest', 'sans-serif'],
         sora: ['Sora', 'sans-serif'],
       },
-     
     },
   },
   plugins: [],
 };
+
 export default config;

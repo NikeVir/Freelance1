@@ -34,14 +34,14 @@ export default function ContactSection() {
         <img src="/images/illustration/gray-cat.svg" />
       </div>
 
-      <div className="flex flex-col justify-center items-center space-y-2">
-        <h1 className="font-bold text-[32px]">Contact Us</h1>
-        <p className="text-[18px] text-gray-500 ">
+      <div className="flex flex-col justify-center items-center space-y-2 text-center">
+        <h1 className="font-bold text-[32px] sm:text-[24px]">Contact Us</h1>
+        <p className="text-[18px] sm:text-[16px] text-gray-500">
           Reach out to us anytime, and we&apos;ll get back you as soon as possible!
         </p>
       </div>
       <div className="relative isolate pt-1">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:flex flex-col gap-10 lg:items-center lg:px-8" >
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:flex flex-col gap-10 lg:items-center lg:px-8 sm:py-16 sm:px-4">
           <form
             action="#"
             method="POST"
@@ -140,9 +140,9 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="">
+              <div className="sm:col-span-2">
                 <label
-                  htmlFor="last-name"
+                  htmlFor="document-upload"
                   className="block text-sm font-normal leading-6 text-gray-900"
                 >
                   Any Document to upload for us
@@ -153,9 +153,8 @@ export default function ContactSection() {
                     type="text"
                     value={fileName}
                     readOnly
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
+                    name="document-upload"
+                    id="document-upload"
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 cursor-pointer"
                     onClick={handleClick}
                     style={{ paddingLeft: '40px' }}
@@ -196,9 +195,9 @@ export default function ContactSection() {
                       />
                     </Switch>
                   </div>
-                  <Switch.Label className="lg:text-sm sm:text-[12px] leading-6 text-gray-500 whitespace-nowrap">
+                  <Switch.Label className="lg:text-sm sm:text-[12px] leading-6 text-gray-500">
                     I agree and consent to the{" "}
-                    <a href="#" className="font-semibold ">
+                    <a href="#" className="font-semibold">
                       privacy&nbsp;policy
                     </a>
                     , its terms of processing of my personal data.
@@ -211,7 +210,7 @@ export default function ContactSection() {
                   type="submit"
                   className="inline-flex w-32 text-center items-center text-sm justify-end bg-[#05C067] p-2 shadow-lg shadow-black/30 rounded-md font-semibold leading-6 text-gray-900"
                 >
-                  <p className="w-full text-center items-center gap-2  text-white rounded-lg">
+                  <p className="w-full text-center items-center gap-2 text-white rounded-lg">
                     Contact Us
                   </p>
                 </button>

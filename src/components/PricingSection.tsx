@@ -2,7 +2,7 @@ export default function PricingSection() {
   return (
     <section className="text-gray-600 body-font overflow-hidden pt-32 pb-16">
       <div className="flex justify-center items-center text-black">
-        <h1 className="text-[32px] sm:text-[24px] font-normal whitespace-nowrap">
+        <h1 className="text-[32px] sm:text-[24px] font-normal whitespace-nowrap text-center">
           Clear Pricing, No Hidden{" "}
           <a href="#" className="font-bold">
             Costs whatsoever
@@ -34,7 +34,7 @@ export default function PricingSection() {
               </p>
             </div>
           </div>
-          <div className="flex lg:w-3/4 w-full flex-wrap justify-end rounded-lg">
+          <div className="flex flex-wrap lg:w-3/4 w-full justify-center lg:justify-end rounded-lg">
             <div className="lg:w-[260px] space-y-12 p-12 lg:h-[850px] lg:mt-px w-full mb-10 lg:mb-0 lg:border-none rounded-lg lg:rounded-none shadow-lg">
               <div className="px-2 text-center h-48 flex space-y-1 flex-col items-center justify-center">
                 <h3 className="tracking-widest text-[20px] font-normal">
@@ -43,13 +43,11 @@ export default function PricingSection() {
                 <h2 className="text-[30px] text-gray-900 font-medium leading-none mb-4 mt-2">
                   $162.50
                 </h2>
-
                 <span className="text-[20px] text-gray-600">Per month</span>
-
                 <div className="p-6 text-center rounded-bl-lg whitespace-nowrap space-y-4">
                   <p className="text-[20px] text-gray-500 mt-3">
                     at{" "}
-                    <a  className="font-semibold w-5 h-5 bg-white" style={{ border: '1.22px solid #EEEEEE', borderRadius: '6.1px'}}>
+                    <a className="font-semibold w-5 h-5 bg-white" style={{ border: '1.22px solid #EEEEEE', borderRadius: '6.1px'}}>
                       $3.25
                     </a>{" "}
                     per GB
@@ -59,7 +57,6 @@ export default function PricingSection() {
                   </button>
                 </div>
               </div>
-
               <p className="text-[18px] text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center">
                 50
               </p>
@@ -80,22 +77,21 @@ export default function PricingSection() {
               </p>
             </div>
             <div className="lg:w-[260px] space-y-12 shadow-lg lg:h-[850px] lg:-mt-px w-full mb-10 lg:mb-0 rounded-lg border-[#05C067] relative bg-[#F0FBF3]">
-            <div className="absolute left-1/2 transform -translate-x-1/2 -top-3 z-10">
-              <span className="bg-[#FFE70E] text-black px-3 py-2 tracking-widest text-xs rounded-md font-bold" style={{ boxShadow: '0px 4.88px 4.88px 0px #00000040' }}>
-                POPULAR
-              </span>
-            </div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 -top-3 z-10">
+                <span className="bg-[#FFE70E] text-black px-3 py-2 tracking-widest text-xs rounded-md font-bold" style={{ boxShadow: '0px 4.88px 4.88px 0px #00000040' }}>
+                  POPULAR
+                </span>
+              </div>
               <div className="px-2 text-center space-y-1 h-48 flex flex-col items-center justify-center">
                 <h3 className="tracking-widest text-[20px]">Enterprise</h3>
                 <h2 className="text-[30px] text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">
                   $199
                 </h2>
                 <span className="text-gray-600 text-[20px] ml-1">Per month</span>
-
                 <div className="p-6 text-center rounded-bl-lg space-y-3">
                   <p className="text-[20px] text-gray-500 mt-3">
                     at{" "}
-                    <a  className="font-semibold w-5 h-5 bg-white" style={{ border: '1.22px solid #EEEEEE', borderRadius: '6.1px'}}>
+                    <a className="font-semibold w-5 h-5 bg-white" style={{ border: '1.22px solid #EEEEEE', borderRadius: '6.1px'}}>
                       $3.25
                     </a>{" "}
                     per GB
@@ -124,7 +120,6 @@ export default function PricingSection() {
                 <img src="/images/icons/green-tick-icon.svg" />
               </p>
             </div>
-
             <div className="lg:w-[260px] space-y-12 p-12 lg:h-[850px] shadow-lg lg:mt-px lg:border-none rounded-lg lg:rounded-none">
               <div className="px-2 text-center h-48 flex space-y-1 flex-col items-center justify-center">
                 <h3 className="tracking-widest text-[20px]">Custom</h3>
@@ -147,7 +142,6 @@ export default function PricingSection() {
                   </button>
                 </div>
               </div>
-
               <p className="text-[18px] text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
                 50
               </p>
