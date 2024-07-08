@@ -1,17 +1,16 @@
-/* eslint-disable react/no-unescaped-entities */
 export default function PrivacyPolicy() {
   return (
-    <section className=" pb-16 overflow-hidden bg-white">
+    <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <img src="/images/illustration/single-cat.svg" className="mt-16" />
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-[32px]">Privacy Policy</h1>
-          <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
+        <img src="/images/illustration/single-cat.svg" className="mt-16 w-full max-w-xs mx-auto" />
+        <div className="flex flex-col justify-center items-center text-center sm:text-left">
+          <h1 className="font-bold text-[32px] sm:text-[32px]">Privacy Policy</h1>
+          <p className="text-[18px] text-gray-500 px-4">
+            Reach out to us anytime, and we&apos;ll get back to you as soon as possible!
           </p>
         </div>
 
-        <div className="text-[24px] p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-4">
+        <div className="text-[24px] sm:text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-4">
           <p>Effective Date: 28 June 2024</p>
           <p>
             CatProxies ("we", "our", "us") is committed to protecting your

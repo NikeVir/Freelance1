@@ -304,9 +304,18 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover>
+          <a href="/contact-us" className="text-sm font-normal leading-6 text-gray-900">
+            Contact
+          </a>
         </PopoverGroup>
 
         <div className="items-center hidden gap-8 lg:flex lg:flex-1 lg:justify-end">
+          <a
+            href="#"
+            className="text-sm font-normal px-10 py-4 rounded-md border border-gray-300 leading-6 text-gray-700"
+          >
+            Sign up
+          </a>
           <a
             href="#"
             className="justify-center w-full px-10 py-4 text-base font-semibold text-center text-white rounded-md shadow-sm bg-[#05C067]  hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:w-fit"
@@ -437,6 +446,12 @@ export default function Header() {
                     className="w-full px-10 py-4 text-base font-semibold text-center text-white rounded-md shadow-sm bg-[#05C067] hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                   >
                     Login
+                  </a>
+                  <a
+                    href="#"
+                    className="w-full px-10 py-4 text-base font-semibold text-center text-gray-900 border border-gray-300 rounded-md hover:bg-gray-50"
+                  >
+                    Sign up
                   </a>
                 </div>
               </div>

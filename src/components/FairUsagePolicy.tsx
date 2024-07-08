@@ -1,146 +1,178 @@
-/* eslint-disable react/no-unescaped-entities */
-export default function FairUsagePolicy() {
+// TermsOfService.tsx
+import React from 'react';
+
+export default function TermsOfService() {
   return (
-    <section className=" pb-16 overflow-hidden bg-white">
+    <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <img src="/images/illustration/single-cat.svg" className="mt-16" />
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-[32px]">
-            Fair Usage Of Privacy Policy
-          </h1>
-          <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
+        <img src="/images/illustration/single-cat.svg" className="mt-16 w-full max-w-xs mx-auto" />
+        <div className="flex flex-col justify-center items-center text-center sm:text-left">
+          <h1 className="font-bold text-[32px]">Terms Of Service</h1>
+          <p className="text-[18px] text-gray-500 px-4">
+            Reach out to us anytime, and we'll get back to you as soon as possible!
           </p>
         </div>
 
-        <div className="text-[24px] p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
+        <div className="text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-3">
           <p>Effective Date: 28 June 2024</p>
-
           <p>
-            At CatProxies, we are committed to providing high-quality, reliable
-            services to all our customers. This Fair Usage Policy ("Policy") is
-            designed to ensure that all customers can use our services fairly
-            and equitably. By using our services, you agree to comply with this
-            Policy.
+            Welcome to CatProxies. By accessing or using our services, you agree
+            to be bound by these Terms of Service ("Terms"). Please read them
+            carefully.
           </p>
-          <p>1. Purpose</p>
+          <p>1. Definitions</p>
+          <p>"Service" refers to the proxy services provided by CatProxies.</p>
+          <p>"User" refers to any individual or entity using the Service.</p>
           <p>
-            The purpose of this Policy is to prevent improper use of our
-            services that could negatively impact the experience of other
-            customers. This Policy outlines what constitutes fair usage and the
-            actions we may take if we detect unfair usage.
-          </p>
-
-          <p>2. Fair Usage</p>
-          <p>2.1 General Principles</p>
-          <p>
-            Equitable Access: Our services are intended to be used by all
-            customers in a manner that does not adversely affect the performance
-            or availability of the services for others.
+            "Account" refers to the User's account created upon registration.
           </p>
           <p>
-            Reasonable Use: Customers are expected to use our services in a
-            reasonable manner. Excessive usage that goes beyond typical or
-            expected usage patterns may be considered unfair.
+            "Content" refers to any data, text, images, or other material
+            provided through the Service.
           </p>
-
-          <p>2.2 Specific Guidelines</p>
+          <p>2. General Terms</p>
           <p>
-            Bandwidth: Excessive consumption of bandwidth that impacts other
-            customers may be subject to limitations or restrictions.
+            By using the Service, you agree to comply with all applicable laws
+            and regulations and not to use the Service for any unlawful purpose.
           </p>
+          <p>3. Registration</p>
           <p>
-            Connections: Overuse of concurrent connections that disrupts the
-            service for others is prohibited.
+            Users must register an account to use the Service. You agree to
+            provide accurate, current, and complete information during the
+            registration process and to update such information to keep it
+            accurate, current, and complete.
           </p>
+          <p>4. Grant of License</p>
           <p>
-            Resource Allocation: Using resources in a way that unfairly
-            monopolizes system resources, such as CPU, memory, or storage, is
-            not allowed.
+            CatProxies grants you a limited, non-exclusive, non-transferable,
+            revocable license to use the Service in accordance with these Terms.
           </p>
-
-          <p>3. Prohibited Activities</p>
+          <p>5. Personal Data</p>
           <p>
-            Unfair usage includes, but is not limited to, the following
-            activities:
+            We collect, use, and protect your personal data in accordance with
+            our Privacy Policy. By using the Service, you agree to the
+            collection and use of information as outlined in our Privacy Policy.
           </p>
+          <p>6. Refunds / Cancellation</p>
           <p>
-            Automated Usage: Using bots or automated scripts to access or use
-            the services in a manner that generates excessive load.
+            We maintain a strict no-refund policy. However, if you encounter any
+            issues that require urgent attention, please contact our support
+            team immediately. All support requests must be submitted within 24
+            hours of purchase.
           </p>
+          <p>7. Payments</p>
           <p>
-            Spamming: Sending large volumes of unsolicited messages or requests.
+            Users are required to pay fees for the Service as described on our
+            website. All payments are non-refundable unless otherwise specified
+            in these Terms.
           </p>
+          <p>8. Disclaimer of Warranty</p>
           <p>
-            Unauthorized Access: Attempting to gain unauthorized access to our
-            services, other accounts, or systems.
+            The Service is provided "as is" and "as available" without any
+            warranties of any kind, either express or implied. CatProxies does
+            not warrant that the Service will be uninterrupted, error-free, or
+            free of viruses or other harmful components.
           </p>
+          <p>9. Indemnification</p>
           <p>
-            Malicious Activities: Engaging in activities that are harmful to our
-            services or other customers, such as distributing malware or
-            launching denial-of-service attacks.
+            You agree to indemnify and hold harmless CatProxies from any claims,
+            damages, liabilities, and expenses arising out of your use of the
+            Service or your violation of these Terms.
           </p>
-
-          <p>4. Monitoring and Enforcement</p>
-          <p>4.1 Monitoring</p>
+          <p>10. System Failure</p>
           <p>
-            We monitor usage patterns to identify and address any instances of
-            unfair usage. This monitoring is conducted in accordance with our
-            Privacy Policy.
+            CatProxies is not responsible for any system failures, errors, or
+            risks associated with the use of the Service. Users acknowledge that
+            such failures, errors, and risks are inherent to internet-based
+            services.
           </p>
-
-          <p>4.2 Enforcement</p>
+          <p>11. User Feedback</p>
           <p>
-            If we detect any activity that violates this Policy, we may take the
-            following actions:
+            We welcome feedback, comments, and suggestions for improvements to
+            the Service. You can submit feedback by contacting us at CatProxies.
+            By submitting feedback, you grant us a worldwide, non-exclusive,
+            perpetual, irrevocable, royalty-free license to use and incorporate
+            your feedback into the Service.
           </p>
+          <p>12. Prohibited Use</p>
           <p>
-            Warning: Issuing a warning to the customer regarding the detected
-            unfair usage.
+            Users are prohibited from using the Service for any illegal
+            activities, including but not limited to spamming, unauthorized
+            access, and distribution of malicious software. CatProxies reserves
+            the right to block any content or terminate accounts that violate
+            these terms.
           </p>
+          <p>13. Intellectual Property</p>
           <p>
-            Temporary Suspension: Temporarily suspending the customer's access
-            to the services to mitigate the impact on other customers.
+            All intellectual property rights in the Service and its content are
+            owned by CatProxies or its licensors. Users are granted a limited
+            license to use the Service and its content in accordance with these
+            Terms.
           </p>
+          <p>14. Payments / Fees / Billing</p>
           <p>
-            Service Restriction: Limiting or throttling the customer's usage to
-            bring it within acceptable limits.
+            Users must pay all fees and charges specified on our website.
+            Payments are due at the time of purchase unless otherwise specified.
+            Billing issues should be reported to our support team.
           </p>
+          <p>15. Suspension</p>
           <p>
-            Termination: Terminating the customer's account for repeated or
-            severe violations of this Policy.
+            CatProxies reserves the right to suspend access to the Service for
+            any reason, including but not limited to violation of these Terms or
+            system maintenance.
           </p>
-
-          <p>5. Your Responsibilities</p>
+          <p>16. Termination</p>
           <p>
-            As a customer, you are responsible for ensuring that your use of our
-            services complies with this Policy. You should:
+            CatProxies may terminate or suspend your account and access to the
+            Service at any time, without prior notice, for conduct that
+            CatProxies believes violates these Terms or is harmful to other
+            users of the Service, or for any other reason in CatProxies's sole
+            discretion.
           </p>
+          <p>17. Third-Party Apps / Links</p>
           <p>
-            Monitor Your Usage: Regularly review your usage to ensure it remains
-            within reasonable limits.
+            The Service may contain links to third-party websites or apps that
+            are not owned or controlled by CatProxies. We are not responsible
+            for the content, privacy policies, or practices of any third-party
+            websites or apps.
           </p>
+          <p>18. Modifications</p>
           <p>
-            Respond to Warnings: Promptly address any warnings or notifications
-            from us regarding your usage.
+            CatProxies reserves the right to modify or discontinue the Service
+            at any time, with or without notice. Users are responsible for
+            regularly reviewing these Terms.
           </p>
+          <p>19. Governing Law</p>
           <p>
-            Report Issues: Notify us immediately if you believe your account has
-            been compromised or if you observe any suspicious activity.
+            These Terms are governed by and construed in accordance with the
+            laws of Europe, without regard to its conflict of law principles.
           </p>
-
-          <p>6. Changes to This Policy</p>
+          <p>20. Dispute Resolution</p>
           <p>
-            We may update this Fair Usage Policy from time to time. We will
-            notify you of any changes by posting the new Policy on this page and
-            updating the "Effective Date" at the top. You are advised to review
-            this Policy periodically for any changes.
+            Any disputes arising out of or related to these Terms or the Service
+            will be resolved through binding arbitration. Users waive their
+            right to a jury trial or to participate in a class action lawsuit.
           </p>
-
-          <p>7. Contact Us</p>
+          <p>21. Law Obligations</p>
           <p>
-            If you have any questions about this Fair Usage Policy, please
-            contact us at:
+            Users agree to comply with all applicable laws and regulations in
+            connection with their use of the Service.
+          </p>
+          <p>22. Release</p>
+          <p>
+            Users release CatProxies from any and all liability, claims, or
+            demands arising out of or related to the use of the Service.
+          </p>
+          <p>23. Miscellaneous</p>
+          <p>
+            These Terms constitute the entire agreement between you and
+            CatProxies regarding the use of the Service. If any provision of
+            these Terms is found to be invalid or unenforceable, the remaining
+            provisions will remain in full force and effect.
+          </p>
+          <p>24. Contact Us</p>
+          <p>
+            If you have any questions about these Terms, please contact us at:
           </p>
           <p>support@catproxies.com</p>
         </div>

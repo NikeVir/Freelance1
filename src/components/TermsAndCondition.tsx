@@ -1,16 +1,16 @@
 export default function TermsAndCondition() {
   return (
-    <section className=" pb-16 overflow-hidden bg-white">
+    <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <img src="/images/illustration/single-cat.svg" className="mt-24" />
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-[32px]">Terms and conditions</h1>
-          <p className="text-[18px] text-gray-500">
+        <img src="/images/illustration/single-cat.svg" className="mt-16 w-full max-w-xs mx-auto" />
+        <div className="flex flex-col justify-center items-center text-center sm:text-left">
+          <h1 className="font-bold text-[32px] sm:text-[32px]">Terms and conditions</h1>
+          <p className="text-[18px] text-gray-500 px-4">
             Reach out to us anytime, and we&apos;ll get back you as soon as possible!
           </p>
         </div>
 
-        <div className="lg:text-[24px] sm:text-[18px] flex flex-col justify-center items-center text-gray-500 font-normal whitespace-nowrap ">
+        <div className="text-[24px] sm:text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-4">
           <p>Acceptance of terms upon accessing the website.</p>
           <p>Intellectual property rights belong to the company.</p>
           <p>
