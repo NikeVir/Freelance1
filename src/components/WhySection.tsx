@@ -48,10 +48,10 @@ export default function WhySection() {
         <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5 space-y-4 text-center lg:text-left">
             <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-secondary">
-              Cat Proxies Solutions
+              <span style={{color: '#121118', fontFamily: 'Sora', fontWeight: '400', fontSize: '32px'}}>Cat Proxies</span> <span style={{color: '#121118', fontFamily: 'Sora', fontSize: '32px', fontWeight: '600'}}>Solutions</span>
             </h3>
             <p className="max-w-xl mx-auto mt-4 text-base text-secondary/80">
-              Explore How Our Expertise Translates into Tangible Results.
+              <span style={{color: '#525252', fontFamily: 'Sora', fontSize: '24px', fontWeight: '400'}}>Explore How Our Expertise Translates</span> <div style={{color: '#525252', fontFamily: 'Sora', fontSize: '24px', fontWeight: '400'}}>into Tangible Results.</div>
             </p>
             <p className="text-sm text-gray-400">
               Dive deep into each project with comprehensive case studies that

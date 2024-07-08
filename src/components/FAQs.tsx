@@ -4,6 +4,9 @@ import { useState } from 'react';
 
 export default function FAQs() {
   const [openFaqs, setOpenFaqs] = useState<number[]>([0]); // Default open FAQ box is the first one
+  const myStyle = {
+    color: '#121118',
+  };
 
   const handleToggle = (index: number) => {
     setOpenFaqs((prevOpenFaqs) =>
@@ -51,7 +54,7 @@ export default function FAQs() {
         {/* Component */}
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center px-6 text-center lg:max-w-3xl lg:px-10">
           <h2 className="mx-auto text-center text-black text-[32px] lg:text-[32px]">
-            Any Questions<br /> Read our FAQ’s
+            Any Questions<br /> Read our <span style={{color: '#121118', fontFamily: 'Sora', fontSize: '32px', fontWeight: '700'}}>FAQs</span>
           </h2>
         </div>
         {/* FAQs */}

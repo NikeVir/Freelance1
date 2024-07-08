@@ -31,37 +31,32 @@ export default function Footer() {
       { name: "privacy policy", href: "/privacy-policy" },
       { name: "refund policy", href: "/refund-policy" },
       { name: "fair usage policy", href: "/FairUsagePolicy" },
-      { name: "Shipping terms ", href: "/terms-of-service" },
+      { name: "Shipping terms", href: "/terms-of-service" },
     ],
     social: [
       {
         name: "Gmail",
         href: "#",
-        icon: (props: IconProps) => <img src="/images/icons/email-icon.svg" />,
+        icon: (props: IconProps) => <img src="/images/icons/email-icon.svg" alt="Gmail" />,
       },
       {
         name: "Telegram",
         href: "#",
-        icon: (props: IconProps) => (
-          <img src="/images/icons/telegram-icon.svg" />
-        ),
+        icon: (props: IconProps) => <img src="/images/icons/telegram-icon.svg" alt="Telegram" />,
       },
       {
         name: "Message",
         href: "#",
-        icon: (props: IconProps) => (
-          <img src="/images/icons/message-icon.svg" />
-        ),
+        icon: (props: IconProps) => <img src="/images/icons/message-icon.svg" alt="Message" />,
       },
       {
         name: "Discord",
         href: "#",
-        icon: (props: IconProps) => (
-          <img src="/images/icons/discord-icon.svg" />
-        ),
+        icon: (props: IconProps) => <img src="/images/icons/discord-icon.svg" alt="Discord" />,
       },
     ],
   };
+
   return (
     <footer aria-labelledby="footer-heading" className="bg-[#FAFAFA]">
       <h2 id="footer-heading" className="sr-only">
@@ -70,9 +65,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 text-center lg:text-left">
-            <div className="flex flex-col items-center space-y-2 lg:items-start">
+            <div className="flex flex-col items-center lg:flex-row lg:items-start space-y-2 lg:space-y-0 lg:space-x-2">
               <img alt="Company name" src="/logo.svg" className="h-12" />
-              <h1 className="font-bold">CAT PROXIES</h1>
+              <h1 className="font-bold text-2xl lg:text-3xl">CAT PROXIES</h1>
             </div>
             <div className="space-y-2">
               <p className="text-sm text-gray-500">Technical Support</p>
