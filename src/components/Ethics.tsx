@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
 export default function EthicsPolicy() {
   return (
     <section className=" pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <img src="/images/illustration/single-cat.svg" className="mt-16" />
+        <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16" />
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Ethics</h1>
           <p className="text-[18px] text-gray-500">

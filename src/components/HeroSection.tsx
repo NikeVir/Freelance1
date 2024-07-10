@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function HeroSection() {
   return (
     <div className="pt-32 pb-1 overflow-hidden bg-white font-giest">
@@ -7,21 +9,22 @@ export default function HeroSection() {
             <div className="max-w-2xl mx-auto lg:mx-0 lg:flex-auto">
               <div className="flex items-center text-base text-gray-600 gap-x-4 justify-center lg:justify-start">
                 <span className="flex items-center justify-center gap-x-1">
-                  <img
+                  <Image
                     src="/images/icons/single-star.svg"
+                    alt=""
                     className="w-5 h-5 "
                   />
                   <p className="mt-1 font-medium text-gray-900">Trustpilot</p>
-                  <img
+                  <Image
                     src="/images/icons/five-stars.svg"
                     alt=""
                     className="mt-1"
                   />
                 </span>
                 <span className="flex items-center justify-center gap-x-1 text-gray-900">
-                  <img src="/images/icons/red-star.svg" className="w-5 h-5" />
+                  <Image src="/images/icons/red-star.svg" alt="" className="w-5 h-5" />
                   <p className="mt-1 font-medium text-gray-900 ">G2</p>
-                  <img src="/images/icons/red-5-stars.svg" className="mt-1" />
+                  <Image src="/images/icons/red-5-stars.svg" alt="" className="mt-1" />
                 </span>
               </div>
               <h1 className="max-w-xl mt-10 text-4xl font-semibold tracking-tight text-center lg:text-left text-gray-900 sm:text-6xl">
@@ -43,22 +46,22 @@ export default function HeroSection() {
                   href="#"
                   className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold text-gray-900 bg-white border border-gray-300 rounded-md gap-x-2 hover:bg-gray-50 lg:w-fit"
                 >
-                  <img src="/images/icons/google-icon.svg" alt="" /> Sign up
+                  <Image src="/images/icons/google-icon.svg" alt="" /> Sign up
                   with Google
                 </a>
               </div>
               <div className="flex items-center gap-4 mt-10 justify-center lg:justify-start">
                 <p className="inline-flex gap-4 items-center text-base text-gray-600">
-                  <img src="/images/icons/tick.svg" alt="" /> Free trials
+                  <Image src="/images/icons/tick.svg" alt="" /> Free trials
                 </p>
                 <p className="inline-flex items-center gap-4 text-base text-gray-600">
-                  <img src="/images/icons/tick.svg" alt="" /> No credit card required
+                  <Image src="/images/icons/tick.svg" alt="" /> No credit card required
                 </p>
               </div>
             </div>
           </div>
           <div className="w-full px-4 mx-auto max-w-7xl">
-            <img src="/images/illustration/cat-illustration.svg" alt="" />
+            <Image src="/images/illustration/cat-illustration.svg" alt="" />
           </div>
         </div>
       </div>

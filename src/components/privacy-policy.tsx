@@ -1,8 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
+
 export default function PrivacyPolicy() {
   return (
     <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <img src="/images/illustration/single-cat.svg" className="mt-16 w-full max-w-xs mx-auto" />
+        <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16 w-full max-w-xs mx-auto" />
         <div className="flex flex-col justify-center items-center text-center sm:text-left">
           <h1 className="font-bold text-[32px] sm:text-[32px]">Privacy Policy</h1>
           <p className="text-[18px] text-gray-500 px-4">
@@ -13,7 +16,7 @@ export default function PrivacyPolicy() {
         <div className="text-[24px] sm:text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-4">
           <p>Effective Date: 28 June 2024</p>
           <p>
-            CatProxies ("we", "our", "us") is committed to protecting your
+            CatProxies (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) is committed to protecting your
             privacy. This Privacy Policy explains how we collect, use, disclose,
             and safeguard your information when you visit our website
             catproxies.com, use our services, or interact with us in other ways.
@@ -140,7 +143,7 @@ export default function PrivacyPolicy() {
           <p>
             We may update our Privacy Policy from time to time. We will notify
             you of any changes by posting the new Privacy Policy on this page
-            and updating the "Effective Date" at the top. You are advised to
+            and updating the &quot;Effective Date&quot; at the top. You are advised to
             review this Privacy Policy periodically for any changes.
           </p>
           <p>7. Contact Us</p>

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from 'next/image';
 import {
   Dialog,
   DialogPanel,
@@ -89,7 +90,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="./" className="-m-1.5 p-1.5">
             <span className="sr-only">Lightning Proxies</span>
-            <img className="w-auto h-12" src="/logo.svg" alt="" />
+            <Image className="w-auto h-12" src="/logo.svg" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -127,7 +128,7 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <img
+                      <Image
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
@@ -177,7 +178,7 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <img
+                      <Image
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
@@ -227,7 +228,7 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <img
+                      <Image
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
@@ -277,7 +278,7 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <img
+                      <Image
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
@@ -334,7 +335,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="./" className="-m-1.5 p-1.5">
               <span className="sr-only">Lightning Proxies</span>
-              <img className="w-auto h-8" src="/logo.svg" alt="" />
+              <Image className="w-auto h-8" src="/logo.svg" alt="" />
             </a>
             <button
               type="button"

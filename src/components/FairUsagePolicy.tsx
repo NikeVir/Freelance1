@@ -1,15 +1,15 @@
-// TermsOfService.tsx
 import React from 'react';
+import Image from 'next/image';
 
 export default function TermsOfService() {
   return (
     <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <img src="/images/illustration/single-cat.svg" className="mt-16 w-full max-w-xs mx-auto" />
+        <Image src="/images/illustration/single-cat.svg" alt="illustration" className="mt-16 w-full max-w-xs mx-auto" />
         <div className="flex flex-col justify-center items-center text-center sm:text-left">
           <h1 className="font-bold text-[32px]">Terms Of Service</h1>
           <p className="text-[18px] text-gray-500 px-4">
-            Reach out to us anytime, and we'll get back to you as soon as possible!
+            Reach out to us anytime, and we&apos;ll get back to you as soon as possible!
           </p>
         </div>
 
@@ -17,17 +17,17 @@ export default function TermsOfService() {
           <p>Effective Date: 28 June 2024</p>
           <p>
             Welcome to CatProxies. By accessing or using our services, you agree
-            to be bound by these Terms of Service ("Terms"). Please read them
+            to be bound by these Terms of Service (&quot;Terms&quot;). Please read them
             carefully.
           </p>
           <p>1. Definitions</p>
-          <p>"Service" refers to the proxy services provided by CatProxies.</p>
-          <p>"User" refers to any individual or entity using the Service.</p>
+          <p>&quot;Service&quot; refers to the proxy services provided by CatProxies.</p>
+          <p>&quot;User&quot; refers to any individual or entity using the Service.</p>
           <p>
-            "Account" refers to the User's account created upon registration.
+            &quot;Account&quot; refers to the User&apos;s account created upon registration.
           </p>
           <p>
-            "Content" refers to any data, text, images, or other material
+            &quot;Content&quot; refers to any data, text, images, or other material
             provided through the Service.
           </p>
           <p>2. General Terms</p>
@@ -68,7 +68,7 @@ export default function TermsOfService() {
           </p>
           <p>8. Disclaimer of Warranty</p>
           <p>
-            The Service is provided "as is" and "as available" without any
+            The Service is provided &quot;as is&quot; and &quot;as available&quot; without any
             warranties of any kind, either express or implied. CatProxies does
             not warrant that the Service will be uninterrupted, error-free, or
             free of viruses or other harmful components.
@@ -126,7 +126,7 @@ export default function TermsOfService() {
             CatProxies may terminate or suspend your account and access to the
             Service at any time, without prior notice, for conduct that
             CatProxies believes violates these Terms or is harmful to other
-            users of the Service, or for any other reason in CatProxies's sole
+            users of the Service, or for any other reason in CatProxies&apos;s sole
             discretion.
           </p>
           <p>17. Third-Party Apps / Links</p>

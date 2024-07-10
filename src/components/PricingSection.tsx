@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function PricingSection() {
   return (
     <section className="text-gray-600 body-font overflow-hidden pt-32 pb-16">
@@ -67,13 +69,13 @@ export default function PricingSection() {
                 Unlimited
               </p>
               <p className="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
               <p className="text-gray-600 text-center h-12 flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
               <p className="text-gray-600 text-center h-12 flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
             </div>
             <div className="w-full lg:w-[260px] space-y-12 shadow-lg lg:h-[850px] lg:-mt-px mb-10 lg:mb-0 rounded-lg border-[#05C067] relative bg-[#F0FBF3]">
@@ -111,13 +113,13 @@ export default function PricingSection() {
                 Unlimited
               </p>
               <p className="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
               <p className="text-gray-600 text-center h-12 flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
               <p className="text-gray-600 text-center h-12 flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
             </div>
             <div className="w-full lg:w-[260px] space-y-12 p-12 lg:h-[850px] lg:mt-px lg:border-none rounded-lg lg:rounded-none shadow-lg">
@@ -152,13 +154,13 @@ export default function PricingSection() {
                 Unlimited
               </p>
               <p className="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
               <p className="text-gray-600 text-center h-12 flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
               <p className="text-gray-600 text-center h-12 flex items-center justify-center">
-                <img src="/images/icons/green-tick-icon.svg" alt="tick" />
+                <Image src="/images/icons/green-tick-icon.svg" alt="tick" />
               </p>
             </div>
           </div>

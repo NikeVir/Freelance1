@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from 'next/image';
 import { Disclosure } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 
@@ -65,7 +66,7 @@ export default function WhySection() {
               outline challenges, strategies, and outcomes.
             </p>
             <div className="sm:flex sm:justify-center lg:justify-start">
-              <img src="/images/illustration/three-cat-illustration.svg" alt="Cat Proxies Illustration" />
+              <Image src="/images/illustration/three-cat-illustration.svg" alt="Cat Proxies Illustration" />
             </div>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
@@ -84,7 +85,7 @@ export default function WhySection() {
                           onClick={() => handleToggle(index)}
                         >
                           <div className="flex items-center space-x-3">
-                            <img src={faq.icon} alt={faq.question} />
+                            <Image src={faq.icon} alt={faq.question} />
                             <span className="text-xl font-light text-gray-900">
                               {faq.question}
                             </span>

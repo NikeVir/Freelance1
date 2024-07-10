@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { Switch } from "@headlessui/react";
+import Image from 'next/image';
 
 type IconProps = React.SVGProps<SVGSVGElement>;
 

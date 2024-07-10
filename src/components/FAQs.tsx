@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function FAQs() {
   const [openFaqs, setOpenFaqs] = useState<number[]>([0]); // Default open FAQ box is the first one
@@ -48,7 +49,7 @@ export default function FAQs() {
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         <div className="flex justify-center items-center mb-8">
-          <img src="/images/illustration/cat.svg" alt="Cat Illustration" />
+          <Image src="/images/illustration/cat.svg" alt="Cat Illustration" />
         </div>
 
         {/* Component */}
