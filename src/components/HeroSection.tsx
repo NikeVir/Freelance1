@@ -28,8 +28,8 @@ export default function HeroSection() {
                 Unlock the Power of Residential Proxies
               </h1>
               <p className="mt-6 text-lg font-normal leading-8 text-center lg:text-left text-gray-600">
-                Reliable and Secure Proxies for Your Needs Avoid captcha blocks
-                while scraping with the most reliable and fast Residential
+                Experience a Stable and Secure proxy solution for your needs.<br></br>
+                Avoid captcha blocks while scraping with the most reliable and fast Residential
                 Proxies.
               </p>
               <div className="flex flex-col items-center gap-6 mt-10 sm:flex-row">
@@ -49,11 +49,10 @@ export default function HeroSection() {
               </div>
               <div className="flex items-center gap-4 mt-10 justify-center lg:justify-start">
                 <p className="inline-flex gap-4 items-center text-base text-gray-600">
-                  <img src="/images/icons/tick.svg" alt="" /> Start free trial
+                  <img src="/images/icons/tick.svg" alt="" /> Free trials
                 </p>
                 <p className="inline-flex items-center gap-4 text-base text-gray-600">
-                  <img src="/images/icons/tick.svg" alt="" /> 3-day money-back
-                  option
+                  <img src="/images/icons/tick.svg" alt="" /> No credit card required
                 </p>
               </div>
             </div>
