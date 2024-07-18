@@ -27,12 +27,13 @@ import {
   PlayCircleIcon,
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
+import { Button } from "./ui/Button";
 
 const products = [
   {
     name: "Residential Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "#",
+    href: "Proxies/residential",
     icon: "/images/icons/residential-icon.svg",
     price: "$4.99",
   },
@@ -53,14 +54,14 @@ const products = [
   {
     name: "Datacenter Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "#",
+    href: "Proxies/datacenter",
     icon: "/images/icons/datacenter-icon.svg",
     price: "$4.99",
   },
   {
     name: "IPv6 Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "#",
+    href: "/Proxies/ipv6",
     icon: "/images/icons/ipv6-icon.svg",
     price: "$4.99",
   },
@@ -81,27 +82,20 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative isolate z-10 border-b font-sora border-[#E7E8EA] bg-white shadow-md shadow-gray-200">
+    <header className="relative isolate z-20 ">
       {/* Navbar */}
       <nav
         className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
       >
+        <div className="flex gap-5 items-center">
+
+        
         <div className="flex lg:flex-1">
           <a href="./" className="-m-1.5 p-1.5">
             <span className="sr-only">Lightning Proxies</span>
-            <Image className="w-auto h-12" src="/logo.svg" alt="" />
+            <Image className="w-auto h-16 " src="/logo.svg" height={400} width={400} alt="" />
           </a>
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="w-6 h-6" aria-hidden="true" />
-          </button>
         </div>
 
         <PopoverGroup className="items-start justify-start hidden lg:flex lg:gap-x-6">
@@ -132,6 +126,7 @@ export default function Header() {
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
+                        height={400} width={400}
                       />
                       <div>
                         <a
@@ -182,6 +177,7 @@ export default function Header() {
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
+                        height={400} width={400}
                       />
                       <div>
                         <a
@@ -232,6 +228,7 @@ export default function Header() {
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
+                        height={400} width={400}
                       />
                       <div>
                         <a
@@ -282,6 +279,7 @@ export default function Header() {
                         src={item.icon}
                         className="w-16 h-16"
                         alt={item.name}
+                        height={400} width={400}
                       />
                       <div>
                         <a
@@ -309,20 +307,25 @@ export default function Header() {
             Contact
           </a>
         </PopoverGroup>
+        </div>
+
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="w-6 h-6" aria-hidden="true" />
+          </button>
+        </div>
+
+       
 
         <div className="items-center hidden gap-8 lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="#"
-            className="text-sm font-normal px-10 py-4 rounded-md border border-gray-300 leading-6 text-gray-700"
-          >
-            Sign up
-          </a>
-          <a
-            href="#"
-            className="justify-center w-full px-10 py-4 text-base font-semibold text-center text-white rounded-md shadow-sm bg-[#05C067]  hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:w-fit"
-          >
-            Login
-          </a>
+          <Button variant={'white'} className=" py-[16px] text-sm">Sign up</Button>
+          <Button variant={'primary'} className=" py-[16px] text-sm">Login</Button>
+
         </div>
       </nav>
       <Dialog
@@ -335,7 +338,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="./" className="-m-1.5 p-1.5">
               <span className="sr-only">Lightning Proxies</span>
-              <Image className="w-auto h-8" src="/logo.svg" alt="" />
+              <Image className="w-auto h-8" src="/logo.svg" height={400} width={400}  alt="" />
             </a>
             <button
               type="button"

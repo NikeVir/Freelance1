@@ -58,15 +58,12 @@ export default function WhySection() {
             <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-secondary">
               <span style={{color: '#121118', fontFamily: 'Sora', fontWeight: '400', fontSize: '32px'}}>Popular</span> <span style={{color: '#121118', fontFamily: 'Sora', fontSize: '32px', fontWeight: '600'}}>Use Cases</span>
             </h3>
-            <p className="flex-col max-w-xl mx-auto mt-4 text-base text-secondary/80">
-              <span style={{color: '#525252', fontFamily: 'Sora', fontSize: '24px', fontWeight: '400'}}>Explore How Our Customer</span> <span style={{color: '#525252', fontFamily: 'Sora', fontSize: '24px', fontWeight: '400'}}>use our proxies.</span>
+            <p className="flex-col max-w-xl mx-auto mt-4 text-2xl text-[#525252]">
+            Explore how our customers use our proxies
             </p>
-            <p className="text-sm text-gray-400">
-              Dive deep into each project with comprehensive case studies that
-              outline challenges, strategies, and outcomes.
-            </p>
+
             <div className="sm:flex sm:justify-center lg:justify-start">
-              <Image src="/images/illustration/three-cat-illustration.svg" alt="Cat Proxies Illustration" />
+              <Image src="/images/illustration/three-cat-illustration.svg" alt="Cat Proxies Illustration" className="w-[500px] h-[500px]" height={400} width={400}/>
             </div>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
@@ -85,8 +82,8 @@ export default function WhySection() {
                           onClick={() => handleToggle(index)}
                         >
                           <div className="flex items-center space-x-3">
-                            <Image src={faq.icon} alt={faq.question} />
-                            <span className="text-xl font-light text-gray-900">
+                            <Image src={faq.icon} alt={faq.question} className="w-[48px] h-[48px]" height={400} width={400} />
+                            <span className="text-xl font-light text-gray-900" >
                               {faq.question}
                             </span>
                           </div>

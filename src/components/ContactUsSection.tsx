@@ -32,7 +32,7 @@ export default function ContactSection() {
   return (
     <div className="bg-white">
       <div className="flex justify-center items-center mb-4">
-        <img src="/images/illustration/gray-cat.svg" />
+        <img src="/images/illustration/gray-cat.svg" height={400} width={400} />
       </div>
 
       <div className="flex flex-col justify-center items-center space-y-2 text-center">

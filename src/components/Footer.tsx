@@ -38,22 +38,22 @@ export default function Footer() {
       {
         name: "Gmail",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/icons/email-icon.svg" alt="Gmail" />,
+        icon: (props: IconProps) => <Image src="/images/icons/email-icon.svg" alt="Gmail" height={400} width={400} />,
       },
       {
         name: "Telegram",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/icons/telegram-icon.svg" alt="Telegram" />,
+        icon: (props: IconProps) => <Image src="/images/icons/telegram-icon.svg" alt="Telegram"  height={400} width={400}/>,
       },
       {
         name: "Message",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/icons/message-icon.svg" alt="Message" />,
+        icon: (props: IconProps) => <Image src="/images/icons/message-icon.svg" alt="Message" height={400} width={400} />,
       },
       {
         name: "Discord",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/icons/discord-icon.svg" alt="Discord" />,
+        icon: (props: IconProps) => <Image src="/images/icons/discord-icon.svg" alt="Discord" height={400} width={400} />,
       },
     ],
   };
@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 text-center lg:text-left">
             <div className="flex flex-col items-center lg:flex-row lg:items-start space-y-2 lg:space-y-0 lg:space-x-2">
-              <Image alt="Company name" src="/logo.svg" className="h-12" />
+              <Image alt="Company name" src="/logo.svg" className="h-12" height={200} width={200} />
               <h1 className="font-bold text-2xl lg:text-3xl">CAT PROXIES</h1>
             </div>
             <div className="space-y-2">

@@ -49,7 +49,7 @@ export default function FAQs() {
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         <div className="flex justify-center items-center mb-8">
-          <Image src="/images/illustration/cat.svg" alt="Cat Illustration" />
+          <Image src="/images/illustration/cat.svg" alt="Cat Illustration" className='w-28 h-52' height={400} width={400} />
         </div>
 
         {/* Component */}
