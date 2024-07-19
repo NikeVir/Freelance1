@@ -8,8 +8,6 @@ export default function Home() {
       <div className="mt-24">
         <ContactUsSection />
       </div>
-
-      <Footer />
     </main>
   );
 }
