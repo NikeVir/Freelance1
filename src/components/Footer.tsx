@@ -20,12 +20,12 @@ export default function Footer() {
       { name: "Integrations", href: "#" },
     ],
     services: [
-      { name: "Web Scraping", href: "Solutions/ad-tech" },
-      { name: "SEO Monitoring", href: "Solutions/seo-monitoring" },
-      { name: "Ad Verification", href: "Solutions/ad-verification" },
-      { name: "Market Research", href: "Solutions/market-research" },
-      { name: "Social Media Management", href: "Solutions/social-media" },
-      { name: "E-commerce", href: "Solutions/cyber-security" },
+      { name: "Web Scraping", href: "/Solutions/ad-tech" },
+      { name: "SEO Monitoring", href: "/Solutions/seo-monitoring" },
+      { name: "Ad Verification", href: "/Solutions/ad-verification" },
+      { name: "Market Research", href: "/Solutions/market-research" },
+      { name: "Social Media Management", href: "/Solutions/social-media" },
+      { name: "E-commerce", href: "/Solutions/cyber-security" },
     ],
     legal: [
       { name: "terms and conditions", href: "/TermsAndCondition" },
@@ -43,7 +43,7 @@ export default function Footer() {
       {
         name: "Telegram",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/icons/telegram-icon.svg" alt="Telegram"  height={400} width={400}/>,
+        icon: (props: IconProps) => <Image src="/images/icons/Telegram-icon.svg" alt="Telegram"  height={400} width={400}/>,
       },
       {
         name: "Message",
@@ -53,7 +53,7 @@ export default function Footer() {
       {
         name: "Discord",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/icons/discord-icon.svg" alt="Discord" height={400} width={400} />,
+        icon: (props: IconProps) => <Image src="/images/icons/Discord-icon.svg" alt="Discord" height={400} width={400} />,
       },
     ],
   };

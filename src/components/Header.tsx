@@ -84,12 +84,12 @@ const products = [
 ];
 
 const services = [
-  { name: "Ad Tech", href: "Solutions/ad-tech", icon: <AdVerification/> },
-  { name: "SEO Monitoring", href: "Solutions/seo-monitoring", icon: <SeoMonitoring/> },
-  { name: "Ad Verification", href: "Solutions/ad-verification", icon: <Webscraping/> },
-  { name: "Market Research", href: "Solutions/market-research", icon: <MarketResearch/> },
-  { name: "Social Media Management", href: "Solutions/social-media", icon: <SocialMedia/> },
-  { name: "Cybersecurity", href: "Solutions/cyber-security",  icon: <AdVerification/> },
+  { name: "Ad Tech", href: "/Solutions/ad-tech", icon: <AdVerification/> },
+  { name: "SEO Monitoring", href: "/Solutions/seo-monitoring", icon: <SeoMonitoring/> },
+  { name: "Ad Verification", href: "/Solutions/ad-verification", icon: <Webscraping/> },
+  { name: "Market Research", href: "/Solutions/market-research", icon: <MarketResearch/> },
+  { name: "Social Media Management", href: "/Solutions/social-media", icon: <SocialMedia/> },
+  { name: "Cybersecurity", href: "/Solutions/cyber-security",  icon: <AdVerification/> },
 ]
 
 const explore = [
@@ -120,7 +120,7 @@ export default function Header() {
 
         
         <div className="flex lg:flex-1">
-          <a href="./" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Lightning Proxies</span>
             <Image className="w-auto h-16 " src="/logo.svg" height={400} width={400} alt="" />
           </a>
@@ -143,7 +143,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <PopoverPanel className="absolute left-0 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute left-14 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
                   {products.map((item) => (
                     <div
@@ -188,7 +188,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <PopoverPanel className="absolute left-0 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute left-14 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
                   {products.map((item) => (
                     <div
@@ -217,7 +217,7 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover>
-          <Popover>
+          {/* <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Solutions
               <ChevronDownIcon
@@ -261,8 +261,8 @@ export default function Header() {
                 </div>
               </PopoverPanel>
             </Transition>
-          </Popover>
-          <Popover>
+          </Popover> */}
+          {/* <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Explore
               <ChevronDownIcon
@@ -303,7 +303,7 @@ export default function Header() {
                 </div>
               </PopoverPanel>
             </Transition>
-          </Popover>
+          </Popover> */}
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Use Cases
@@ -320,7 +320,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <PopoverPanel className="absolute left-0 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute left-20 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
                   {services.map((item) => (
                     <div
@@ -345,6 +345,9 @@ export default function Header() {
           </Popover>
           <a href="/contact-us" className="text-sm font-normal leading-6 text-gray-900">
             Contact
+          </a>
+          <a href="/Blog" className="text-sm ml-4 font-normal leading-6 text-gray-900">
+            Blog
           </a>
         </PopoverGroup>
         </div>
