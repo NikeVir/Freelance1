@@ -71,7 +71,7 @@ const DataScraping = () => {
                                 {data.image}
                                 <div className='text-2xl '>{data.title}</div>
                                 <div className='text-sm text-[#A8A8A8]'>{data.description}</div>
-                                <div className='mt-4'>
+                                <div className='mt-8'>
                                     
                                     <div className='flex justify-between items-center'>
                                         <div className=''>
@@ -79,7 +79,7 @@ const DataScraping = () => {
                                         <div className='text-2xl mt-2 font-semibold text-[#020611]'>
                                             {data.rate}</div>
                                         </div>
-                                        <Button variant={data.color as "pinkg" | "primary" | "purple" | "yellowg"} className='py-[14px] px-[34px]'>{data.action}</Button>
+                                        <Button variant={data.color as "pinkg" | "primary" | "purple" | "yellowg"} className='px-[15px] py-[10px] sm:py-[14px] sm:px-[34px]'>{data.action}</Button>
                                     </div>
                                 </div>
                             </div>
