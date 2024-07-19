@@ -4,15 +4,18 @@ export default function EthicsPolicy() {
   return (
     <section className=" pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16" height={400} width={400} />
+        <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16" height={100} width={100} />
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Ethics</h1>
           <p className="text-[18px] text-gray-500">
             Reach out to us anytime, and we&apos;ll get back you as soon as possible!
           </p>
         </div>
+        <div className='px-16'>
 
-        <div className="text-[24px] p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
+        
+        <div className="text-[24px] shadow-flag p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
+
           <p>Effective Date: 28 June 2024</p>
 
           <p>
@@ -128,6 +131,7 @@ export default function EthicsPolicy() {
           </p>
           <p>support@catproxies.com</p>
         </div>
+      </div>
       </div>
     </section>
   );

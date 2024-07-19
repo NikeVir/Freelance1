@@ -31,6 +31,11 @@ import { Button } from "./ui/Button";
 import Residental from "./assets/DataScraping/Residental";
 import Datacenter from "./assets/DataScraping/Datacenter";
 import Ipv6 from "./assets/DataScraping/Ipv6";
+import AdVerification from "./assets/usecases/AdVerification";
+import SeoMonitoring from "./assets/usecases/SeoMonitoring";
+import Webscraping from "./assets/usecases/Webscraping";
+import MarketResearch from "./assets/usecases/MarketResearch";
+import SocialMedia from "./assets/usecases/SocialMedia";
 
 const products = [
   {
@@ -77,6 +82,25 @@ const products = [
   //   price: "$4.99",
   // },
 ];
+
+const services = [
+  { name: "Ad Tech", href: "Solutions/ad-tech", icon: <AdVerification/> },
+  { name: "SEO Monitoring", href: "Solutions/seo-monitoring", icon: <SeoMonitoring/> },
+  { name: "Ad Verification", href: "Solutions/ad-verification", icon: <Webscraping/> },
+  { name: "Market Research", href: "Solutions/market-research", icon: <MarketResearch/> },
+  { name: "Social Media Management", href: "Solutions/social-media", icon: <SocialMedia/> },
+  { name: "Cybersecurity", href: "Solutions/cyber-security",  icon: <AdVerification/> },
+]
+
+const explore = [
+  {
+    name: "Blog",
+    description: "Usce consequat mi elementum, semper massa sit amet",
+    href: "/Blog",
+    icon: <AdVerification/>,
+  },
+
+]
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -256,7 +280,7 @@ export default function Header() {
             >
               <PopoverPanel className="absolute left-0 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
-                  {products.map((item) => (
+                  {explore.map((item) => (
                     <div
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
@@ -273,10 +297,46 @@ export default function Header() {
                           {item.description}
                         </p>
                       </div>
-                      <div className="flex flex-col items-center justify-center gap-1">
-                        <p className="text-sm text-gray-600">{item.price}</p>
-                        <p className="text-sm text-gray-600">onwards</p>
+
+                    </div>
+                  ))}
+                </div>
+              </PopoverPanel>
+            </Transition>
+          </Popover>
+          <Popover>
+            <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
+              Use Cases
+              <ChevronDownIcon
+                className="flex-none w-5 h-5 text-gray-400"
+                aria-hidden="true"
+              />
+            </PopoverButton>
+            <Transition
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 -translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 -translate-y-1"
+            >
+              <PopoverPanel className="absolute left-0 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+                <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
+                  {services.map((item) => (
+                    <div
+                      key={item.name}
+                      className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
+                    >
+                      {item.icon}
+                      <div>
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
+                          {item.name}
+                        </a>
                       </div>
+
                     </div>
                   ))}
                 </div>
@@ -418,8 +478,36 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        Services
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
+                          aria-hidden="true"
+                        />
+                      </DisclosureButton>
+                      <DisclosurePanel className="mt-2 space-y-2">
+                        {services.map((item) => (
+                          <DisclosureButton
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </DisclosureButton>
+                        ))}
+                      </DisclosurePanel>
+                    </>
+                  )}
+                </Disclosure>
                 <a
-                  href="#"
+                  href="/Blog"
                   className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Blogs

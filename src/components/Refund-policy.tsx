@@ -4,7 +4,7 @@ export default function RefundPolicy() {
   return (
     <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <Image src="/images/illustration/single-cat.svg" alt="" className="mt-16 w-full max-w-xs mx-auto" height={400} width={400} />
+        <Image src="/images/illustration/single-cat.svg" alt="" className="mt-16  max-w-xs mx-auto" height={100} width={100} />
         <div className="flex flex-col justify-center items-center text-center sm:text-left">
           <h1 className="font-bold text-[32px] sm:text-[32px]">Refund Policy</h1>
           <p className="text-[18px] text-gray-500 px-4">
