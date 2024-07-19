@@ -1,112 +1,203 @@
 import Image from 'next/image';
 
+
+const Line1 = [
+  {
+    src: '/images/logos/semrush.svg',
+    alt: 'semrush',
+  },
+  {
+    src: '/images/logos/bitbrowser.svg',
+    alt: 'bitbrowser',
+  },
+  {
+    src: '/images/logos/csharp.svg',
+    alt: 'c#',
+  },
+  {
+    src: '/images/logos/lalicat.svg',
+    alt: 'lalicat',
+  },
+  {
+    src: '/images/logos/dolphinantybrowser.svg',
+    alt: 'dolphinantybrowser',
+  },
+  {
+    src: '/images/logos/selenium.svg',
+    alt: 'Digital Ocean',
+  },
+  {
+    src: '/images/logos/gmail.svg',
+    alt: 'Adobe XD',
+  },
+  {
+    src: '/images/logos/mulogin.svg',
+    alt: 'Airtable',
+  },
+  {
+    src: '/images/logos/incogniton.svg',
+    alt: 'Gitlab',
+  },
+  {
+    src: '/images/logos/kameleo.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/nstbrowser.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/undetectable.svg',
+    alt: 'MongoDB',
+  },
+
+
+]
+const Line2 = [
+  {
+    src: '/images/logos/multilogin.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/octobrowser.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/gologin.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/puppeteer.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/c++.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/playwright.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/doubleverify.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/parsehub.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/react.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/octoparse.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/foxyproxy.svg',
+    alt: 'MongoDB',
+  },
+]
+const Line3 = [
+
+  {
+    src: '/images/logos/vmlogin.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/ruby.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/javascript.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/integralAdscience.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/adspower.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/morelogin.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/shopify.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/proxifier.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/ghostbrowser.svg',
+    alt: 'MongoDB',
+  },
+  {
+    src: '/images/logos/python.svg',
+    alt: 'MongoDB',
+  },
+]
+
 export default function LogoSection() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-2xl font-light leading-8 text-gray-900">
-          Supported browsers / features / languages / sites
-        </h2>
-        <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-10">
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/figma-icon.svg"
-              alt="Figma"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">FIGMA</p>
+    <div className="bg-white my-20 py-24 sm:py-32 z-0">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className='flex justify-center'>
+
+          <h2 className="text-center max-w-4xl text-3xl leading-10 capitalize text-[#161616]">
+            Compatible with Major Browsers, Programming Languages, and Development Tools
+          </h2>
+        </div>
+        <div className='mt-12 flex justify-center'>
+
+          <div className=" max-w-7xl grid grid-cols-4 gap-x-16 gap-y-10 sm:grid-cols-6 lg:grid-cols-12">
+            {Line1.map((logo) => (
+              <div key={logo.alt} className="flex justify-center items-center">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  className='h-[41px] w-[41px]'
+
+                  width={100}
+                  height={48}
+                />
+              </div>
+            ))}
           </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/react-icon.svg"
-              alt="React"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">REACT</p>
+        </div>
+        <div className='flex justify-center'>
+          <div className="mt-10 max-w-6xl grid grid-cols-4 gap-x-16 gap-y-10 sm:grid-cols-6 lg:grid-cols-11">
+            {Line2.map((logo) => (
+              <div key={logo.alt} className="flex justify-center items-center">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  className='h-[41px] w-[41px]'
+                  width={100}
+                  height={48}
+                />
+              </div>
+            ))}
           </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/kotlin-icon.svg"
-              alt="Kotlin"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">KOTLIN</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/aws-icon.svg"
-              alt="AWS"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">AWS</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/nodeJS-icon.svg"
-              alt="Node-js"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">JAVA SCRIPT</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/digital-ocean-icon.svg"
-              alt="Digital Ocean"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">DIGITAL OCEAN</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/adobe-icon.svg"
-              alt="Adobe XD"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">ADOBE XD</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/airtable-icon.svg"
-              alt="Airtable"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">IPSUM</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/gitlab.svg"
-              alt="Gitlab"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">LOREM</p>
-          </div>
-          <div className="flex flex-col items-center space-y-4">
-            <Image
-              className="max-h-12"
-              src="/images/icons/mongoDB-icon.svg"
-              alt="MongoDB"
-              width={158}
-              height={48}
-            />
-            <p className="text-[12px]">MONGO DB</p>
+        </div>
+        <div className='flex justify-center'>
+          <div className="mt-10 max-w-5xl grid grid-cols-4 gap-x-16 gap-y-10 sm:grid-cols-6 lg:grid-cols-10">
+            {Line3.map((logo) => (
+              <div key={logo.alt} className="flex justify-center items-center">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  className='h-[41px] w-[41px]'
+                  width={100}
+                  height={48}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

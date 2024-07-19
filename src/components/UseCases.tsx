@@ -32,7 +32,7 @@ const data = [
 ]
 const UseCases = () => {
     return (
-        <div className='mt-40'>
+        <div className='my-40'>
             <div>
                 <div className='text-center flex flex-col gap-2'>
                     <h1 className='text-[32px] '>Popular use cases</h1>

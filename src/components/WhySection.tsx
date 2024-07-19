@@ -3,6 +3,9 @@ import { useState } from "react";
 import Image from 'next/image';
 import { Disclosure } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
+import { Button } from "./ui/Button";
+import ActiveSvg from "./assets/active";
+import InactiveSvg from "./assets/inactive";
 
 const faqs = [
   {
@@ -43,7 +46,15 @@ const faqs = [
   },
 ];
 
-export default function WhySection() {
+type data ={
+  image: string;
+  color:'blueOutline' | 'greenOutline'  | 'purpleOutline'| 'outline';
+}
+
+
+export default function WhySection(
+  {Data}:{Data:data}
+) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -51,7 +62,7 @@ export default function WhySection() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white py-20 my-20">
       <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
         <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5 space-y-4 text-center lg:text-left">
@@ -63,7 +74,7 @@ export default function WhySection() {
             </p>
 
             <div className="sm:flex sm:justify-center lg:justify-start">
-              <Image src="/images/illustration/three-cat-illustration.svg" alt="Cat Proxies Illustration" className="w-[500px] h-[500px]" height={400} width={400}/>
+              <Image src={Data.image} alt="Cat Proxies Illustration" className="w-[500px] h-[500px]" height={400} width={400}/>
             </div>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
@@ -72,32 +83,26 @@ export default function WhySection() {
                 <Disclosure
                   as="div"
                   key={faq.question}
-                  className="max-w-xl p-4 mx-auto bg-white border border-gray-200 rounded-md shadow-md"
+                  className="max-w-xl p-4 mx-auto bg-white border rounded-2xl  border-gray-200 shadow-md "
                 >
                   {({ open }) => (
                     <>
-                      <dt>
+                      <dt className="">
                         <Disclosure.Button
-                          className="flex items-center justify-between w-full"
+                          className="flex items-center justify-between w-full  "
                           onClick={() => handleToggle(index)}
                         >
-                          <div className="flex items-center space-x-3">
+                          <div className="flex items-center space-x-3 rounded-2xl">
                             <Image src={faq.icon} alt={faq.question} className="w-[48px] h-[48px]" height={400} width={400} />
-                            <span className="text-xl font-light text-gray-900" >
+                            <span className="text-[16px] text-[#6F6F6F]" >
                               {faq.question}
                             </span>
                           </div>
-                          <span className="flex items-center ml-6 h-7">
+                          <span className="flex  items-center ml-6 h-7">
                             {openIndex === index ? (
-                              <ChevronUpIcon
-                                className="w-6 h-6"
-                                aria-hidden="true"
-                              />
+                           <ActiveSvg/>
                             ) : (
-                              <ChevronDownIcon
-                                className="w-6 h-6"
-                                aria-hidden="true"
-                              />
+                            <InactiveSvg/>
                             )}
                           </span>
                         </Disclosure.Button>
@@ -105,14 +110,12 @@ export default function WhySection() {
                       {openIndex === index && (
                         <Disclosure.Panel
                           as="dd"
-                          className="flex flex-col items-start pr-12 mt-4 space-y-4"
+                          className="flex flex-col gap-8 items-start mt-4 "
                         >
-                          <p className="text-base font-normal text-gray-600">
+                          <p className="text-base font-normal text-[#6F6F6F]">
                             {faq.answer}
                           </p>
-                          <button className="px-4 py-2 w-full text-sm text-white rounded-lg bg-gradient-to-r from-[#05C067] to-[#50EA48]">
-                            Contact Us Now
-                          </button>
+                         <Button variant={Data.color} className="w-full ">Read more</Button>
                         </Disclosure.Panel>
                       )}
                     </>

@@ -50,8 +50,9 @@ const DataScraping = () => {
 
 
     return (
-        <div >
-            <div className='p-6 mx-auto  '>
+        <div className='relative z-0'>
+            <Image src='/hero2.svg' alt="" width={1000} height={500} className=' w-full absolute -z-10 opacity-30' />
+            <div className='p-6 mx-auto z-10  '>
 
                 <div className='text-center  flex justify-center'>
                     <div className='max-w-3xl'>
@@ -63,10 +64,10 @@ const DataScraping = () => {
                 </div>
                 <div className='flex justify-center'>
 
-                <div className='grid grid-cols-2 gap-7 max-w-[956px] mt-12'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-7 max-w-[956px] mt-12'>
                     {
                         Data.map((data, index) => (
-                            <div key={index} className='flex w-[460px] flex-col h-[307px] p-7 rounded-2xl gap-2 shadow-custom'>
+                            <div key={index} className='flex max-w-[460px] flex-col h-[307px] p-7 bg-white rounded-2xl gap-2 shadow-custom'>
                                 {data.image}
                                 <div className='text-2xl '>{data.title}</div>
                                 <div className='text-sm text-[#A8A8A8]'>{data.description}</div>

@@ -5,7 +5,6 @@ import ContactUsSection from "@/components/ContactUsSection";
 export default function Home() {
   return (
     <main className="font-giest">
-      <Header />
       <div className="mt-24">
         <ContactUsSection />
       </div>

@@ -7,9 +7,9 @@ type IconProps = React.SVGProps<SVGSVGElement>;
 export default function Footer() {
   const navigation = {
     proxies: [
-      { name: "Residential Proxies", href: "#" },
-      { name: "Data Center Proxies", href: "#" },
-      { name: "IPv6 Proxies", href: "#" },
+      { name: "Residential Proxies", href: "Proxies/residential" },
+      { name: "Data Center Proxies", href: "Proxies/datacenter" },
+      { name: "IPv6 Proxies", href: "Proxies/ipv6" },
     ],
     company: [
       { name: "Contact us", href: "/contact-us" },
@@ -20,12 +20,12 @@ export default function Footer() {
       { name: "Integrations", href: "#" },
     ],
     services: [
-      { name: "Web Scraping", href: "#" },
-      { name: "SEO Monitoring", href: "#" },
-      { name: "Ad Verification", href: "#" },
-      { name: "Market Research", href: "#" },
-      { name: "Social Media Management", href: "#" },
-      { name: "E-commerce", href: "#" },
+      { name: "Web Scraping", href: "Solutions/ad-tech" },
+      { name: "SEO Monitoring", href: "Solutions/seo-monitoring" },
+      { name: "Ad Verification", href: "Solutions/ad-verification" },
+      { name: "Market Research", href: "Solutions/market-research" },
+      { name: "Social Media Management", href: "Solutions/social-media" },
+      { name: "E-commerce", href: "Solutions/cyber-security" },
     ],
     legal: [
       { name: "terms and conditions", href: "/TermsAndCondition" },
@@ -60,29 +60,27 @@ export default function Footer() {
 
   return (
     <footer aria-labelledby="footer-heading" className="bg-[#FAFAFA]">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 ">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 text-center lg:text-left">
-            <div className="flex flex-col items-center lg:flex-row lg:items-start space-y-2 lg:space-y-0 lg:space-x-2">
-              <Image alt="Company name" src="/logo.svg" className="h-12" height={200} width={200} />
-              <h1 className="font-bold text-2xl lg:text-3xl">CAT PROXIES</h1>
+          <div className=" text-center lg:text-left">
+            <div className="flex items-center gap-2">
+              <Image alt="Company name" src="/logo.svg" className="h-12 w-12" height={200} width={200} />
+              <h1 className="font-bold text-2xl lg:text-2xl">CAT PROXIES</h1>
             </div>
-            <div className="space-y-2">
+            <div className="mt-5 flex flex-col gap-4">
               <p className="text-sm text-gray-500">Technical Support</p>
               <p className="text-sm">support@catproxies.com</p>
             </div>
-            <div className="flex justify-center space-x-6 lg:justify-start">
+            <div className="flex justify-center items-center mt-4 space-x-5 lg:justify-start">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
+                  className="text-gray-40  hover:text-gray-500 h-9 w-9 p-2 flex items-center "
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon aria-hidden="true" className="h-6 w-6" />
+                  <item.icon aria-hidden="true" className="h-3 w-3" />
                 </a>
               ))}
             </div>
@@ -90,7 +88,7 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-normal leading-6 underline text-gray-400">
+                <h3 className="text-sm font-normal leading-6 underline text-[#6F6F6F]">
                   Proxies
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -98,7 +96,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -107,7 +105,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-normal leading-6 underline text-gray-400">
+                <h3 className="text-sm font-normal leading-6 underline text-[#6F6F6F]">
                   Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -115,7 +113,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -126,7 +124,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-normal leading-6 underline text-gray-400">
+                <h3 className="text-sm font-normal leading-6 underline text-[#6F6F6F]">
                   Services
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -134,7 +132,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -143,7 +141,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-normal leading-6 underline text-gray-400">
+                <h3 className="text-sm font-normal leading-6 underline text-[#6F6F6F]">
                   Legal
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -151,7 +149,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { Switch } from "@headlessui/react";
 import Image from 'next/image';
+import { Button } from "./ui/Button";
 
 type IconProps = React.SVGProps<SVGSVGElement>;
 
@@ -46,7 +47,7 @@ export default function ContactSection() {
           <form
             action="#"
             method="POST"
-            className="bg-[#ffffff] w-full shadow-lg rounded-2xl p-12 mx-auto max-w-5xl"
+            className="bg-[#ffffff] w-full shadow-flag rounded-lg p-12 mx-auto max-w-5xl"
             style={{ background: 'linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%)' }}
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -64,7 +65,7 @@ export default function ContactSection() {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    className="block w-full border-b-2 border-[#E0E0E0] py-2 text-gray-900  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -82,7 +83,7 @@ export default function ContactSection() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    className="block w-full border-b-2 border-[#E0E0E0] py-2 text-gray-900  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -100,7 +101,7 @@ export default function ContactSection() {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                   className="block w-full border-b-2 border-[#E0E0E0] py-2 text-gray-900  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -118,7 +119,7 @@ export default function ContactSection() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    className="block w-full border-b-2 border-[#E0E0E0] py-2 text-gray-900  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -135,7 +136,7 @@ export default function ContactSection() {
                     name="message"
                     id="message"
                     rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  className="block w-full border-b-2 border-[#E0E0E0] py-2 text-gray-900 h-10  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                     defaultValue={""}
                   />
                 </div>
@@ -156,7 +157,7 @@ export default function ContactSection() {
                     readOnly
                     name="document-upload"
                     id="document-upload"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 cursor-pointer"
+                    className="block w-full border-b-2 border-[#E0E0E0] py-2 text-gray-900  placeholder:text-gray-400  sm:text-sm sm:leading-6"
                     onClick={handleClick}
                     style={{ paddingLeft: '40px' }}
                   />
@@ -207,14 +208,15 @@ export default function ContactSection() {
               </div>
 
               <div className="lg:flex lg:justify-end sm:mt-12 lg:mt-0 sm:justify-end sm:flex">
-                <button
+                <Button
                   type="submit"
-                  className="inline-flex w-32 text-center items-center text-sm justify-end bg-[#05C067] p-2 shadow-lg shadow-black/30 rounded-md font-semibold leading-6 text-gray-900"
+                  variant={'outline'}
+                  className=""
                 >
                   <p className="w-full text-center items-center gap-2 text-white rounded-lg">
                     Contact Us
                   </p>
-                </button>
+                </Button>
               </div>
             </div>
           </form>

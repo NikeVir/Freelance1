@@ -7,6 +7,8 @@ import ResidentialProxies from '@/components/ResidentialProxies';
 import Pricing from '@/components/Pricing';
 import LogoSection from '@/components/LogoSection';
 import FAQs from '@/components/FAQs';
+import WhyToChoose from '@/components/whyToChoose';
+import WhySection from '@/components/WhySection';
 
 interface HeroContainer {
     title: string;
@@ -15,30 +17,42 @@ interface HeroContainer {
     pointsColor: string;
     image: string;
     alt: string;
+    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
 }
 
 
-const HomeContentHero: HeroContainer = {
-    title: "Unlock the Power of Residential Proxies",
-    description: "Reliable and Secure Proxies for Your Needs Avoid captcha blocks while scraping with the most reliable and fast Residential Proxies.",
-    points: [],
-    pointsColor: "blue",
-    image: "/images/illustration/cat-illustration.svg",
+const HomeContentHero:HeroContainer = {
+    title: "Datacenter Proxies",
+    description: "A vast IP pool. Scale your tasks with our rotating Datacenter IPs.",
+    points: ["20.000+ ethical datacenter proxies","Unlimited concurrent connections","Unlimited bandwidth"],
+    pointsColor: "green",
+    image: "/images/illustration/proxies/Datacenter.svg",
     alt: "Hero Banner",
+    buttonColor: "greenlg",
 };
+type data ={
+    image: string;
+    color:'blueOutline' | 'greenOutline'  | 'purpleOutline'| 'outline';
+  }
+  const Data1:data={
+    image: "/images/illustration/DarkGreenUse.svg",
+    color: 'greenOutline'
+  }
+  
 export default function page() {
     return (
         <div>
-            <div className="z-10 relative ">
-                <div className='absolute  -z-10 w-full h-[80vh]'>
+            <div className=" relative ">
+                <div className='absolute -top-28 -z-10 w-full h-[80vh]'>
                     <Image src="/11heroBanner.svg" alt="" className="border-black  w-full h-screen" height={600} width={600} />
                 </div>
                 <HeroSection data={HomeContentHero} />
             </div>
             <ProxyLocations />
             <ResidentialProxies />
-            <Pricing />
+            <Pricing type='green'/>
             <LogoSection />
+            <WhySection Data={Data1} />
             <FAQs />
         </div>
     )

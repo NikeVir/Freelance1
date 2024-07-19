@@ -28,50 +28,54 @@ import {
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
 import { Button } from "./ui/Button";
+import Residental from "./assets/DataScraping/Residental";
+import Datacenter from "./assets/DataScraping/Datacenter";
+import Ipv6 from "./assets/DataScraping/Ipv6";
 
 const products = [
   {
     name: "Residential Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "Proxies/residential",
-    icon: "/images/icons/residential-icon.svg",
+    href: "/Proxies/residential",
+    icon: <Residental/>,
     price: "$4.99",
   },
+  // {
+  //   name: "Static ISP Proxies",
+  //   description: "Usce consequat mi elementum, semper massa sit amet",
+  //   href: "#",
+  //   icon: "/images/icons/static-isp-icon.svg",
+  //   price: "$4.99",
+  // },
+  // {
+  //   name: "Unlimited Residential",
+  //   description: "Usce consequat mi elementum, semper massa sit amet",
+  //   href: "#",
+  //   icon: "/images/icons/residential-icon.svg",
+  //   price: "$4.99",
+  // },
   {
-    name: "Static ISP Proxies",
+    name: "IPv6 Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "#",
-    icon: "/images/icons/static-isp-icon.svg",
-    price: "$4.99",
-  },
-  {
-    name: "Unlimited Residential",
-    description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "#",
-    icon: "/images/icons/residential-icon.svg",
+    href: "/Proxies/ipv6",
+    icon: <Ipv6/>,
     price: "$4.99",
   },
   {
     name: "Datacenter Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "Proxies/datacenter",
-    icon: "/images/icons/datacenter-icon.svg",
+    href: "/Proxies/datacenter",
+    icon: <Datacenter/>,
     price: "$4.99",
   },
-  {
-    name: "IPv6 Proxies",
-    description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "/Proxies/ipv6",
-    icon: "/images/icons/ipv6-icon.svg",
-    price: "$4.99",
-  },
-  {
-    name: "Mobile Proxies",
-    description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "#",
-    icon: "/images/icons/mobile-icon.svg",
-    price: "$4.99",
-  },
+
+  // {
+  //   name: "Mobile Proxies",
+  //   description: "Usce consequat mi elementum, semper massa sit amet",
+  //   href: "#",
+  //   icon: "/images/icons/mobile-icon.svg",
+  //   price: "$4.99",
+  // },
 ];
 
 function classNames(...classes: any) {
@@ -122,19 +126,13 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <Image
-                        src={item.icon}
-                        className="w-16 h-16"
-                        alt={item.name}
-                        height={400} width={400}
-                      />
+                     {item.icon}
                       <div>
                         <a
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
-                          <span className="absolute inset-0" />
                         </a>
                         <p className="mt-1 text-sm text-gray-600">
                           {item.description}
@@ -173,19 +171,13 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <Image
-                        src={item.icon}
-                        className="w-16 h-16"
-                        alt={item.name}
-                        height={400} width={400}
-                      />
+                      {item.icon}
                       <div>
                         <a
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
-                          <span className="absolute inset-0" />
                         </a>
                         <p className="mt-1 text-sm text-gray-600">
                           {item.description}
@@ -224,19 +216,13 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <Image
-                        src={item.icon}
-                        className="w-16 h-16"
-                        alt={item.name}
-                        height={400} width={400}
-                      />
+                       {item.icon}
                       <div>
                         <a
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
-                          <span className="absolute inset-0" />
                         </a>
                         <p className="mt-1 text-sm text-gray-600">
                           {item.description}
@@ -275,19 +261,13 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      <Image
-                        src={item.icon}
-                        className="w-16 h-16"
-                        alt={item.name}
-                        height={400} width={400}
-                      />
+                       {item.icon}
                       <div>
                         <a
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
-                          <span className="absolute inset-0" />
                         </a>
                         <p className="mt-1 text-sm text-gray-600">
                           {item.description}
@@ -313,10 +293,12 @@ export default function Header() {
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(true)}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="w-6 h-6" aria-hidden="true" />
+            {
+              mobileMenuOpen ? <XMarkIcon className="w-6 h-6" aria-hidden="true" /> : <Bars3Icon className="w-6 h-6" aria-hidden="true" />
+            }
+            
           </button>
         </div>
 
@@ -340,16 +322,16 @@ export default function Header() {
               <span className="sr-only">Lightning Proxies</span>
               <Image className="w-auto h-8" src="/logo.svg" height={400} width={400}  alt="" />
             </a>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="w-6 h-6" aria-hidden="true" />
-            </button>
+             <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+        
+          </button>
+
           </div>
-          <div className="flow-root mt-6">
+          <div className="flow-root mt-10">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-6 space-y-2">
                 <Disclosure as="div" className="-mx-3">
