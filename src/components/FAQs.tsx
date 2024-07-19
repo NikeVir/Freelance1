@@ -55,7 +55,7 @@ export default function FAQs() {
         {/* Component */}
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center px-6 text-center lg:max-w-3xl lg:px-10">
           <h2 className="mx-auto text-center text-black text-[32px] lg:text-[32px]">
-            Any Questions<br /> Read our <span style={{color: '#121118', fontFamily: 'Sora', fontSize: '32px', fontWeight: '700'}}>FAQ's</span>
+            Any Questions<br /> Read our <span style={{color: '#121118', fontFamily: 'Sora', fontSize: '32px', fontWeight: '700'}}>{"FAQ's"}</span>
           </h2>
         </div>
         {/* FAQs */}

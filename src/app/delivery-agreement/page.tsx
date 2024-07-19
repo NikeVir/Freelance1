@@ -5,10 +5,8 @@ import DeliveryAgreement from "@/components/Delivery-agreement";
 export default function Home() {
   return (
     <main className="font-giest">
-      <Header />
       <DeliveryAgreement />
 
-      <Footer />
     </main>
   );
 }
