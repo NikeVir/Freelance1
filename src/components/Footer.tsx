@@ -21,7 +21,7 @@ export default function Footer() {
     ],
     services: [
       { name: "E-commerce", href: "/Solutions/ad-verification" },
-      { name: "Social Media Management", href: "/Solutions/social-media" },
+      { name: "Social Media Marketing", href: "/Solutions/social-media" },
       { name: "Cybersecurity", href: "/Solutions/cyber-security" },
       { name: "Market Research", href: "/Solutions/market-research" },
       { name: "SEO Monitoring", href: "/Solutions/seo-monitoring" },

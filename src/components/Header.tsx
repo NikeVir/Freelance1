@@ -84,12 +84,12 @@ const products = [
 ];
 
 const services = [
-  { name: "Ad Tech", href: "/Solutions/ad-tech", icon: <AdVerification/> },
-  { name: "SEO Monitoring", href: "/Solutions/seo-monitoring", icon: <SeoMonitoring/> },
-  { name: "Ad Verification", href: "/Solutions/ad-verification", icon: <Webscraping/> },
+  { name: "E-Commerce", href: "/Solutions/ad-verification", icon: <Webscraping/> },
+  { name: "Social Media Marketing", href: "/Solutions/social-media", icon: <SocialMedia/> },
   { name: "Market Research", href: "/Solutions/market-research", icon: <MarketResearch/> },
-  { name: "Social Media Management", href: "/Solutions/social-media", icon: <SocialMedia/> },
   { name: "Cybersecurity", href: "/Solutions/cyber-security",  icon: <AdVerification/> },
+  { name: "SEO Monitoring", href: "/Solutions/seo-monitoring", icon: <SeoMonitoring/> },
+  { name: "Ad Tech", href: "/Solutions/ad-tech", icon: <AdVerification/> },
 ]
 const resources = [
   { name: "FAQ", href: "/FAQ" },

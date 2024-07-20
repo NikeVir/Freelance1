@@ -14,22 +14,22 @@ const data = [
   {
     flag: <AmericanFlag />,
     country: 'USA',
-    ips: "2705989"
+    ips: "2,705,989"
   },
   {
     flag: <UkFlag />,
     country: 'UK',
-    ips: "810432"
+    ips: "810,432"
   },
   {
     flag: <CanadaFlag />,
     country: 'Canada',
-    ips: "659422"
+    ips: "659,422"
   },
   {
     flag: <ChinaFlag />,
     country: 'China',
-    ips: "1611670"
+    ips: "1,611,670"
   },
   {
     flag: <FranceFlag />,
@@ -39,27 +39,27 @@ const data = [
   {
     flag: <GermanyFlag />,
     country: 'Germany',
-    ips: "883121"
+    ips: "883,121"
   },
   {
     flag: <AustraliaFlag />,
     country: 'Australia',
-    ips: "320621"
+    ips: "320,621"
   },
   {
     flag: <BrazilFlag />,
     country: 'Brazil',
-    ips: "563122"
+    ips: "563,122"
   },
   {
     flag: <IndiaFlag />,
     country: 'India',
-    ips: "397680"
+    ips: "397,680"
   },
   {
     flag: <JapanFlag />,
     country: 'Japan',
-    ips: "1342221"
+    ips: "1,342,221"
   },
 
 

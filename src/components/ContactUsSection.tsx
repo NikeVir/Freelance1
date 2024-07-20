@@ -201,7 +201,7 @@ export default function ContactSection() {
                     I agree and consent to the{" "}
                     <a href="#" className="font-semibold">
                       privacy&nbsp;policy
-                    </a>
+                    </a> {" "}
                     and its terms of processing of my personal data.
                   </Switch.Label>
                 </Switch.Group>
