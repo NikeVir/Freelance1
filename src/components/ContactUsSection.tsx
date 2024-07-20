@@ -202,7 +202,7 @@ export default function ContactSection() {
                     <a href="#" className="font-semibold">
                       privacy&nbsp;policy
                     </a>
-                    , its terms of processing of my personal data.
+                    and its terms of processing of my personal data.
                   </Switch.Label>
                 </Switch.Group>
               </div>

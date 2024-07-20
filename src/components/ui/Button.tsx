@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "rounded-[8px] px-[50px] py-[18px] text-white text-sm w-fit  ",
+  "rounded-[8px] px-[50px] py-[18px] text-white text-sm w-fit hover:opacity-95 ",
   {
     variants: {
       variant: {
@@ -47,13 +47,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {variant === "outline" ?
-          (<div className="bg-[linear-gradient(133.32deg,#05C067_-18.1%,#50EA48_118.55%)] px-[32px] py-[12px] rounded-[8px]" > {props.children}</div>) :
+          (<div className="bg-[linear-gradient(133.32deg,#05C067_-18.1%,#50EA48_118.55%)] px-[32px] py-[12px] rounded-[8px] hover:opacity-95 " > {props.children}</div>) :
           variant === "blueOutline" ?(
-<div className="bg-[linear-gradient(286.17deg,#246BFD_0%,#5089FD_100%)] px-[32px] py-[12px] rounded-[8px]" > {props.children}</div>
+<div className="bg-[linear-gradient(286.17deg,#246BFD_0%,#5089FD_100%)] px-[32px] py-[12px] rounded-[8px] hover:opacity-95 " > {props.children}</div>
           ):variant === "purpleOutline" ?(
-<div className="bg-[linear-gradient(90deg,#AF52DE_0%,#7E00BE_100%)] px-[32px] py-[12px] rounded-[8px]" > {props.children}</div>
+<div className="bg-[linear-gradient(90deg,#AF52DE_0%,#7E00BE_100%)] px-[32px] py-[12px] rounded-[8px] hover:opacity-95 " > {props.children}</div>
           ): variant === "greenOutline" ?(
-<div className="bg-[linear-gradient(286.17deg,#019B83_0%,#18C6AB_100%)] px-[32px] py-[12px] rounded-[8px]" > {props.children}</div>
+<div className="bg-[linear-gradient(286.17deg,#019B83_0%,#18C6AB_100%)] px-[32px] py-[12px] rounded-[8px] hover:opacity-95 " > {props.children}</div>
           ):props.children
         }
 

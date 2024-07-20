@@ -20,12 +20,12 @@ export default function Footer() {
       { name: "Integrations", href: "#" },
     ],
     services: [
-      { name: "Web Scraping", href: "/Solutions/ad-tech" },
-      { name: "SEO Monitoring", href: "/Solutions/seo-monitoring" },
-      { name: "Ad Verification", href: "/Solutions/ad-verification" },
-      { name: "Market Research", href: "/Solutions/market-research" },
+      { name: "E-commerce", href: "/Solutions/ad-verification" },
       { name: "Social Media Management", href: "/Solutions/social-media" },
-      { name: "E-commerce", href: "/Solutions/cyber-security" },
+      { name: "Cybersecurity", href: "/Solutions/cyber-security" },
+      { name: "Market Research", href: "/Solutions/market-research" },
+      { name: "SEO Monitoring", href: "/Solutions/seo-monitoring" },
+      { name: "Ad Verification", href: "/Solutions/ad-tech" },
     ],
     legal: [
       { name: "terms and conditions", href: "/TermsAndCondition" },
@@ -96,7 +96,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
+                        className="text-sm capitalize  leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -113,7 +113,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
+                        className="text-sm capitalize leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -125,14 +125,14 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-normal leading-6 underline text-[#6F6F6F]">
-                  Services
+                  Solutions
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.services.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
+                        className="text-sm capitalize leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -149,7 +149,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-[#020611] hover:text-gray-900"
+                        className="text-sm capitalize leading-6 text-[#020611] hover:text-gray-900"
                       >
                         {item.name}
                       </a>

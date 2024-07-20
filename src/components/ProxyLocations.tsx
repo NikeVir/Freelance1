@@ -13,53 +13,53 @@ import AustraliaFlag from './assets/AustraliaFlag';
 const data = [
   {
     flag: <AmericanFlag />,
-    country: 'United States',
-    ips: "2,505,230"
+    country: 'USA',
+    ips: "2705989"
   },
   {
     flag: <UkFlag />,
-    country: 'United Kingdom',
-    ips: "2,505,230"
+    country: 'UK',
+    ips: "810432"
   },
   {
     flag: <CanadaFlag />,
     country: 'Canada',
-    ips: "2,505,230"
+    ips: "659422"
   },
   {
     flag: <ChinaFlag />,
     country: 'China',
-    ips: "2,505,230"
+    ips: "1611670"
   },
   {
     flag: <FranceFlag />,
     country: 'France',
-    ips: "2,505,230"
+    ips: "568098"
   },
   {
     flag: <GermanyFlag />,
     country: 'Germany',
-    ips: "2,505,230"
+    ips: "883121"
   },
   {
     flag: <AustraliaFlag />,
     country: 'Australia',
-    ips: "2,505,230"
+    ips: "320621"
   },
   {
     flag: <BrazilFlag />,
     country: 'Brazil',
-    ips: "2,505,230"
+    ips: "563122"
   },
   {
     flag: <IndiaFlag />,
     country: 'India',
-    ips: "2,505,230"
+    ips: "397680"
   },
   {
     flag: <JapanFlag />,
     country: 'Japan',
-    ips: "2,505,230"
+    ips: "1342221"
   },
 
 
@@ -67,9 +67,16 @@ const data = [
 
 const ProxyLocations = () => {
   return (
-    <div className='my-20 py-20  z-10'>
+    <div className='my-10 py-20   z-10'>
       <div>
-        <h1 className="text-3xl font-bold text-center">Proxy Locations</h1>
+      <div className='flex justify-center' >
+        <div className='max-w-3xl'>
+          <h1 className='text-[32px] font-bold leading-9'>Top Proxy Locations</h1>
+          <p className='text-[18px] text-[#A8A8A8] mt-2'>
+          Premium proxy IPs from 195 countries
+          </p>
+        </div>
+        </div>
         <div className='flex justify-center mt-5'>
 
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 p-4 max-w-6xl">

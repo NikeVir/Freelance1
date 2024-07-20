@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function FeaturesSection() {
   return (
-    <div className=" z-10 lg:py-10 lg:px-8 mx-2 px-8 sm:py-24">
+    <div className=" z-10 mb-10 lg:py-10 lg:px-8 mx-2 px-8 sm:py-24">
       <div className="mx-auto max-w-7xl lg:px-6 md:px-6 ">
         <div className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x lg:p-6 sm:p-0 bg-white shadow-flag divide-gray-300 rounded-lg">
           <div className="flex-1 p-4 sm:p-2 sm:mt-3 flex items-center justify-center">

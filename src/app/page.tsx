@@ -24,7 +24,7 @@ interface HeroContainer {
 
 const HomeContentHero:HeroContainer = {
   title: "Unlock the Power of Residential Proxies",
-  description: "Reliable and Secure Proxies for Your Needs Avoid captcha blocks while scraping with the most reliable and fast Residential Proxies.",
+  description: "Reliable and secure proxies for your needs. Avoid captcha blocks while scraping with the most reliable and fast Residential Proxies.",
   points:[],
   pointsColor: "blue",
   image: "/images/illustration/cat-illustration.svg",
@@ -101,10 +101,9 @@ export default function Home() {
         <HeroSection data={HomeContentHero} />
         <Features />
       </div>
-      <LogoSection />
       <DataScraping/>
-      {/* <PricingSection /> */}
       <WhySection Data={Data1} />
+      <LogoSection />
       <WhyToChoose Data={Data} title={title}/>
       <ProxyLocations/>
       <FAQs />

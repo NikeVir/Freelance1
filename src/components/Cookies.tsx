@@ -8,9 +8,7 @@ export default function CookiesPolicy() {
         <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16" height={100} width={100} />
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Cookie Policy</h1>
-          <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
-          </p>
+
         </div>
 
         <div className="text-[24px] p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">

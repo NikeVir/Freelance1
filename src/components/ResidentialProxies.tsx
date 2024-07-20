@@ -37,9 +37,9 @@ const data = [
 
 const ResidentialProxies = () => {
     return (
-        <div className='my-20 z-0 relative  mx-auto'>
+        <div className=' my-10 relative overflow-hidden  mx-auto'>
             <Image src='/hero2.svg' alt="" width={1000} height={500} className=' w-full absolute -z-10 opacity-30' />
-            <div className='py-40  z-0 mx-auto '>
+            <div className='py-28   z-0 mx-auto '>
                 <div className='flex justify-center' >
                     <h1 className="text-4xl font-bold text-center max-w-xl">Discover our residential proxies network</h1>
                 </div>

@@ -145,7 +145,7 @@ const Line3 = [
 
 export default function LogoSection() {
   return (
-    <div className="bg-white my-20 py-24 sm:py-32 z-0">
+    <div className="bg-white my-20 py-20  z-0">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className='flex justify-center'>
 
@@ -161,10 +161,10 @@ export default function LogoSection() {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  className='h-[41px] w-[41px]'
+                  className='h-[44px] w-[44px]'
 
                   width={100}
-                  height={48}
+                  height={100}
                 />
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function LogoSection() {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  className='h-[41px] w-[41px]'
+                    className='h-[44px] w-[44px]'
                   width={100}
                   height={48}
                 />
@@ -192,7 +192,7 @@ export default function LogoSection() {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  className='h-[41px] w-[41px]'
+                   className='h-[44px] w-[44px]'
                   width={100}
                   height={48}
                 />

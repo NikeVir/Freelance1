@@ -62,8 +62,8 @@ export default function WhySection(
   };
 
   return (
-    <div className="bg-white py-20 my-20">
-      <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
+    <div className="bg-white  py-20 my-10">
+      <div className="px-6  mx-auto max-w-7xl lg:px-8">
         <div className="mt-10 lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5 space-y-4 text-center lg:text-left">
             <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-secondary">

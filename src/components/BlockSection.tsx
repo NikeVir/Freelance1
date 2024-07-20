@@ -25,9 +25,6 @@ export default function Blog() {
         <img src="/images/blog-images/cat-ball.svg" className="w-auto mx-auto"/>
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="font-bold text-[32px] sm:text-[32px]">Blogs</h1>
-          <p className="text-[18px] text-gray-500 px-4">
-            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
-          </p>
         </div>
 
         <div className="flex flex-wrap justify-center space-x-0 sm:space-x-3">

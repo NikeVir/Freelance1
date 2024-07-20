@@ -14,7 +14,7 @@ interface HeroContainer {
 
 export default function HeroSection({ data }: { data: HeroContainer }) {
   return (
-    <div className="pt-16 pb-1 overflow-hidden z-10">
+    <div className="py-16  pb-1 overflow-hidden z-10">
 
       <div className=" z-10  mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center">
@@ -45,7 +45,7 @@ export default function HeroSection({ data }: { data: HeroContainer }) {
               <h1 className="max-w-xl mt-2  font-semibold tracking-tight text-center lg:text-left text-gray-900 text-3xl sm:text-[42px] sm:leading-[60px]  ">
                 {data.title}
               </h1>
-              <p className="mt-6  font-normal leading-7 text-[18px] text-center lg:text-left text-gray-600">
+              <p className="mt-6 capitalize font-normal leading-7 text-[18px] text-center lg:text-left text-gray-600">
                 {data.description}
               </p>
               <div className='flex justify-center lg:justify-start '>

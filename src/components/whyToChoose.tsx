@@ -56,7 +56,7 @@ const title: titleProps = {
 
 const WhyToChoose = ({ title, Data }: { title: titleProps, Data: DataItem[] }) => {
     return (
-        <div className='my-20 py-20'>
+        <div className='my-10 py-20'>
             <div className='p-6 mx-auto  '>
                 <div className='text-center  flex justify-center'>
                     <div className='max-w-2xl'>

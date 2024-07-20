@@ -42,7 +42,7 @@ type data ={
 export default function page() {
     return (
         <div>
-            <div className=" relative ">
+            <div className=" relative lg:mb-24">
                 <div className='absolute -top-28 -z-10 w-full h-[80vh]'>
                     <Image src="/11heroBanner.svg" alt="" className="border-black  w-full h-screen" height={600} width={600} />
                 </div>

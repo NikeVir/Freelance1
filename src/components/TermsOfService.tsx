@@ -8,10 +8,9 @@ export default function TermsOfService() {
         <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16" height={100} width={100} />
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Terms Of Service</h1>
-          <p className="text-[18px] text-gray-500">
-            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
-          </p>
+
         </div>
+        <div className='px-16'>
 
         <div className="text-[24px] p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
           <p>Effective Date: 28 June 2024</p>
@@ -199,6 +198,7 @@ export default function TermsOfService() {
             If you have any questions about these Terms, please contact us at:
           </p>
           <p>support@catproxies.com</p>
+        </div>
         </div>
       </div>
     </section>

@@ -7,10 +7,9 @@ export default function TermsAndCondition() {
         <Image src="/images/illustration/single-cat.svg" alt="" className="mt-16  max-w-xs mx-auto" height={100} width={100} />
         <div className="flex flex-col justify-center items-center text-center sm:text-left">
           <h1 className="font-bold text-[32px] sm:text-[32px]">Terms and conditions</h1>
-          <p className="text-[18px] text-gray-500 px-4">
-            Reach out to us anytime, and we&apos;ll get back you as soon as possible!
-          </p>
+
         </div>
+        <div className='px-16'>
 
         <div className="text-[24px] sm:text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-4">
           <p>Acceptance of terms upon accessing the website.</p>
@@ -27,6 +26,7 @@ export default function TermsAndCondition() {
           <p>Disclaimer of warranties and limitation of liability.</p>
           <p>Governing law and jurisdiction.</p>
           <p>Changes to the terms and conditions will be notified.</p>
+        </div>
         </div>
       </div>
     </section>

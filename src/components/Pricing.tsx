@@ -80,7 +80,7 @@ const Pricing = ({type}:{type:typeInterface}) => {
  
 
     return (
-        <div className=' px-4 lg:px-20 mt-40' >
+        <div className='bg-white px-4 lg:px-20 my-10 py-20' >
             <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto  border shadow-flag '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>

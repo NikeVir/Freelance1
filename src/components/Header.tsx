@@ -91,7 +91,13 @@ const services = [
   { name: "Social Media Management", href: "/Solutions/social-media", icon: <SocialMedia/> },
   { name: "Cybersecurity", href: "/Solutions/cyber-security",  icon: <AdVerification/> },
 ]
-
+const resources = [
+  { name: "FAQ", href: "/FAQ" },
+  { name: "Blog", href: "/Blog" },
+  { name: "Guides", href: "/Blog?text=guide" },
+  { name: "Integration", href: "/Blog?text=Integration" },
+  { name: "Support", href: "/contact-use"},
+]
 const explore = [
   {
     name: "Blog",
@@ -113,7 +119,7 @@ export default function Header() {
     <header className="relative isolate z-20 ">
       {/* Navbar */}
       <nav
-        className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
+        className="flex relative items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
       >
         <div className="flex gap-5 items-center">
@@ -122,7 +128,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Lightning Proxies</span>
-            <Image className="w-auto h-16 " src="/logo.svg" height={400} width={400} alt="" />
+            <Image className="w-auto h-16 " src="/logo.png" height={400} width={400} alt="" />
           </a>
         </div>
 
@@ -217,6 +223,45 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover>
+          <Popover>
+            <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
+              Use Cases
+              <ChevronDownIcon
+                className="flex-none w-5 h-5 text-gray-400"
+                aria-hidden="true"
+              />
+            </PopoverButton>
+            <Transition
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 -translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 -translate-y-1"
+            >
+              <PopoverPanel className="absolute left-20 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+                <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
+                  {services.map((item) => (
+                    <div
+                      key={item.name}
+                      className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
+                    >
+                      {item.icon}
+                      <div>
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
+                          {item.name}
+                        </a>
+                      </div>
+
+                    </div>
+                  ))}
+                </div>
+              </PopoverPanel>
+            </Transition>
+          </Popover>
           {/* <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Solutions
@@ -262,51 +307,9 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover> */}
-          {/* <Popover>
-            <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
-              Explore
-              <ChevronDownIcon
-                className="flex-none w-5 h-5 text-gray-400"
-                aria-hidden="true"
-              />
-            </PopoverButton>
-            <Transition
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 -translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 -translate-y-1"
-            >
-              <PopoverPanel className="absolute left-0 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
-                <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
-                  {explore.map((item) => (
-                    <div
-                      key={item.name}
-                      className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
-                    >
-                       {item.icon}
-                      <div>
-                        <a
-                          href={item.href}
-                          className="block font-semibold text-gray-900"
-                        >
-                          {item.name}
-                        </a>
-                        <p className="mt-1 text-sm text-gray-600">
-                          {item.description}
-                        </p>
-                      </div>
-
-                    </div>
-                  ))}
-                </div>
-              </PopoverPanel>
-            </Transition>
-          </Popover> */}
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
-              Use Cases
+              Resources
               <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
                 aria-hidden="true"
@@ -322,12 +325,11 @@ export default function Header() {
             >
               <PopoverPanel className="absolute left-20 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
-                  {services.map((item) => (
+                  {resources.map((item) => (
                     <div
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                      {item.icon}
                       <div>
                         <a
                           href={item.href}
@@ -335,6 +337,7 @@ export default function Header() {
                         >
                           {item.name}
                         </a>
+                       
                       </div>
 
                     </div>
@@ -343,12 +346,11 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover>
+
           <a href="/contact-us" className="text-sm font-normal leading-6 text-gray-900">
             Contact
           </a>
-          <a href="/Blog" className="text-sm ml-4 font-normal leading-6 text-gray-900">
-            Blog
-          </a>
+
         </PopoverGroup>
         </div>
 
@@ -457,7 +459,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Solutions
+                        Resources
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -467,7 +469,7 @@ export default function Header() {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...products].map((item) => (
+                        {resources.map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"
@@ -509,12 +511,7 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="/Blog"
-                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
-                >
-                  Blogs
-                </a>
+
               </div>
               <div className="py-6">
                 <div className="flex flex-col items-center gap-8">
