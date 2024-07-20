@@ -3,7 +3,6 @@ import React from 'react'
 
 import Image from 'next/image'
 import { Button } from './ui/Button'
-import LeftAndRight from './resusables/LeftAndRight'
 
 const plans = [
     'Unlimited concurrent sessions',
