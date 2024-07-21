@@ -1,9 +1,9 @@
 'use client'
-import React from 'react'
+import React,{useState} from 'react'
 import PricingForMain from '@/components/PricingForMain'
 import { Explore2, plans2, Explore1, Explore3, plans1, plans3 } from '@/utils/Data'
-export default function page() {
-    const [tab, setTab] = React.useState('datacenter')
+export default function Page() {
+    const [tab, setTab] = useState('datacenter')
     return (
         <div className=''>
 

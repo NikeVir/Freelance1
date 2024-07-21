@@ -312,7 +312,7 @@ export default function Header() {
             </Transition>
           </Popover> */}
           <Popover>
-            <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
+            <PopoverButton className="flex items-center  gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Resources
               <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
@@ -327,7 +327,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <PopoverPanel className="absolute left-20 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute left-64 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
                   {resources.map((item) => (
                     <div
