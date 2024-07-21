@@ -2,22 +2,13 @@ import React from 'react'
 import Image from 'next/image';
 import HeroSection from '@/components/HeroSection';
 import ProxyLocations from '@/components/ProxyLocations';
-import Residental from '@/components/assets/DataScraping/Residental';
 import ResidentialProxies from '@/components/ResidentialProxies';
 import Pricing from '@/components/Pricing';
 import LogoSection from '@/components/LogoSection';
 import FAQs from '@/components/FAQs';
-import WhyToChoose from '@/components/whyToChoose';
 import WhySection from '@/components/WhySection';
-interface HeroContainer {
-    title: string;
-    description: string;
-    points: string[];
-    pointsColor: string;
-    image: string;
-    alt: string;
-    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
-}
+import { HeroContainer } from '@/types/types';
+import { Explore1,plans1 } from '@/utils/Data';
 
 
 const HomeContentHero:HeroContainer = {
@@ -37,7 +28,8 @@ type data ={
     image: "/images/illustration/BlueUseCase.svg",
     color: 'blueOutline'
   }
-  
+
+
 export default function page() {
     return (
         <div>
@@ -49,7 +41,7 @@ export default function page() {
             </div>
             <ProxyLocations />
             <ResidentialProxies />
-            <Pricing type='blue' />
+            <Pricing type='blue' plans={plans1} Explore={Explore1} />
             <LogoSection />
             <WhySection Data={Data1} />
             <FAQs />

@@ -9,17 +9,8 @@ import LogoSection from '@/components/LogoSection';
 import FAQs from '@/components/FAQs';
 import WhyToChoose from '@/components/whyToChoose';
 import WhySection from '@/components/WhySection';
-interface HeroContainer {
-    title: string;
-    description: string;
-    points: string[];
-    pointsColor: string;
-    image: string;
-    alt: string;
-    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
-}
-
-
+import { HeroContainer } from '@/types/types';
+import { Explore3,plans3 } from '@/utils/Data';
 const HomeContentHero:HeroContainer = {
     title: "IPv6 Proxies",
     description: "Extensive IP range. Scale your operations with our rotating IPv6 proxies",
@@ -37,6 +28,10 @@ type data ={
     image: "/images/illustration/purpleUseCase.svg",
     color: 'purpleOutline'
   }
+
+
+
+
   
 export default function page() {
     return (
@@ -49,7 +44,7 @@ export default function page() {
             </div>
             <ProxyLocations />
             <ResidentialProxies />
-            <Pricing type='purple'/>
+            <Pricing type='purple' plans={plans3} Explore={Explore3} />
             <LogoSection />
             <WhySection Data={Data1} />
             <FAQs />

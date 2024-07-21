@@ -63,19 +63,45 @@ type typeInterface = 'blue' | 'green' | 'purple'
 
 
 
-const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore:ExploreInterface[]}) => {
+const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plans:string[],Explore:ExploreInterface[],setTab:Function,tab:string}) => {
  
 
     return (
         <div className='bg-white px-4 lg:px-20 my-10 py-20' >
-            <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto  border shadow-flag '>
+            <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto   shadow-flag '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>
                         <h1 className='text-[32px] leading-10'>Clear Pricing, No Hidden <span className='font-bold'>Costs whatsoever</span></h1>
                     </div>
                 </div>
+                <div className="flex justify-center my-10">
+                <div className="w-full md:w-[600px]">
+                    <div className="border-b ">
+                        <ul className="flex justify-between w-full -mb-px text-lg  text-center text-gray-800 ">
+                            <li className=" basis-1/3">
+                                <a href="#" onClick={() => setTab("residential")} className={`inline-flex items-center justify-center w-full py-4 pb-1 px-0 text-md ${tab == "residential" ? "text-[#5089FD] border-b-[3px] font-semibold border-[#5089FD] rounded-t-lg active " : "border-b-2 border-transparent hover:text-gray-600"} `}>
+                                    Residential
+                                </a>
+                            </li>
+                            <li className="basis-1/3">
+                                <a href="#" onClick={() => setTab("datacenter")} className={`inline-flex items-center justify-center w-full py-4 pb-1 px-0  text-md  ${tab == "datacenter" ? "text-[#18C6AB] border-b-[3px] font-semibold border-[#18C6AB]  rounded-t-lg active  " : "border-b-2 border-transparent hover:text-gray-600"} `} aria-current="page">
+                                    Datacenter
+                                </a>
+                            </li>
+                            <li className=" basis-1/3">
+                                <a href="#" onClick={() => setTab("ipv6")} className={`inline-flex items-center justify-center w-full py-4 pb-1 px-0  text-md  ${tab == "ipv6" ? "text-[#7E00BE] border-b-[3px] font-semibold border-[#7E00BE]  rounded-t-lg active  " : "border-b-2 border-transparent hover:text-gray-600 "} `}>
+                                    Ipv6
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className={`border-[3px] rounded-lg  ${type=='green'?"border-[#18C6AB]" :type=='blue'?"border-[#5089FD]":"border-[#7E00BE]"}`}>
+
+           
                 {/* font - Satoshi Variable */}
-                <div className='flex justify-center mt-8'>
+                <div className='flex justify-center mt-10'>
                     <div className='flex flex-col lg:flex-row max-w-5xl gap-8'>
                         <div className='lg:w-1/5 text-[16px] text-center font-medium'>All Plans Include:</div>
                         <div className='flex lg:w-4/5 gap-5 flex-wrap justify-center '>
@@ -88,7 +114,7 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center mt-16 '>
+                <div className='flex justify-center mt-5 '>
 
                     <div className='flex flex-col  max-w-6xl w-full overflow-x-scroll md:overflow-x-auto  mt-12'>
                         <div className='flex border-b border-[#E4E4E4] pb-10 w-full'>
@@ -112,13 +138,14 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center'>
+
+                <div className='flex justify-center my-10'>
                         <Button variant='white' className='mt-10 min-w-[382px] font-medium text-[#2C2C2C] '>Explore more plans</Button>
                     </div>
 
-
+            </div>
             </div>
         </div>
     )
 }
-export default Pricing
+export default PricingForMain

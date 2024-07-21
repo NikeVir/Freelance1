@@ -178,7 +178,10 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover>
-          <Popover>
+          <a href="/Pricing" className="text-sm font-normal leading-6 text-gray-900">
+            Pricing
+          </a>
+          {/* <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Pricing
               <ChevronDownIcon
@@ -222,7 +225,7 @@ export default function Header() {
                 </div>
               </PopoverPanel>
             </Transition>
-          </Popover>
+          </Popover> */}
           <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Use Cases
@@ -262,6 +265,7 @@ export default function Header() {
               </PopoverPanel>
             </Transition>
           </Popover>
+        
           {/* <Popover>
             <PopoverButton className="flex items-center gap-x-1 rounded-md px-1.5 text-sm font-normal leading-6 text-gray-900 focus-visible:bg-gray-100 focus-visible:outline-none">
               Solutions

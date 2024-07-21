@@ -9,36 +9,31 @@ import LogoSection from '@/components/LogoSection';
 import FAQs from '@/components/FAQs';
 import WhyToChoose from '@/components/whyToChoose';
 import WhySection from '@/components/WhySection';
-
-interface HeroContainer {
-    title: string;
-    description: string;
-    points: string[];
-    pointsColor: string;
-    image: string;
-    alt: string;
-    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
-}
+import { HeroContainer } from '@/types/types';
+import { Explore2,plans2 } from '@/utils/Data';
 
 
-const HomeContentHero:HeroContainer = {
+const HomeContentHero: HeroContainer = {
     title: "Datacenter Proxies",
     description: "A vast IP pool. Scale your tasks with our rotating Datacenter IPs.",
-    points: ["20.000+ ethical datacenter proxies","Unlimited concurrent connections","Unlimited bandwidth"],
+    points: ["20.000+ ethical datacenter proxies", "Unlimited concurrent connections", "Unlimited bandwidth"],
     pointsColor: "green",
     image: "/images/illustration/proxies/Datacenter.svg",
     alt: "Hero Banner",
     buttonColor: "greenlg",
 };
-type data ={
+type data = {
     image: string;
-    color:'blueOutline' | 'greenOutline'  | 'purpleOutline'| 'outline';
-  }
-  const Data1:data={
+    color: 'blueOutline' | 'greenOutline' | 'purpleOutline' | 'outline';
+}
+const Data1: data = {
     image: "/images/illustration/DarkGreenUse.svg",
     color: 'greenOutline'
-  }
-  
+}
+
+
+
+
 export default function page() {
     return (
         <div>
@@ -50,7 +45,7 @@ export default function page() {
             </div>
             <ProxyLocations />
             <ResidentialProxies />
-            <Pricing type='green'/>
+            <Pricing type='green' plans={plans2} Explore={Explore2} />
             <LogoSection />
             <WhySection Data={Data1} />
             <FAQs />

@@ -23,6 +23,7 @@ const buttonVariants = cva(
         white: "bg-[#ffffff] border-[#12111840] border-[1px] text-[#121118]",
         greendg: "bg-[linear-gradient(286.17deg,#019B83_0%,#18C6AB_100%)]",
         purpleg: "bg-[linear-gradient(286.17deg,#6949FF_0%,#876DFF_100%)]",
+        purpledg:"bg-[linear-gradient(90deg,#AF52DE_0%,#7E00BE_100%)]"
       }
     },
     defaultVariants: {
