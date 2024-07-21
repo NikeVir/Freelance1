@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import {  useParams, usePathname, useSearchParams } from "next/navigation";
+import {  useParams } from "next/navigation";
 import BlogContent from '@/components/BlogContent';
-export default function page() {
+ const Page=()=> {
     const search_params = useParams()
     console.log(search_params)
   return (
@@ -11,3 +11,4 @@ export default function page() {
     </div>
   )
 }
+export default Page
