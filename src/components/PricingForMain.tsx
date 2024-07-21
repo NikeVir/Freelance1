@@ -67,7 +67,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
  
 
     return (
-        <div className='bg-white sm:px-4 lg:px-20 my-10 py-20' >
+        <div className='bg-white sm:px-4 lg:px-20 px-2 my-10 py-20' >
             <div className='sm:p-4 py-8 md:p-8 lg:p-16 mx-auto   sm:shadow-flag '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>
@@ -97,7 +97,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
                     </div>
                 </div>
             </div>
-            <div className={`border-[3px] rounded-lg  ${type=='green'?"border-[#18C6AB]" :type=='blue'?"border-[#5089FD]":"border-[#7E00BE]"}`}>
+            <div className={`sm:border-[3px] rounded-lg  ${type=='green'?"border-[#18C6AB]" :type=='blue'?"border-[#5089FD]":"border-[#7E00BE]"}`}>
 
            
                 {/* font - Satoshi Variable */}
@@ -123,14 +123,14 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
                             <div className='basis-1/4 text-center'>Total Cost</div>
                             <div className='basis-1/4'></div>
                         </div>
-                        <div className='flex flex-col min-w-[540px]'>
+                        <div className='flex flex-col min-w-[390px]'>
                             {Explore.map((item, index) => {
                                 return (
-                                    <div key={index}  className={` flex border-2 border-t-transparent border-x-white border-b border-[#E4E4E4]  ${type=='green'?"hover:border-[#019B83] hover:bg-[#ECFBFA]" :type=='blue'?"hover:border-[#246BFD] hover:bg-[#ECF5FF]":"hover:border-[#AF52DE] hover:bg-[#F9F2FD]"} hover:border-2 hover:rounded-xl py-8 px-2  md:py-10 md:px-10 text-xl w-full items-center`}>
-                                        <div className='basis-1/4 font-bold'>{item.plan}</div>
-                                        <div className={`basis-1/4  ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.pricePerGB}</div>
-                                        <div className={`basis-1/4  ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.totalCost}</div>
-                                        <div className='basis-1/4 flex justify-end'><Button className='min-w-[150px] lg:min-w-[180px] px-5 lg:px-[30px] ' variant={item.variant =='white'?'white':type=='blue'?'blue':type=='green'?'greendg':'purpleg'}>{item.action}</Button></div>
+                                    <div key={index}  className={` text-sm flex border-2 border-t-transparent border-x-white border-b border-[#E4E4E4]  ${type=='green'?"hover:border-[#019B83] hover:bg-[#ECFBFA]" :type=='blue'?"hover:border-[#246BFD] hover:bg-[#ECF5FF]":"hover:border-[#AF52DE] hover:bg-[#F9F2FD]"} hover:border-2 hover:rounded-xl py-8 px-2  md:py-10 md:px-10 text-xl w-full items-center`}>
+                                        <div className='basis-1/4 text-sm sm:text-xl md:text-2xl font-bold'>{item.plan}</div>
+                                        <div className={`basis-1/4 text-sm sm:text-xl md:text-2xl ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.pricePerGB}</div>
+                                        <div className={`basis-1/4 text-sm sm:text-xl md:text-2xl ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.totalCost}</div>
+                                        <div className='basis-1/4 flex justify-end'><Button className='min-w-[100px] lg:min-w-[180px] px-2 lg:px-[30px] ' variant={item.variant =='white'?'white':type=='blue'?'blue':type=='green'?'greendg':'purpleg'}>{item.action}</Button></div>
                                     </div>
                                 )
                             })

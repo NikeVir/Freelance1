@@ -431,6 +431,7 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
+              
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -515,6 +516,9 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
+                <a href="/Pricing" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
+            Pricing
+          </a>
 
               </div>
               <div className="py-6">
