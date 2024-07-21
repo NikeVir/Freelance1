@@ -67,8 +67,8 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
  
 
     return (
-        <div className='bg-white px-4 lg:px-20 my-10 py-20' >
-            <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto   shadow-flag '>
+        <div className='bg-white sm:px-4 lg:px-20 my-10 py-20' >
+            <div className='sm:p-4 py-8 md:p-8 lg:p-16 mx-auto   sm:shadow-flag '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>
                         <h1 className='text-[32px] leading-10'>Clear Pricing, No Hidden <span className='font-bold'>Costs whatsoever</span></h1>
@@ -140,7 +140,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
                 </div>
 
                 <div className='flex justify-center my-10'>
-                        <Button variant='white' className='mt-10 min-w-[382px] font-medium text-[#2C2C2C] '>Explore more plans</Button>
+                        <Button variant='white' className='mt-10 sm:min-w-[382px] font-medium text-[#2C2C2C] '>Explore more plans</Button>
                     </div>
 
             </div>
