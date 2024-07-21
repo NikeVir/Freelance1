@@ -83,7 +83,7 @@ export default function Blog({ filter }: { filter: string | null }) {
   const currentCards = filteredCards.slice(indexOfFirstItem, indexOfLastItem);
 
   const displayCards = currentCards.map((card, index) => (
-    <div onClick={()=>window.open(`/Blog/${card.heading.replace(/\s+/g, '-')}`)} className="border shadow-sm rounded-lg w-[90%] hover:bg-[#f9f7f7]  sm:w-[380px] cursor-pointer">
+    <div key={index} onClick={()=>window.open(`/Blog/${card.heading.replace(/\s+/g, '-')}`)} className="border shadow-sm rounded-lg w-[90%] hover:bg-[#f9f7f7]  sm:w-[380px] cursor-pointer">
       <div className="p-4">
 
         <div className="rounded-lg  overflow-hidden h-60 ">
