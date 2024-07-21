@@ -2,7 +2,7 @@
 import React from 'react'
 import {  useParams } from "next/navigation";
 import BlogContent from '@/components/BlogContent';
- const Page=()=> {
+export default function Page() {
     const search_params = useParams()
     console.log(search_params)
   return (
@@ -11,4 +11,3 @@ import BlogContent from '@/components/BlogContent';
     </div>
   )
 }
-export default Page
