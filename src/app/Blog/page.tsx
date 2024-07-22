@@ -4,14 +4,19 @@ import Blog from "@/components/BlockSection";
 import { useSearchParams } from "next/navigation";
 
 export default function Page() {
-  const search_params = useSearchParams()
-  const ref = search_params.get("text");
   return (
     <main className="font-giest">
       <div className="mt-5">
-      <Blog filter={ref} />;
+        <Suspense fallback={<div>Loading...</div>}>
+          <BlogWithSearchParams />
+        </Suspense>
       </div>
     </main>
   );
 }
 
+function BlogWithSearchParams() {
+  const search_params = useSearchParams()
+  const ref = search_params.get("text");
+  return <Blog filter={ref} />;
+}
