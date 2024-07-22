@@ -150,7 +150,7 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <PopoverPanel className="absolute left-14 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute -left-10 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
                   {products.map((item) => (
                     <div

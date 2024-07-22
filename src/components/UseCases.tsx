@@ -42,10 +42,10 @@ const UseCases = () => {
             <div className='flex justify-center mt-10'>
                 <div className="flex flex-wrap justify-center gap-5 max-w-7xl">
                     {data.map((item, index) => (
-                        <div key={index} className="bg-[linear-gradient(180deg,#FAFAFA_0%,#FFF_100%)] border-2 flex items-center group hover:border-2 hover:border-[#05C067] hover:bg-[#F0FBF3] min-w-[368px] min-h-[250px] border-white  rounded-xl shadow-custom px-10 py-5  justify-center ">
+                        <div key={index} className="bg-[linear-gradient(180deg,#FAFAFA_0%,#FFF_100%)] border-2 flex items-center group hover:border-2 hover:border-[#05C067] hover:bg-[#F0FBF3] w-[368px] h-[250px] border-white  rounded-xl shadow-custom px-10 py-5  justify-center ">
                             <div className='flex items-center flex-col'>
                                 {item.image}
-                                <h1 className="text-2xl mt-2 ">{item.title}</h1>
+                                <h1 className="text-2xl mt-2 text-center ">{item.title}</h1>
                                 <p className="text-[16px] mt-4 hidden group-hover:flex  text-[#05C067]   underline decoration-[#05C067]">Read More</p>
                             </div>
                         </div>

@@ -81,7 +81,7 @@ export default function page() {
                 <HeroSection data={HomeContentHero} />
             </div>
             {/* <ProxyLocations /> */}
-            <ResidentialProxies  type={"Datacenter"} data = {ProxiesData}  />
+            <ResidentialProxies  type={"IPV6"} data = {ProxiesData}  />
             <Pricing type='purple' plans={plans3} Explore={Explore3} />
             <LogoSection />
             <WhySection Data={Data1} />

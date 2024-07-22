@@ -67,7 +67,7 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
  
 
     return (
-        <div className='bg-white px-4 lg:px-20 my-10 py-20' >
+        <div className='bg-white px-4 lg:px-20  py-10 my-10' >
             <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto  shadow-pricingCard '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>
@@ -104,7 +104,7 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
                                         <div className='basis-1/4 text-sm sm:text-xl md:text-2xl font-bold'>{item.plan}</div>
                                         <div className={`basis-1/4 text-sm sm:text-xl md:text-2xl  ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.pricePerGB}</div>
                                         <div className={`basis-1/4 text-sm sm:text-xl md:text-2xl ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.totalCost}</div>
-                                        <div className='basis-1/4 text-sm sm:text-xl md:text-2xl flex justify-end'><Button className='min-w-[100px] lg:min-w-[180px] px-5 lg:px-[30px] ' variant={item.variant =='white'?'white':type=='blue'?'blue':type=='green'?'greendg':'purpleg'}>{item.action}</Button></div>
+                                        <div className='basis-1/4 text-sm sm:text-xl md:text-2xl flex justify-end'><Button className='min-w-[100px] lg:min-w-[180px] px-5 lg:px-[30px] ' variant={item.variant =='white'?'white':type=='blue'?'blue':type=='green'?'greendg':'purpledg'}>{item.action}</Button></div>
                                     </div>
                                 )
                             })
@@ -122,3 +122,4 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
     )
 }
 export default Pricing
+

@@ -145,7 +145,7 @@ const Line3 = [
 
 export default function LogoSection() {
   return (
-    <div className="bg-white my-20 py-20  z-0">
+    <div className="bg-white my-20 py-10 sm:py-20  z-0">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className='flex justify-center'>
 
@@ -155,7 +155,7 @@ export default function LogoSection() {
         </div>
         <div className='mt-12 flex justify-center'>
 
-          <div className=" max-w-7xl grid grid-cols-4 gap-x-16 gap-y-10 sm:grid-cols-6 lg:grid-cols-12">
+          <div className=" max-w-7xl grid grid-cols-6 gap-5 sm:gap-x-16 sm:gap-y-10 sm:grid-cols-6 lg:grid-cols-12">
             {Line1.map((logo) => (
               <div key={logo.alt} className="flex justify-center items-center">
                 <Image
@@ -171,7 +171,7 @@ export default function LogoSection() {
           </div>
         </div>
         <div className='flex justify-center'>
-          <div className="mt-10 max-w-6xl grid grid-cols-4 gap-x-16 gap-y-10 sm:grid-cols-6 lg:grid-cols-11">
+          <div className="mt-6 sm:mt-10  max-w-6xl grid grid-cols-6 gap-5 sm:gap-x-16 sm:gap-y-10 sm:grid-cols-6 lg:grid-cols-11">
             {Line2.map((logo) => (
               <div key={logo.alt} className="flex justify-center items-center">
                 <Image
@@ -186,7 +186,7 @@ export default function LogoSection() {
           </div>
         </div>
         <div className='flex justify-center'>
-          <div className="mt-10 max-w-5xl grid grid-cols-4 gap-x-16 gap-y-10 sm:grid-cols-6 lg:grid-cols-10">
+          <div className="mt-6 sm:mt-10 max-w-5xl grid grid-cols-6 gap-5 sm:gap-x-16 sm:gap-y-10 sm:grid-cols-6 lg:grid-cols-10">
             {Line3.map((logo) => (
               <div key={logo.alt} className="flex justify-center items-center">
                 <Image

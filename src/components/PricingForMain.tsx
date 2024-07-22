@@ -130,7 +130,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
                                         <div className='basis-1/4 text-sm sm:text-xl md:text-2xl font-bold'>{item.plan}</div>
                                         <div className={`basis-1/4 text-sm sm:text-xl md:text-2xl ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.pricePerGB}</div>
                                         <div className={`basis-1/4 text-sm sm:text-xl md:text-2xl ${type=='green'?"text-[#18C6AB]" :type=='blue'?"text-[#5089FD]":"text-[#7E00BE]"} text-center`}>{item.totalCost}</div>
-                                        <div className='basis-1/4 flex justify-end'><Button className='min-w-[100px] lg:min-w-[180px] px-2 lg:px-[30px] ' variant={item.variant =='white'?'white':type=='blue'?'blue':type=='green'?'greendg':'purpleg'}>{item.action}</Button></div>
+                                        <div className='basis-1/4 flex justify-end'><Button className='min-w-[100px] lg:min-w-[180px] px-2 lg:px-[30px] ' variant={item.variant =='white'?'white':type=='blue'?'blue':type=='green'?'greendg':'purpledg'}>{item.action}</Button></div>
                                     </div>
                                 )
                             })
