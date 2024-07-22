@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-export default function FAQs() {
+export default function FAQs({colortheme}:{colortheme:string}) {
   const [openFaqs, setOpenFaqs] = useState<number[]>([0]); // Default open FAQ box is the first one
   const myStyle = {
     color: '#121118',
@@ -44,6 +44,8 @@ export default function FAQs() {
     },
   ];
 
+  type colorTheme = 'blue'|"green"|"purple"|"primary";
+
   return (
     <section>
       {/* Container */}
@@ -63,8 +65,12 @@ export default function FAQs() {
           {faqs.map((faq, index) => (
             <div key={index} onClick={() => handleToggle(index)} className="cursor-pointer mx-4 flex max-w-3xl flex-col lg:shrink lg:grow lg:basis-96">
               {/* FAQ BLOCK */}
-              <div className={`relative my-2 w-full hover:border-[#05C067] rounded-[10px] border px-12 py-8 ${openFaqs.includes(index) ? 'border-[1px] border-image-source-[linear-gradient(133.32deg,#05C067_-18.1%,#50EA48_118.55%)]' : 'border-gray-300'}`}>
-                <h2 className={`font-normal text-[18px] ${openFaqs.includes(index) ? 'text-[#05C067]' : 'text-black'}`}>
+              <div className={`relative my-2 w-full 
+                 ${colortheme === 'blue' ? 'hover:border-[#246BFD]' : colortheme === 'green' ? 'hover:border-[#05C067]' : colortheme === 'purple' ? 'hover:border-[#AF52DE]' : 'hover:border-[#019B83]'} 
+                 rounded-[10px] border px-12 py-8 ${openFaqs.includes(index) ? 'border-[1px] border-image-source-[linear-gradient(133.32deg,#05C067_-18.1%,#50EA48_118.55%)]' : 'border-gray-300'}`}>
+                <h2 className={`font-normal text-[18px] ${openFaqs.includes(index) ? (
+                  colortheme === 'blue' ? 'text-[#246BFD]' : colortheme === 'green' ? 'text-[#05C067]' : colortheme === 'purple' ? 'text-[#AF52DE]' : 'text-[#019B83]'
+                ) : 'text-black'}`}>
                   {faq.question}
                 </h2>
                 {openFaqs.includes(index) && (
@@ -87,7 +93,7 @@ export default function FAQs() {
                     {openFaqs.includes(index) ? (
                       <path
                         d="M7.05078 12H16.9508"
-                        stroke="#05C067"
+                        stroke= {colortheme === 'blue' ? '#246BFD' : colortheme === 'green' ? '#05C067' : colortheme === 'purple' ? '#AF52DE' : '#019B83'}
                         strokeWidth={2}
                         strokeLinecap="round"
                         strokeLinejoin="round"

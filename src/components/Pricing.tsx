@@ -68,7 +68,7 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
 
     return (
         <div className='bg-white px-4 lg:px-20 my-10 py-20' >
-            <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto  border shadow-pricingCard '>
+            <div className='p-4 py-8 md:p-8 lg:p-16 mx-auto  shadow-pricingCard '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>
                         <h1 className='text-[32px] leading-10'>Clear Pricing, No Hidden <span className='font-bold'>Costs whatsoever</span></h1>
@@ -81,7 +81,7 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
                         <div className='flex lg:w-4/5 gap-5 flex-wrap justify-center '>
                             {plans.map((plan, index) => {
                                 return (
-                                    <div key={index} className={`${type=='green'?"bg-[#DFFFFD]" :type=='blue'?"bg-[#DBF6FF]":"bg-[#F9F2FD]"} font-medium rounded-[34px] px-[18px] py-[8px] text-[14px] w-fit`}>{plan}</div>
+                                    <div key={index} className={`${type=='green'?"bg-[#DFFFFD]" :type=='blue'?"bg-[#90E4FF]":"bg-[#F9F2FD]"} font-medium rounded-[34px] px-[18px] py-[8px] text-[14px] w-fit`}>{plan}</div>
                                 )
                             })
                             }

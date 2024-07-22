@@ -3,52 +3,18 @@ import Image from 'next/image'
 import React from 'react'
 
 
-
-
-
-
-
-
-const data = [
-    {
-        color: '/RectanglePurple.svg',
-        title: 'Clean Residential Proxy IP Pool',
-        description: "There are 10M+ clean residential IPs in our network"
-    },
-    {
-        color: '/RectangleDGreen.svg',
-        title: 'Precise Geo Targeting',
-        description: "Option to target any city ,state and ISP in 195 countries available"
-    },
-    {
-        color: '/RectangleYellow.svg',
-        title: 'Good compatibility',
-        description: "Our proxies support both HTTP and SOCKS5 protocols"
-    },
-    {
-        color: '/RectangleBlue.svg',
-        title: 'Stable performance',
-        description: "99.9% Uptime. Proven performance, not just words"
-    },
-    {
-        color: 'RectangleGreen.svg',
-        title: 'Rotating and Static',
-        description: "Rotating by default and option for static IPs"
-    },
-    {
-        color: '/RectanglePink.svg',
-        title: 'Top Residential Proxy Speeds',
-        description: "99.9% success rate , ready for any task available"
-    }
-]
-
-const ResidentialProxies = () => {
+type ProxiesDataInterface = {
+    color: string;
+    title: string;
+    description: string
+  }
+const ResidentialProxies = ({type,data}:{type:string,data:ProxiesDataInterface[]}) => {
     return (
         <div className=' my-10 relative overflow-hidden  mx-auto'>
             <Image src='/hero2.svg' alt="" width={1000} height={500} className=' w-full absolute -z-10 opacity-30' />
             <div className='py-28   z-0 mx-auto '>
                 <div className='flex justify-center' >
-                    <h1 className="text-4xl font-bold text-center max-w-xl">Discover our residential proxies network</h1>
+                    <h1 className="text-4xl font-medium tracking-tight capitalize text-center max-w-xl">Discover our {type} proxies network</h1>
                 </div>
                 <div className='flex justify-center mt-5'>
                     <div className='max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 p-4 '>

@@ -8,22 +8,16 @@ import InactiveSvg from "./assets/inactive";
 
 const faqs = [
   {
-    icon: "/images/icons/web-scraping-icon.svg",
+    icon: "/images/icons/seo-icon.svg",
     question: "E-Commerce",
     answer:
       "Secure and high-speed proxies tailored for e-commerce platforms. Enhance your online business operations with reliable and scalable proxy solutions.",
   },
   {
-    icon: "/images/icons/social-media-icon.svg",
+    icon: "/images/icons/market.svg",
     question: "Social Media Marketing",
     answer:
       "Boost your social media campaigns with our dedicated proxies. Ensure seamless access and manage multiple accounts without restrictions.",
-  },
-  {
-    icon: "/images/icons/e-commerce-icon.svg",
-    question: "Cybersecurity",
-    answer:
-      "Protect your online activities with our robust proxies. Safeguard your data and ensure anonymity with our secure and reliable proxy services.",
   },
   {
     icon: "/images/icons/ad-icon.svg",
@@ -32,13 +26,19 @@ const faqs = [
       "Conduct thorough market research with our anonymous proxies. Gather accurate data and insights while maintaining your privacy and security.",
   },
   {
-    icon: "/images/icons/seo-icon.svg",
-    question: "SEO Monitoring",
+    icon: "/images/icons/web-scraping-icon.svg",
+    question: "Cybersecurity",
     answer:
-      "MMonitor your SEO efforts with our dedicated proxies. Track rankings and gather data from search engines with our reliable and anonymous proxy solutions.",
+      "Protect your online activities with our robust proxies. Safeguard your data and ensure anonymity with our secure and reliable proxy services.",
   },
   {
-    icon: "/images/icons/ad-icon.svg",
+    icon: "/images/icons/social-media-icon.svg",
+    question: "SEO Monitoring",
+    answer:
+      "Monitor your SEO efforts with our dedicated proxies. Track rankings and gather data from search engines with our reliable and anonymous proxy solutions.",
+  },
+  {
+    icon: "/images/icons/e-commerce-icon.svg",
     question: "Ad Tech",
     answer:
       "Optimize your ad campaigns using our high-performance proxies. Access ad platforms without limitations and enhance your targeting strategies.",

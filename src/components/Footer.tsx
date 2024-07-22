@@ -25,7 +25,7 @@ export default function Footer() {
       { name: "Cybersecurity", href: "/Solutions/cyber-security" },
       { name: "Market Research", href: "/Solutions/market-research" },
       { name: "SEO Monitoring", href: "/Solutions/seo-monitoring" },
-      { name: "Ad Verification", href: "/Solutions/ad-tech" },
+      { name: "Ad Tech", href: "/Solutions/ad-tech" },
     ],
     legal: [
       { name: "terms and conditions", href: "/terms-of-service" },

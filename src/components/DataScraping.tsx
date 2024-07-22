@@ -50,13 +50,13 @@ const DataScraping = () => {
 
 
     return (
-        <div className='relative py-20 my-10 '>
-            <Image src='/hero2.svg' alt="" width={1000} height={500} className=' w-full absolute -z-10 opacity-30' />
-            <div className='p-6 mx-auto z-10  '>
+        <div className='relative  py-10 my-10 '>
+            <Image src='/hero2.svg' alt="" width={1000} height={1000} className='border w-full absolute -z-10 opacity-30' />
+            <div className='p-28 mx-auto z-10  '>
 
                 <div className='text-center  flex justify-center'>
                     <div className='max-w-3xl'>
-                        <h1 className='text-[32px] leading-9'>Efficient Data Scraping For <span className='font-bold'>Projects Of Any Scale</span></h1>
+                        <h1 className='text-[32px] leading-10'>Efficient Data Scraping For <span className='font-bold'>Projects Of Any Scale</span></h1>
                         <p className='text-[18px] text-[#A8A8A8] mt-2'>
                             From Premium Residential Proxies or responsive datacenter to static ISP solutions for any needs, experience the quality with CatProxies.
                         </p>
@@ -64,7 +64,7 @@ const DataScraping = () => {
                 </div>
                 <div className='flex justify-center'>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-7 max-w-[956px] mt-12'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[956px] mt-12'>
                     {
                         Data.map((data, index) => (
                             <div key={index} className='flex  lg:min-w-[460px] flex-col lg:min-h-[307px] p-7 bg-white rounded-2xl gap-2 shadow-custom'>

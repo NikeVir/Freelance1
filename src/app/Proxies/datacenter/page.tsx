@@ -31,6 +31,44 @@ const Data1: data = {
     color: 'greenOutline'
 }
 
+type ProxiesDataInterface = {
+    color: string;
+    title: string;
+    description: string
+  }
+  const ProxiesData = [
+    {
+        color: '/RectanglePurple.svg',
+        title: 'Discover our Clean Proxy IP Pool',
+        description: "There are 20.000+ clean and fast IPs in our datacenter network"
+    },
+    {
+        color: '/RectangleDGreen.svg',
+        title: 'Only Top Geo Available',
+        description: "Only 5 major countries available in the IP pool , primarily USA."
+    },
+    {
+        color: '/RectangleYellow.svg',
+        title: 'Good compatibility',
+        description: "Our datacenter proxies support HTTP protocols"
+    },
+    {
+        color: '/RectangleBlue.svg',
+        title: 'Stable performance',
+        description: "99.9% Uptime. Proven performance, not just words"
+    },
+    {
+        color: 'RectangleGreen.svg',
+        title: 'Rotating instantly',
+        description: "Rotating by default every millisecond"
+    },
+    {
+        color: '/RectanglePink.svg',
+        title: 'Top Proxy Speeds',
+        description: "99.9% success rate , ready to automate your tasks"
+    }
+]
+
 
 
 
@@ -43,12 +81,12 @@ export default function page() {
                 </div>
                 <HeroSection data={HomeContentHero} />
             </div>
-            <ProxyLocations />
-            <ResidentialProxies />
+            <ProxyLocations flagsType='datacenter' />
+            <ResidentialProxies   type={"Datacenter"} data = {ProxiesData} />
             <Pricing type='green' plans={plans2} Explore={Explore2} />
             <LogoSection />
             <WhySection Data={Data1} />
-            <FAQs />
+            <FAQs colortheme='darkgreen' />
         </div>
     )
 }

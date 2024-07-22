@@ -29,6 +29,44 @@ type data ={
     color: 'purpleOutline'
   }
 
+  type ProxiesDataInterface = {
+    color: string;
+    title: string;
+    description: string
+  }
+  const ProxiesData = [
+    {
+        color: '/RectanglePurple.svg',
+        title: 'Clean Proxy IP Pool',
+        description: "There are truly billions of billions of clean IPs in our IPV6 network"
+    },
+    {
+        color: '/RectangleDGreen.svg',
+        title: 'Only Top Geo Available',
+        description: "Only 6 major countries available in the IP pool"
+    },
+    {
+        color: '/RectangleYellow.svg',
+        title: 'Good compatibility',
+        description: "Our IPV6 proxies support HTTP protocols"
+    },
+    {
+        color: '/RectangleBlue.svg',
+        title: 'Stable performance',
+        description: "99.9% Uptime. Proven performance, not just words"
+    },
+    {
+        color: 'RectangleGreen.svg',
+        title: 'Rotating instantly',
+        description: "Rotating by default every millisecond"
+    },
+    {
+        color: '/RectanglePink.svg',
+        title: 'Top Proxy Speeds',
+        description: "99.9% success rate , ready to automate your tasks"
+    }
+]
+
 
 
 
@@ -42,12 +80,12 @@ export default function page() {
                 </div>
                 <HeroSection data={HomeContentHero} />
             </div>
-            <ProxyLocations />
-            <ResidentialProxies />
+            {/* <ProxyLocations /> */}
+            <ResidentialProxies  type={"Datacenter"} data = {ProxiesData}  />
             <Pricing type='purple' plans={plans3} Explore={Explore3} />
             <LogoSection />
             <WhySection Data={Data1} />
-            <FAQs />
+            <FAQs colortheme='purple'/>
         </div>
     )
 }

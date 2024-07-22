@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="font-giest">
       <div className="-mt-10">
-        <FAQ />
+        <FAQ colortheme="green"/>
       </div>
 
     </main>

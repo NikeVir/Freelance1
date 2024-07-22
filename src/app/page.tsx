@@ -105,8 +105,8 @@ export default function Home() {
       <WhySection Data={Data1} />
       <LogoSection />
       <WhyToChoose Data={Data} title={title}/>
-      <ProxyLocations/>
-      <FAQs />
+      <ProxyLocations flagsType="residential"/>
+      <FAQs colortheme="green"/>
     </main>
   );
 }

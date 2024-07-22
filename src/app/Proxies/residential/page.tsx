@@ -29,6 +29,44 @@ type data ={
     color: 'blueOutline'
   }
 
+  type ProxiesDataInterface = {
+    color: string;
+    title: string;
+    description: string
+  }
+  const ProxiesData = [
+    {
+        color: '/RectanglePurple.svg',
+        title: 'Clean Residential Proxy IP Pool',
+        description: "There are 10M+ clean residential IPs in our network"
+    },
+    {
+        color: '/RectangleDGreen.svg',
+        title: 'Precise Geo Targeting',
+        description: "Option to target any city ,state and ISP in 195 countries available"
+    },
+    {
+        color: '/RectangleYellow.svg',
+        title: 'Good compatibility',
+        description: "Our proxies support both HTTP and SOCKS5 protocols"
+    },
+    {
+        color: '/RectangleBlue.svg',
+        title: 'Stable performance',
+        description: "99.9% Uptime. Proven performance, not just words"
+    },
+    {
+        color: 'RectangleGreen.svg',
+        title: 'Rotating and Static',
+        description: "Rotating by default and option for static IPs"
+    },
+    {
+        color: '/RectanglePink.svg',
+        title: 'Top Residential Proxy Speeds',
+        description: "99.9% success rate , ready for any task available"
+    }
+]
+
 
 export default function page() {
     return (
@@ -39,12 +77,12 @@ export default function page() {
                 </div>
                 <HeroSection data={HomeContentHero} />
             </div>
-            <ProxyLocations />
-            <ResidentialProxies />
+            <ProxyLocations flagsType='residential'/>
+            <ResidentialProxies type={"Residential"} data = {ProxiesData} />
             <Pricing type='blue' plans={plans1} Explore={Explore1} />
             <LogoSection />
             <WhySection Data={Data1} />
-            <FAQs />
+            <FAQs colortheme='blue'/>
         </div>
     )
 }

@@ -36,6 +36,7 @@ import SeoMonitoring from "./assets/usecases/SeoMonitoring";
 import Webscraping from "./assets/usecases/Webscraping";
 import MarketResearch from "./assets/usecases/MarketResearch";
 import SocialMedia from "./assets/usecases/SocialMedia";
+import AdTech from "./assets/usecases/AdTech";
 
 const products = [
   {
@@ -84,12 +85,12 @@ const products = [
 ];
 
 const services = [
-  { name: "E-Commerce", href: "/Solutions/ad-verification", icon: <Webscraping/> },
-  { name: "Social Media Marketing", href: "/Solutions/social-media", icon: <SocialMedia/> },
-  { name: "Market Research", href: "/Solutions/market-research", icon: <MarketResearch/> },
-  { name: "Cybersecurity", href: "/Solutions/cyber-security",  icon: <AdVerification/> },
-  { name: "SEO Monitoring", href: "/Solutions/seo-monitoring", icon: <SeoMonitoring/> },
-  { name: "Ad Tech", href: "/Solutions/ad-tech", icon: <AdVerification/> },
+  { name: "E-Commerce", href: "/Solutions/ad-verification", icon: <AdVerification/> },
+  { name: "Social Media Marketing", href: "/Solutions/social-media", icon: <MarketResearch/> },
+  { name: "Market Research", href: "/Solutions/market-research", icon: <SocialMedia/> },
+  { name: "Cybersecurity", href: "/Solutions/cyber-security",  icon: <Webscraping/> },
+  { name: "SEO Monitoring", href: "/Solutions/seo-monitoring", icon: <AdTech/> },
+  { name: "Ad Tech", href: "/Solutions/ad-tech", icon: <SeoMonitoring/> },
 ]
 const resources = [
   { name: "FAQ", href: "/FAQ" },
@@ -154,7 +155,8 @@ export default function Header() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
+                      onClick={()=>window.open(item.href, "_self")}
+                      className="flex items-center cursor-pointer gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
                     <Image src={item.icon} height={150} width={150} alt="" />
                       <div>
@@ -242,12 +244,13 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <PopoverPanel className="absolute left-20 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
+              <PopoverPanel  className="absolute left-20 top-full pt-2 bg-white shadow-lg z-10 ring-1 ring-gray-900/5">
                 <div className="grid grid-cols-3 px-6 py-8 mx-auto max-w-7xl gap-x-4 lg:px-8">
                   {services.map((item) => (
                     <div
                       key={item.name}
-                      className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
+                      onClick={()=>window.open(item.href, "_self")}
+                      className="flex items-center cursor-pointer gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
                       {item.icon}
                       <div>
@@ -332,7 +335,8 @@ export default function Header() {
                   {resources.map((item) => (
                     <div
                       key={item.name}
-                      className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
+                      onClick={()=>window.open(item.href, "_self")}
+                      className="flex cursor-pointer items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
                       <div>
                         <a
