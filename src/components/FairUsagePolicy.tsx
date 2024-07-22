@@ -16,7 +16,7 @@ export default function TermsOfService() {
   <p>Effective Date: 28 June 2024</p>
 
   <p>
-    At CatProxies, we are committed to providing high-quality, reliable services to all our customers. This Fair Usage Policy ("Policy") is designed to ensure that all customers can use our services fairly and equitably. By using our services, you agree to comply with this Policy.
+    At CatProxies, we are committed to providing high-quality, reliable services to all our customers. This Fair Usage Policy &quot;Policy&quot; is designed to ensure that all customers can use our services fairly and equitably. By using our services, you agree to comply with this Policy.
   </p>
 
   <p>1. Purpose</p>
@@ -75,13 +75,13 @@ export default function TermsOfService() {
     Warning: Issuing a warning to the customer regarding the detected unfair usage.
   </p>
   <p>
-    Temporary Suspension: Temporarily suspending the customer's access to the services to mitigate the impact on other customers.
+    Temporary Suspension: Temporarily suspending the customer&apos;s access to the services to mitigate the impact on other customers.
   </p>
   <p>
-    Service Restriction: Limiting or throttling the customer's usage to bring it within acceptable limits.
+    Service Restriction: Limiting or throttling the customer&apos;s usage to bring it within acceptable limits.
   </p>
   <p>
-    Termination: Terminating the customer's account for repeated or severe violations of this Policy.
+    Termination: Terminating the customer&apos;s account for repeated or severe violations of this Policy.
   </p>
 
   <p>5. Your Responsibilities</p>
@@ -100,7 +100,7 @@ export default function TermsOfService() {
 
   <p>6. Changes to This Policy</p>
   <p>
-    We may update this Fair Usage Policy from time to time. We will notify you of any changes by posting the new Policy on this page and updating the "Effective Date" at the top. You are advised to review this Policy periodically for any changes.
+    We may update this Fair Usage Policy from time to time. We will notify you of any changes by posting the new Policy on this page and updating the &quot;Effective Date&quot; at the top. You are advised to review this Policy periodically for any changes.
   </p>
 
   <p>7. Contact Us</p>

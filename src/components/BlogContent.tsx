@@ -46,7 +46,7 @@ export default function BlogContent({ title }: { title: string }) {
         </div>
         </div>
       ) : (
-        <p>No blog found with the title "{title}".</p>
+        <p>No blog found with the title &quot;{title}&quot;.</p>
       )}
     </div>
   )
