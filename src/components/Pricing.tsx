@@ -4,14 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from './ui/Button'
 
-const plans = [
-    'Unlimited concurrent sessions',
-    'Rotating or Static',
-    'Free geo-targeting',
-    'Avg. 0.6s response time',
-    'Avg. 99.9% success rates',
-    'HTTP/HTTPS/SOCKS5 protocols'
-]
+
 type ExploreInterface = {
     plan: string,
     pricePerGB: string,
@@ -20,43 +13,7 @@ type ExploreInterface = {
     variant: string
 
 }
-const Explore:ExploreInterface[] = [
-{
-    plan:'Free Trial',
-    pricePerGB:'FREE',
-    totalCost:'FREE',
-    action:'Contact Us',
-    variant:'white'
-},
-{
-    plan:'1GB',
-    pricePerGB:'$3.5',
-    totalCost:'$3.5',
-    action:'Buy Now',
-    variant:'blue'
-},
-{
-    plan:'5GB',
-    pricePerGB:'Price Per GB',
-    totalCost:'$3',
-    action:'$15',
-    variant:'blue'
-},
-{
-    plan:'25GB',
-    pricePerGB:'Price Per GB',
-    totalCost:'$2.7',
-    action:'$67.5',
-    variant:'blue'
-},
-{
-    plan:'100GB',
-    pricePerGB:'Price Per GB',
-    totalCost:'$250',
-    action:'Buy Now',
-    variant:'blue'
-},
-]
+
 
 
 type typeInterface = 'blue' | 'green' | 'purple'
@@ -93,7 +50,7 @@ const Pricing = ({type,plans,Explore}:{type:typeInterface,plans:string[],Explore
                     <div className='flex flex-col  max-w-6xl w-full overflow-x-scroll md:overflow-x-auto  mt-12'>
                         <div className='flex border-b border-[#E4E4E4] pb-10 w-full'>
                             <div className='basis-1/4'></div>
-                            <div className='basis-1/4 text-center'>Price Per GB</div>
+                            <div className='basis-1/4 text-center'>Price Per {type=='blue'?"GB":"Day"}</div>
                             <div className='basis-1/4 text-center'>Total Cost</div>
                             <div className='basis-1/4'></div>
                         </div>

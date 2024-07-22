@@ -93,14 +93,14 @@ const datacenter = [
 const ProxyLocations = ({flagsType}:{flagsType:string}) => {
   const data = flagsType === 'datacenter' ? datacenter : residential;
   return (
-    <div className='my-10 py-20   z-10'>
+    <div className={`my-10 py-20 z-10 ${flagsType=='datacenter'?'py-32':''} `}>
       <div>
       <div className='flex justify-center' >
         <div className='max-w-3xl'>
           <h1 className='text-[32px] font-bold leading-9'>Top Proxy Locations</h1>
-          <p className='text-[18px] text-[#A8A8A8] mt-2'>
+          { flagsType=='datacenter'?"": <p className='text-[18px] text-[#A8A8A8] mt-2'>
           Premium proxy IPs from 195 countries
-          </p>
+          </p>}
         </div>
         </div>
         <div className='flex justify-center mt-5'>

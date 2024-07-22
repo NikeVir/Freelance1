@@ -23,7 +23,7 @@ interface HeroContainer {
   
   
   const HomeContentHero:HeroContainer = {
-    title: "Proxies for Extensive E-Commerce Data Collection",
+    title: "Proxies for E-Commerce Data Collection",
     description: "Enhance Your E-commerce Insights with Public Data",
     points:["Geo-targeted Product Data","Less IP Blocks and CAPTCHA Issues","Instantly Usable E-commerce Data"],
     pointsColor: "green",
@@ -76,8 +76,9 @@ type titleProps = {
 const title:titleProps  = {
         title: 'Unlock Your',
         span: 'E-commerce Potential',
-        other: 'with Proxies'
+        other: ' with Proxies'
 }
+
 
 export default function page() {
     return (
@@ -86,7 +87,7 @@ export default function page() {
             <WhyToChoose Data={Data} title={title}/>
             <DataScraping/>
             <LogoSection />
-            <UseCases/>
+            <UseCases type='E-Commerce'/>
         </div>
     )
 }

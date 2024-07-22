@@ -23,7 +23,7 @@ interface HeroContainer {
   
   
   const HomeContentHero:HeroContainer = {
-    title: "Targeted audience profiling",
+    title: "Proxies for SEO Monitoring",
     description: "Control Rankings, Analyze Traffic, and Discover Trends with proxies",
     points:["Optimize search engine rankings","Analyze website traffic and keyword performance","Utilize data for strategic product placement"],
     pointsColor: "green",
@@ -86,7 +86,7 @@ export default function page() {
             <WhyToChoose Data={Data} title={title}/>
             <DataScraping/>
             <LogoSection />
-            <UseCases/>
+            <UseCases type='SEO Monitoring'/>
         </div>
     )
 }

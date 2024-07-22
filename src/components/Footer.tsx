@@ -66,7 +66,7 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className=" text-center lg:text-left">
             <div className="flex items-center gap-2">
-              <Image alt="Company name" src="/logo.svg" className="h-12 w-12" height={200} width={200} />
+              <Image alt="Company name" src="/logo.png" className="h-12 w-12" height={200} width={200} />
               <h1 className="font-bold text-2xl lg:text-2xl">CAT PROXIES</h1>
             </div>
             <div className="mt-5 flex flex-col gap-4">

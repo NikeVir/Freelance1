@@ -2,11 +2,11 @@ import { ExploreInterface } from "@/types/types";
 
 export const Explore2: ExploreInterface[] = [
   {
-    plan: "Free Trial",
+    plan: "l Day",
     pricePerGB: "$10",
     totalCost: "$10",
-    action: "Contact Us",
-    variant: "white",
+    action: "Buy Now",
+    variant: "green",
   },
   {
     plan: "7 Days",
@@ -25,9 +25,9 @@ export const Explore2: ExploreInterface[] = [
 ];
 export const plans2 = [
     'Unlimited concurrent sessions',
-    'Rotating or Static',
-    'Free geo-targeting',
-    'Avg. 0.6s response time',
+    'Unlimited bandwidth',
+    'Rotating by default',
+    'Top tier countries',
     'Avg. 99.9% success rates',
     'HTTP protocols'
 ]
@@ -35,11 +35,11 @@ export const plans2 = [
 
 export const Explore3: ExploreInterface[] = [
   {
-    plan: "Free Trial",
+    plan: "1 Day",
     pricePerGB: "$7",
     totalCost: "$7",
-    action: "Contact Us",
-    variant: "white",
+    action: "Buy Now",
+    variant: "purple",
   },
   {
     plan: "1GB",
@@ -59,9 +59,9 @@ export const Explore3: ExploreInterface[] = [
 
 export const plans3 = [
     'Unlimited concurrent sessions',
-    'Rotating or Static',
-    'Free geo-targeting',
-    'Avg. 0.6s response time',
+    'Unlimited bandwidth',
+    'Rotating by default',
+    'Top tier countries',
     'Avg. 99.9% success rates',
     'HTTP protocols'
 ]

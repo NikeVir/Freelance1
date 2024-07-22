@@ -76,6 +76,7 @@ const title:titleProps  = {
         span: 'advertising technology',
         other: ' using proxies.'
 }
+
   
 export default function page() {
     return (
@@ -84,7 +85,7 @@ export default function page() {
             <WhyToChoose Data={Data} title={title}/>
             <DataScraping/>
             <LogoSection />
-            <UseCases/>
+            <UseCases type="Ad Tech" />
         </div>
     )
 }

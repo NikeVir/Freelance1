@@ -42,7 +42,7 @@ export default function HeroSection({ data }: { data: HeroContainer }) {
                   <Image src="/images/icons/red-5-stars.svg" alt="" className="mt-1 w-20 h-4" height={400} width={400} />
                 </span>
               </div>
-              <h1 className="max-w-xl mt-2  font-semibold tracking-tight text-center lg:text-left text-gray-900 text-3xl sm:text-[42px] sm:leading-[60px]  ">
+              <h1 className="max-w-xl mt-2 text-wrap  font-semibold tracking-tight text-center lg:text-left text-gray-900 text-3xl sm:text-[42px] sm:leading-[60px]  ">
                 {data.title}
               </h1>
               <p className="mt-6 capitalize font-normal leading-7 text-[18px] text-center lg:text-left text-gray-600">

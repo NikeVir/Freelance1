@@ -86,7 +86,7 @@ export default function page() {
             <WhyToChoose Data={Data} title={title}/>
             <DataScraping/>
             <LogoSection />
-            <UseCases/>
+            <UseCases type='Cybersecurity'/>
         </div>
     )
 }

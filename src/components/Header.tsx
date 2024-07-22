@@ -41,10 +41,22 @@ import AdTech from "./assets/usecases/AdTech";
 const products = [
   {
     name: "Residential Proxies",
-    description: "Usce consequat mi elementum, semper massa sit amet",
+    description: "Real IPs from ISPs for reliable and secure web scraping",
     href: "/Proxies/residential",
     icon: '/images/icons/residential.svg',
-    price: "$4.99",
+  },
+
+  {
+    name: "Datacenter Proxies",
+    description: "High-speed, scalable proxies from data centers for bulk web scraping",
+    href: "/Proxies/datacenter",
+    icon: '/images/icons/datacenter.svg',
+  },
+  {
+    name: "IPv6 Proxies",
+    description: "Modern, high-availability proxies with vast address space for advanced needs",
+    href: "/Proxies/ipv6",
+    icon: '/images/icons/ipv6.svg',
   },
   // {
   //   name: "Static ISP Proxies",
@@ -60,21 +72,6 @@ const products = [
   //   icon: "/images/icons/residential-icon.svg",
   //   price: "$4.99",
   // },
-  {
-    name: "IPv6 Proxies",
-    description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "/Proxies/ipv6",
-    icon: '/images/icons/ipv6.svg',
-    price: "$4.99",
-  },
-  {
-    name: "Datacenter Proxies",
-    description: "Usce consequat mi elementum, semper massa sit amet",
-    href: "/Proxies/datacenter",
-    icon: '/images/icons/datacenter.svg',
-    price: "$4.99",
-  },
-
   // {
   //   name: "Mobile Proxies",
   //   description: "Usce consequat mi elementum, semper massa sit amet",
@@ -170,10 +167,7 @@ export default function Header() {
                           {item.description}
                         </p>
                       </div>
-                      <div className="flex flex-col items-center justify-center gap-1">
-                        <p className="text-sm text-gray-600">{item.price}</p>
-                        <p className="text-sm text-gray-600">onwards</p>
-                      </div>
+                    
                     </div>
                   ))}
                 </div>

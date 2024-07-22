@@ -119,7 +119,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
                     <div className='flex flex-col  max-w-6xl w-full overflow-x-scroll md:overflow-x-auto  mt-12'>
                         <div className='flex border-b border-[#E4E4E4] pb-10 w-full'>
                             <div className='basis-1/4'></div>
-                            <div className='basis-1/4 text-center'>Price Per GB</div>
+                            <div className='basis-1/4 text-center'>Price Per {type=='blue'?"GB":"Day"}</div>
                             <div className='basis-1/4 text-center'>Total Cost</div>
                             <div className='basis-1/4'></div>
                         </div>

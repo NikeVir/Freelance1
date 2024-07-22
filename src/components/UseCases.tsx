@@ -4,33 +4,40 @@ import MarketResearch from './assets/usecases/MarketResearch'
 import SocialMedia from './assets/usecases/SocialMedia'
 import AdVerification from './assets/usecases/AdVerification'
 import SeoMonitoring from './assets/usecases/SeoMonitoring'
+import AdTech from './assets/usecases/AdTech'
+type DataItem = {
+    image: JSX.Element;
+    title: string;
+}
 
 const data = [
     {
-        image: <Webscraping />,
-        title: 'Web Scraping',
+        image: <AdVerification />,
+        title: 'E-Commerce',
     },
     {
         image: <MarketResearch />,
-        title: 'Market Research',
+        title: 'Social Media Marketing',
     },
     {
         image: <SocialMedia />,
-        title: 'Social Media Management',
+        title: 'Market Research',
     },
     {
-        image: <AdVerification />,
-        title: 'Ad Verification',
+        image: <Webscraping />,
+        title: 'Cybersecurity',
+    },
+    {
+        image: <AdTech />,
+        title: 'SEO Monitoring',
     },
     {
         image: <SeoMonitoring />,
-        title: 'SEO Monitoring',
+        title: 'Ad Tech',
     },
-   
-
-
 ]
-const UseCases = () => {
+const UseCases = ({type}:{type:string}) => {
+    const filteredData = data.filter(item => item.title !== type);
     return (
         <div className='my-40'>
             <div>
@@ -41,7 +48,7 @@ const UseCases = () => {
             </div>
             <div className='flex justify-center mt-10'>
                 <div className="flex flex-wrap justify-center gap-5 max-w-7xl">
-                    {data.map((item, index) => (
+                    {filteredData.map((item, index) => (
                         <div key={index} className="bg-[linear-gradient(180deg,#FAFAFA_0%,#FFF_100%)] border-2 flex items-center group hover:border-2 hover:border-[#05C067] hover:bg-[#F0FBF3] w-[368px] h-[250px] border-white  rounded-xl shadow-custom px-10 py-5  justify-center ">
                             <div className='flex items-center flex-col'>
                                 {item.image}
