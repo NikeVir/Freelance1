@@ -9,8 +9,8 @@ export default function RefundPolicy() {
           <h1 className="font-bold text-[32px] sm:text-[32px]">Refund Policy</h1>
 
         </div>
-
-        <div className="text-[24px] sm:text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-4">
+        <div className='px-16'>
+        <div className="text-[24px] shadow-flag p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
           <p>Effective Date: 28 June 2024</p>
           <p>
             At CatProxies, we strive to ensure the satisfaction of our
@@ -89,6 +89,7 @@ export default function RefundPolicy() {
             assistance with a refund request, please contact us at:
           </p>
           <p>support@catproxies.com</p>
+        </div>
         </div>
       </div>
     </section>

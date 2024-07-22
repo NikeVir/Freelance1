@@ -10,8 +10,7 @@ export default function TermsAndCondition() {
 
         </div>
         <div className='px-16'>
-
-        <div className="text-[24px] sm:text-[24px] p-4 sm:p-16 flex flex-col justify-center items-center text-center sm:items-start sm:text-left text-gray-500 font-normal space-y-4">
+        <div className="text-[24px] shadow-flag p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
           <p>Acceptance of terms upon accessing the website.</p>
           <p>Intellectual property rights belong to the company.</p>
           <p>

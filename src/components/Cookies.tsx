@@ -10,8 +10,10 @@ export default function CookiesPolicy() {
           <h1 className="font-bold text-[32px]">Cookie Policy</h1>
 
         </div>
+        <div className='px-16'>
 
-        <div className="text-[24px] p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
+        
+        <div className="text-[24px] shadow-flag p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
           <p>Effective Date: 28 June 2024</p>
 
           <p>
@@ -109,6 +111,7 @@ export default function CookiesPolicy() {
             cookies, please contact us at:
           </p>
           <p>support@catproxies.com</p>
+        </div>
         </div>
       </div>
     </section>

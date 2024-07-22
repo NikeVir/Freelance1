@@ -42,14 +42,14 @@ export const Explore3: ExploreInterface[] = [
     variant: "purple",
   },
   {
-    plan: "1GB",
+    plan: "7 Days",
     pricePerGB: "$5",
     totalCost: "$35",
     action: "Buy Now",
     variant: "purple",
   },
   {
-    plan: "5GB",
+    plan: "30 days",
     pricePerGB: "$3.1",
     totalCost: "$95",
     action: "Buy Now",
