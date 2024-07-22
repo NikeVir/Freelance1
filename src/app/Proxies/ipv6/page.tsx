@@ -18,7 +18,7 @@ const HomeContentHero:HeroContainer = {
     pointsColor: "purple",
     image: "/images/illustration/proxies/Ipv6.svg",
     alt: "Hero Banner",
-    buttonColor: "purpleg",
+    buttonColor: "purpledg",
 };
 type data ={
     image: string;

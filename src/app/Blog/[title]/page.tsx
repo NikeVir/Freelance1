@@ -3,11 +3,11 @@ import React from 'react'
 import {  useParams } from "next/navigation";
 import BlogContent from '@/components/BlogContent';
 export default function Page() {
-    const search_params = useParams()
-    console.log(search_params)
+    const {title} = useParams()
+    const params = ( title as string).replace(/-/g, ' ');
   return (
     <div className='min-h-[50vh]'>
-        <BlogContent title={search_params.title as string} />
+        <BlogContent title={params as string} />
     </div>
   )
 }

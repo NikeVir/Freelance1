@@ -11,7 +11,7 @@ const faqs = [
     icon: "/images/icons/web-scraping-icon.svg",
     question: "E-Commerce",
     answer:
-      "Dive deep into each project with comprehensive case studies that outline challenges, strategies, and outcomes.",
+      "Secure and high-speed proxies tailored for e-commerce platforms. Enhance your online business operations with reliable and scalable proxy solutions.",
   },
   {
     icon: "/images/icons/social-media-icon.svg",
@@ -35,7 +35,7 @@ const faqs = [
     icon: "/images/icons/seo-icon.svg",
     question: "SEO Monitoring",
     answer:
-      "Monitor your SEO efforts with our dedicated proxies. Track rankings and gather data from search engines with our reliable and anonymous proxy solutions.",
+      "MMonitor your SEO efforts with our dedicated proxies. Track rankings and gather data from search engines with our reliable and anonymous proxy solutions.",
   },
   {
     icon: "/images/icons/ad-icon.svg",

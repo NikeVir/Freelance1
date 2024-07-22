@@ -44,7 +44,7 @@ export const Explore3: ExploreInterface[] = [
   {
     plan: "1GB",
     pricePerGB: "$5",
-    totalCost: "$5",
+    totalCost: "$35",
     action: "Buy Now",
     variant: "purple",
   },
@@ -84,15 +84,15 @@ export const Explore1: ExploreInterface[] = [
   {
     plan: "5GB",
     pricePerGB: "$3",
-    totalCost: "$3",
-    action: "$15",
+    totalCost: "$15",
+    action: "Buy Now",
     variant: "blue",
   },
   {
     plan: "25GB",
     pricePerGB: "$2.7",
-    totalCost: "$2.7",
-    action: "$67.5",
+    totalCost: "$67.5",
+    action: "Buy Now",
     variant: "blue",
   },
   {

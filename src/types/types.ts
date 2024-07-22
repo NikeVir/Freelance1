@@ -5,7 +5,7 @@ export interface HeroContainer {
     pointsColor: string;
     image: string;
     alt: string;
-    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
+    buttonColor: "primary" | "blue" | 'blueg'|"white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | 'purpledg'| "outline";
 }
 export type ExploreInterface = {
     plan: string,

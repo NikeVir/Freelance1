@@ -3,6 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
+
 const buttonVariants = cva(
   "rounded-[8px] px-[50px] py-[18px] text-white text-sm w-fit hover:opacity-95 ",
   {
@@ -19,6 +20,7 @@ const buttonVariants = cva(
         purple: "bg-[#AF52DE] ",
         yellowg: "bg-[linear-gradient(286.17deg,#FB9400_0%,#FFAB38_100%)]",
         blue: "bg-[linear-gradient(286.17deg,#246BFD_0%,#5089FD_100%)]",
+        blueg: "bg-[linear-gradient(105.4deg,#88E2FF_-0.05%,#00B5E7_100.05%)]",
         greenlg: "bg-[linear-gradient(133.32deg,#05C067_-18.1%,#50EA48_118.55%)]",
         white: "bg-[#ffffff] border-[#12111840] border-[1px] text-[#121118]",
         greendg: "bg-[linear-gradient(286.17deg,#019B83_0%,#18C6AB_100%)]",
@@ -31,6 +33,9 @@ const buttonVariants = cva(
     },
   }
 );
+
+
+
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,

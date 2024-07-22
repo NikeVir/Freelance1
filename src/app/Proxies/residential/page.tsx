@@ -12,11 +12,11 @@ import { Explore1,plans1 } from '@/utils/Data';
 
 
 const HomeContentHero:HeroContainer = {
-    title: "Unlock the Power of Residential Proxies",
+    title: "Residential Proxies",
     description: "Bypass limitations with our high-performance residential proxies.",
     points: ["10M+ residential IPs","Country, State, City & ISP Targeting","HTTP & SOCKS5 Support"],
     pointsColor: "blue",
-    image: "/images/illustration/proxies/Residental.svg",
+    image: "/images/illustration/proxies/Residential.svg",
     alt: "Hero Banner",
     buttonColor: "blue",
 };

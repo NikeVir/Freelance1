@@ -34,7 +34,7 @@ const data = [
   {
     flag: <FranceFlag />,
     country: 'France',
-    ips: "568098"
+    ips: "568,098"
   },
   {
     flag: <GermanyFlag />,
@@ -81,7 +81,7 @@ const ProxyLocations = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 p-4 max-w-6xl">
             {data.map((item, index) => (
-              <div key={index} className="bg-[linear-gradient(180deg,#FAFAFA_0%,#FFF_100%)] border-white border rounded-sm shadow-flag px-10 py-5  justify-center ">
+              <div key={index} className="bg-[linear-gradient(180deg,#FAFAFA_0%,#FFF_100%)] sm:min-w-[217px] sm:min-h-[157px] border-white border rounded-sm shadow-flag px-10 py-5  justify-center ">
                 <div className='flex items-center flex-col'>
                   {item.flag}
                   <h1 className="text-sm mt-2 ">{item.country}</h1>

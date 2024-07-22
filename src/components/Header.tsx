@@ -42,7 +42,7 @@ const products = [
     name: "Residential Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
     href: "/Proxies/residential",
-    icon: <Residental/>,
+    icon: '/images/icons/residential.svg',
     price: "$4.99",
   },
   // {
@@ -63,14 +63,14 @@ const products = [
     name: "IPv6 Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
     href: "/Proxies/ipv6",
-    icon: <Ipv6/>,
+    icon: '/images/icons/ipv6.svg',
     price: "$4.99",
   },
   {
     name: "Datacenter Proxies",
     description: "Usce consequat mi elementum, semper massa sit amet",
     href: "/Proxies/datacenter",
-    icon: <Datacenter/>,
+    icon: '/images/icons/datacenter.svg',
     price: "$4.99",
   },
 
@@ -96,7 +96,7 @@ const resources = [
   { name: "Blog", href: "/Blog" },
   { name: "Guides", href: "/Blog?text=guide" },
   { name: "Integration", href: "/Blog?text=Integration" },
-  { name: "Support", href: "/contact-use"},
+  { name: "Support", href: "/contact-us"},
 ]
 const explore = [
   {
@@ -156,7 +156,7 @@ export default function Header() {
                       key={item.name}
                       className="flex items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
-                     {item.icon}
+                    <Image src={item.icon} height={150} width={150} alt="" />
                       <div>
                         <a
                           href={item.href}

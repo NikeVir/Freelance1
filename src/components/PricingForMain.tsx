@@ -68,7 +68,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
 
     return (
         <div className='bg-white sm:px-4 lg:px-20 px-2 my-10 py-20' >
-            <div className='sm:p-4 py-8 md:p-8 lg:p-16 mx-auto   sm:shadow-flag '>
+            <div className='sm:p-4 py-8 md:p-8 lg:p-16 mx-auto   sm:shadow-pricingCard '>
                 <div className='text-center  flex  justify-center'>
                     <div className='max-w-[487px]'>
                         <h1 className='text-[32px] leading-10'>Clear Pricing, No Hidden <span className='font-bold'>Costs whatsoever</span></h1>
@@ -97,7 +97,7 @@ const PricingForMain = ({type,plans,Explore,setTab,tab}:{type:typeInterface,plan
                     </div>
                 </div>
             </div>
-            <div className={`sm:border-[3px] rounded-lg  ${type=='green'?"border-[#18C6AB]" :type=='blue'?"border-[#5089FD]":"border-[#7E00BE]"}`}>
+            <div >
 
            
                 {/* font - Satoshi Variable */}

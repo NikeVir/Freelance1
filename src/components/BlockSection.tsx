@@ -7,27 +7,12 @@ export default function Blog({ filter }: { filter: string | null }) {
     {
       'type': 'blog',
       "blog-img": "https://catproxies.com/uploads/07-05-2024/1cat-1715113327802-956036189.jpeg",
-      heading: "How to use Catproxies on MoreLogin Browser",
-      text: "What is Morelogin? Morelogin is a privacy-focused browser that allows you to connect to a single browser with complete privacy. It lets you connect a proxy to your session with a different IP addres..",
+      heading: "How to use residential proxies on catproxies",
+      text: "To use the residential proxy you just bought, first go to the generator page on your user dashboard Once your order is confirmed on site you will find your proxy plan here. It usually takes about 30...",
       writtenBy: "CateProxies",
       Date: "2024-06-14",
     },
-    {
-      'type': 'blog',
-      "blog-img": "https://catproxies.com/uploads/07-05-2024/1cat-1715113327802-956036189.jpeg",
-      heading: "How to use Catproxies on MoreLogin Browser",
-      text: "What is Morelogin? Morelogin is a privacy-focused browser that allows you to connect to a single browser with complete privacy. It lets you connect a proxy to your session with a different IP addres..",
-      writtenBy: "CateProxies",
-      Date: "2024-06-14",
-    },
-    {
-      'type': 'guide',
-      "blog-img": "https://catproxies.com/uploads/07-05-2024/1cat-1715113327802-956036189.jpeg",
-      heading: "How to use Catproxies on MoreLogin Browser",
-      text: "What is Morelogin? Morelogin is a privacy-focused browser that allows you to connect to a single browser with complete privacy. It lets you connect a proxy to your session with a different IP addres..",
-      writtenBy: "CateProxies",
-      Date: "2024-06-14",
-    },
+
     {
       'type': 'guide',
       "blog-img": "https://files.catproxies.com/uploads/1718396172363-958835602.jpg",
@@ -36,30 +21,7 @@ export default function Blog({ filter }: { filter: string | null }) {
       writtenBy: "CateProxies",
       Date: "2024-06-14",
     },
-    {
-      'type': 'guide',
-      "blog-img": "https://files.catproxies.com/uploads/1718396172363-958835602.jpg",
-      heading: "The Link Between Gut Health and Mental...",
-      text: "What is Morelogin? Morelogin is a privacy-focused browser that allows you to connect to a single browser with complete privacy. It lets you connect a proxy to your session with a different IP addres..",
-      writtenBy: "CateProxies",
-      Date: "2024-06-14",
-    },
-    {
-      'type': 'guide',
-      "blog-img": "/images/blog-images/blog-img3.svg",
-      heading: "The Link Between Gut Health and Mental...",
-      text: "What is Morelogin? Morelogin is a privacy-focused browser that allows you to connect to a single browser with complete privacy. It lets you connect a proxy to your session with a different IP addres..",
-      writtenBy: "CateProxies",
-      Date: "2024-06-14",
-    },
-    {
-      'type': 'guide',
-      "blog-img": "/images/blog-images/blog-img3.svg",
-      heading: "The Link Between Gut Health and Mental...",
-      text: "What is Morelogin? Morelogin is a privacy-focused browser that allows you to connect to a single browser with complete privacy. It lets you connect a proxy to your session with a different IP addres..",
-      writtenBy: "CateProxies",
-      Date: "2024-06-14",
-    },
+
   ];
   const [searchInput, setSearchInput] = useState(filter ==null?"":filter);
   const [currentPage, setCurrentPage] = useState(1);
@@ -92,7 +54,7 @@ export default function Blog({ filter }: { filter: string | null }) {
         </div>
         <div className="rounded-md  space-y-1 my-3">
           <h1 className="text-center sm:text-left  font-bold text-2xl">{card.heading}</h1>
-          <p className="text-center sm:text-left text-[15px] text-gray-400">{card.text.substring(0,191)+"..."}</p>
+          <p className="text-center sm:text-left text-[16px] text-gray-700">{card.text.substring(0,191)+"..."}</p>
         </div>
       </div>
       <div className="border-t p-5 border-[#05C067] flex justify-between">

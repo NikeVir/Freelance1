@@ -31,7 +31,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white font-sora">
       <div className="flex justify-center items-center mb-4">
         <img src="/images/illustration/gray-cat.svg" height={400} width={400} />
       </div>

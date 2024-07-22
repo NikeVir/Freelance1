@@ -17,7 +17,7 @@ interface HeroContainer {
     pointsColor: string;
     image: string;
     alt: string;
-    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
+    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | 'purpledg'| "outline";
   }
   
   
@@ -28,7 +28,7 @@ interface HeroContainer {
     pointsColor: "purple",
     image: "/images/illustration/market-research/main.svg",
     alt: "Hero Banner",
-    buttonColor: "purpleg",
+    buttonColor: "purpledg",
   };
 
   

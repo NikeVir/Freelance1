@@ -74,7 +74,7 @@ export default function FAQs() {
                 )}
                 <button
                   onClick={() => handleToggle(index)}
-                  className="absolute right-5 top-9"
+                  className="absolute -z-10 right-5 top-9 cursor-pointer"
                 >
                   <svg
                     width={24}

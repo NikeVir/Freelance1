@@ -5,7 +5,7 @@ export default function CookiesPolicy() {
   return (
     <section className="pb-16 overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center space-y-12">
-        <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="mt-16" height={100} width={100} />
+        <Image src="/images/illustration/single-cat.svg" alt="Illustration of a single cat" className="" height={100} width={100} />
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[32px]">Cookie Policy</h1>
 

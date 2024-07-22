@@ -7,17 +7,17 @@ type IconProps = React.SVGProps<SVGSVGElement>;
 export default function Footer() {
   const navigation = {
     proxies: [
-      { name: "Residential Proxies", href: "Proxies/residential" },
-      { name: "Data Center Proxies", href: "Proxies/datacenter" },
-      { name: "IPv6 Proxies", href: "Proxies/ipv6" },
+      { name: "Residential Proxies", href: "/Proxies/residential" },
+      { name: "Data Center Proxies", href: "/Proxies/datacenter" },
+      { name: "IPv6 Proxies", href: "/Proxies/ipv6" },
     ],
     company: [
       { name: "Contact us", href: "/contact-us" },
       { name: "Ethics", href: "/Ethics" },
       { name: "FAQ", href: "/FAQ" },
-      { name: "Guides", href: "#" },
+      { name: "Guides", href: "/Blog?text=guide" },
       { name: "Blog", href: "/Blog" },
-      { name: "Integrations", href: "#" },
+      { name: "Integrations", href: "/Blog?text=integrations" },
     ],
     services: [
       { name: "E-commerce", href: "/Solutions/ad-verification" },
@@ -28,11 +28,12 @@ export default function Footer() {
       { name: "Ad Verification", href: "/Solutions/ad-tech" },
     ],
     legal: [
-      { name: "terms and conditions", href: "/TermsAndCondition" },
+      { name: "terms and conditions", href: "/terms-of-service" },
       { name: "privacy policy", href: "/privacy-policy" },
       { name: "refund policy", href: "/refund-policy" },
       { name: "fair usage policy", href: "/FairUsagePolicy" },
-      { name: "Shipping terms", href: "/terms-of-service" },
+      { name: "Shipping terms", href: "/delivery-agreement" },
+      { name: "Cookies Policy", href: "/Cookies" },
     ],
     social: [
       {

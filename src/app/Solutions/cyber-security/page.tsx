@@ -18,7 +18,7 @@ interface HeroContainer {
     pointsColor: string;
     image: string;
     alt: string;
-    buttonColor: "primary" | "blue" | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" | "outline";
+    buttonColor: "primary" | "blue"|'blueg' | "white" | "purple" | "purpleg" | "pinkg" | "yellowg" | "greendg" | "greenlg" |'purpledg'| "outline";
   }
   
   
@@ -29,7 +29,7 @@ interface HeroContainer {
     pointsColor: "blue",
     image: "/images/illustration/cyber-security/main.svg",
     alt: "Hero Banner",
-    buttonColor: "blue",
+    buttonColor: "blueg",
   };
 
   

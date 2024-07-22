@@ -29,7 +29,7 @@ interface HeroContainer {
     pointsColor: "green",
     image: "/images/illustration/social-media/main.svg",
     alt: "Hero Banner",
-    buttonColor: "purple",
+    buttonColor: "purpleg",
   };
 
 

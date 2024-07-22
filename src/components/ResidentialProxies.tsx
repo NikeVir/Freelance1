@@ -2,6 +2,13 @@ import exp from 'constants'
 import Image from 'next/image'
 import React from 'react'
 
+
+
+
+
+
+
+
 const data = [
     {
         color: '/RectanglePurple.svg',
@@ -10,28 +17,28 @@ const data = [
     },
     {
         color: '/RectangleDGreen.svg',
-        title: 'Unlimited Bandwidth',
-        description: "No bandwidth limits thanks to our unlimited data plans"
+        title: 'Precise Geo Targeting',
+        description: "Option to target any city ,state and ISP in 195 countries available"
     },
     {
         color: '/RectangleYellow.svg',
-        title: 'Custom Geotargeting',
-        description: "Target any country or city with our IP geolocation targeting"
+        title: 'Good compatibility',
+        description: "Our proxies support both HTTP and SOCKS5 protocols"
     },
     {
         color: '/RectangleBlue.svg',
-        title: '24/7 Support',
-        description: "Our support team is available 24/7 to help you with any issues"
+        title: 'Stable performance',
+        description: "99.9% Uptime. Proven performance, not just words"
     },
     {
         color: 'RectangleGreen.svg',
-        title: '99.9% Uptime',
-        description: "Our residential proxies have a 99.9% uptime guarantee"
+        title: 'Rotating and Static',
+        description: "Rotating by default and option for static IPs"
     },
     {
         color: '/RectanglePink.svg',
-        title: 'Fast and Reliable',
-        description: "Our residential proxies are fast and reliable for all your needs"
+        title: 'Top Residential Proxy Speeds',
+        description: "99.9% success rate , ready for any task available"
     }
 ]
 
