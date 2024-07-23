@@ -11,7 +11,7 @@ export default function DeliveryAgreement() {
    
         </div>
         <div className='px-4 md:px-16'>
-        <div className=" text-sm md:text-[24px] p-4 md:p-16 shadow-flag flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
+        <div className=" text-[16px] md:text-[24px] p-4 md:p-16 shadow-flag flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
           <p>Effective Date: 28 June 2024</p>
 
           <p>
