@@ -90,11 +90,11 @@ const services = [
   { name: "Ad Tech", href: "/Solutions/ad-tech", icon: <SeoMonitoring/> },
 ]
 const resources = [
-  { name: "FAQ", href: "/FAQ" },
-  { name: "Blog", href: "/Blog" },
-  { name: "Guides", href: "/Blog?text=guide" },
-  { name: "Integration", href: "/Blog?text=Integration" },
-  { name: "Support", href: "/contact-us"},
+  { name: "FAQ", href: "/FAQ" , icon:'/images/icons/FAQ.svg' },
+  { name: "Blog", href: "/Blog", icon:'/images/icons/BLOG.svg' },
+  { name: "Guides", href: "/Blog?text=guide",icon:'/images/icons/guide.svg' },
+  { name: "Integration", href: "/Blog?text=Integration",icon:'/images/icons/integration.svg' },
+  { name: "Support", href: "/contact-us",icon:'/images/icons/support.svg'},
 ]
 const explore = [
   {
@@ -330,8 +330,9 @@ export default function Header() {
                     <div
                       key={item.name}
                       onClick={()=>window.open(item.href, "_self")}
-                      className="flex cursor-pointer items-center gap-3 p-6 text-sm leading-6 rounded-lg group hover:bg-gray-50"
+                      className="flex cursor-pointer items-center gap-3 p-4 text-sm leading-6 rounded-lg group hover:bg-gray-50"
                     >
+                      <img src={item.icon} className="h-[70px] w-[70px]" alt="#" />
                       <div>
                         <a
                           href={item.href}

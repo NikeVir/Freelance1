@@ -9,8 +9,8 @@ export default function TermsAndCondition() {
           <h1 className="font-bold text-[32px] sm:text-[32px]">Terms and conditions</h1>
 
         </div>
-        <div className='px-16'>
-        <div className="text-[24px] shadow-flag p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
+        <div className='px-4 md:px-16'>
+        <div className="text-[24px] shadow-flag p-4 md:p-16 flex flex-col justify-left items-left text-gray-500 font-normal space-y-3">
           <p>Acceptance of terms upon accessing the website.</p>
           <p>Intellectual property rights belong to the company.</p>
           <p>
